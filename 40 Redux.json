@@ -10,30 +10,18 @@
       {"name": "Epic Hero", "id": "07a3-d9f5-7ead-b17d", "hidden": false},
       {"name": "Character", "id": "351f-2cd0-e63e-a1e4", "hidden": false},
       {"name": "Battleline", "id": "48a2-a96a-636c-ecff", "hidden": false},
-      {
-        "name": "Elites",
-        "id": "97e0-7273-8b73-ded5",
-        "hidden": false,
-        "constraints": [{"id": "5d51-9619-0549-5246", "field": "acdc-8926-b4b9-633c", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 750}]
-      },
+      {"name": "Elites", "id": "97e0-7273-8b73-ded5", "hidden": false},
       {"name": "Swarm", "id": "e4de-a047-1261-0ddb", "hidden": false},
       {"name": "Mounted", "id": "c6ee-25c5-d80e-a51a", "hidden": false},
       {"name": "Beast", "id": "6e6c-cae7-0807-c3ce", "hidden": false},
       {"name": "Monster", "id": "43a3-e81e-c4fd-d158", "hidden": false},
-      {
-        "name": "Vehicle",
-        "id": "130b-99ae-79be-9e2b",
-        "hidden": false,
-        "constraints": [{"id": "6e3e-e1ae-9222-c1cc", "field": "acdc-8926-b4b9-633c", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1000}]
-      },
+      {"name": "Vehicle", "id": "130b-99ae-79be-9e2b", "hidden": false},
       {"name": "Transport", "id": "c829-a91d-839c-62cd", "hidden": false},
       {"name": "Infantry", "id": "35fa-30e7-f803-c8a7", "hidden": false},
       {"name": "Smoke", "id": "543a-24bc-bd55-80fe", "hidden": false},
       {"name": "Grenades", "id": "2630-d0bd-d058-68a2", "hidden": false},
       {"name": "Configuration", "id": "d039-d79f-f083-6e3b", "hidden": false},
       {"name": "Walker", "id": "13b9-7786-ae17-f8f9", "hidden": false},
-      {"name": "Terminator", "id": "0d0b-3232-731e-07e7", "hidden": false},
-      {"name": "Veteran", "id": "b1ba-cb00-f7c7-0aa3", "hidden": false},
       {"name": "Fly", "id": "b3be-306e-6f3e-625b", "hidden": false}
     ],
     "costTypes": [

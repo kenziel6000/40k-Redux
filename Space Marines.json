@@ -35,7 +35,25 @@
       },
       {"name": "Tactical Squad", "id": "7648-1827-6150-04a1", "hidden": false},
       {"name": "Phobos Squad", "id": "28af-c619-08bc-4dc1", "hidden": false},
-      {"name": "Gravis Squad", "id": "d541-e8ac-65a6-43c1", "hidden": false}
+      {"name": "Gravis Squad", "id": "d541-e8ac-65a6-43c1", "hidden": false},
+      {
+        "name": "Veteran",
+        "id": "f6e0-4f04-60fb-ae7a",
+        "hidden": false,
+        "constraints": [{"id": "de13-acf1-e7da-55ae", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Terminator",
+        "id": "d747-2934-6257-7735",
+        "hidden": false,
+        "constraints": [{"id": "40d5-b422-c9cc-5341", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Dreadnought",
+        "id": "d49c-c921-bd9e-15ce",
+        "hidden": false,
+        "constraints": [{"id": "cfe5-e1aa-bd3a-82db", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+      }
     ],
     "entryLinks": [
       {"name": "Detachments", "id": "4b54-7b52-d998-357e", "hidden": false, "targetId": "e1d9-cd47-ec23-6e60", "type": "selectionEntry"},
@@ -155,9 +173,28 @@
           {"name": "Infantry", "id": "4ff0-88d3-ee17-d451", "hidden": false, "primary": false, "targetId": "35fa-30e7-f803-c8a7"},
           {"name": "Grenades", "id": "5218-71d1-f352-ac7c", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"}
         ],
-        "constraints": [{"id": "9b35-30b2-c494-aa89", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
+        "constraints": [{"id": "9b35-30b2-c494-aa89", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}],
         "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "infoLinks": [{"name": "Combat Doctrines", "id": "a0e8-97a0-16cf-4759", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "9b35-30b2-c494-aa89",
+            "type": "set",
+            "value": 4,
+            "conditions": [
+              {
+                "childId": "7b3c-f17e-79ea-215c",
+                "childName": "Terminator Company",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
         "selectionEntryGroups": [
           {
             "name": "Wargear",
@@ -709,7 +746,7 @@
           {"name": "Infantry", "id": "cdd5-da90-6ec6-6941", "hidden": false, "primary": false, "targetId": "35fa-30e7-f803-c8a7"},
           {"name": "Grenades", "id": "9c57-3a4d-ba32-bada", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"}
         ],
-        "constraints": [{"id": "59fa-4fd6-cfc2-657e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
+        "constraints": [{"id": "59fa-4fd6-cfc2-657e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}],
         "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "infoLinks": [{"name": "Combat Doctrines", "id": "acee-fbbc-a8c8-c713", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
         "modifiers": [
@@ -740,6 +777,42 @@
                     "value": 1
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "field": "59fa-4fd6-cfc2-657e",
+            "type": "set",
+            "value": 4,
+            "conditions": [
+              {
+                "childId": "8dce-fe7d-b434-eb09",
+                "childName": "Veteran Company",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "affects": "self.entries.recursive.profiles.Unit",
+            "field": "55a7-5b54-c60d-11dc",
+            "scope": "834d-a4ee-e112-2937",
+            "type": "set",
+            "value": "5+",
+            "conditions": [
+              {
+                "childId": "f3df-56b4-b4a2-612d",
+                "childName": "Honoured Veterans",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
               }
             ]
           }
@@ -775,7 +848,7 @@
                       {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "4", "typeId": "0398-77db-0833-6880"},
                       {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
-                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "InSv", "$text": "6+", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
                       {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
@@ -865,7 +938,7 @@
                       {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "4", "typeId": "0398-77db-0833-6880"},
                       {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
-                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "InSv", "$text": "6+", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
                       {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
@@ -1192,7 +1265,7 @@
                           {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
                           {"name": "T", "$text": "4", "typeId": "0398-77db-0833-6880"},
                           {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
-                          {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+                          {"name": "InSv", "$text": "6+", "typeId": "55a7-5b54-c60d-11dc"},
                           {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
                           {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
                           {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
@@ -1408,7 +1481,7 @@
             "rules": [{"name": "Codex Discipline", "id": "e9b1-407e-33b1-5346", "description": "You can use the all doctrines an additional time.", "hidden": false}]
           },
           {
-            "name": "Tacticus Assault Force",
+            "name": "Tacticus Attack Force",
             "id": "ec31-ae3f-4032-3bfd",
             "hidden": false,
             "import": true,
@@ -1416,7 +1489,7 @@
             "categoryLinks": [{"name": "Tacticus", "id": "3898-2ac6-e2ef-cb01", "hidden": false, "primary": false, "targetId": "7e3d-0b83-4f6a-b8c8"}],
             "constraints": [{"id": "282b-042d-4f3a-b66a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [{"name": "Tactical Speed", "id": "6318-1001-32cc-ad09", "description": "Friendly Tactical Squad units can re-roll advance rolls.", "hidden": false}]
+            "rules": [{"name": "Tactical Speed", "id": "6318-1001-32cc-ad09", "description": "Friendly Tactical Squad units have +1 to advance rolls.", "hidden": false}]
           },
           {
             "name": "Gravis Defense Force",
@@ -1475,7 +1548,7 @@
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
             "rules": [
               {
-                "name": "Firestorm",
+                "name": "Tactical Firestorm",
                 "id": "31f7-1688-fb5b-650e",
                 "description": "When a friendly Tactical Squad targets an enemy unit within half range, add 1 to the attacks characteristic of each ranged weapon equipped by that unit.",
                 "hidden": false
@@ -1512,11 +1585,12 @@
             "rules": [{"name": "Shadow Mastery", "id": "4f68-0e8d-384c-ea87", "description": "Friendly Phobos Squads do not lose hidden when shooting.", "hidden": false}]
           },
           {
-            "name": "Ironclad Champions",
+            "name": "Dread Champions",
             "id": "236f-36c4-c4e0-6fd3",
             "hidden": false,
             "import": true,
             "type": "upgrade",
+            "categoryLinks": [{"name": "Dreadnought", "id": "53fd-5943-3662-1e98", "hidden": false, "primary": false, "targetId": "d49c-c921-bd9e-15ce"}],
             "constraints": [{"id": "3d35-6f66-f782-d912", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
             "rules": [
@@ -1580,20 +1654,66 @@
             ]
           },
           {
-            "name": "Terminator Warp Force",
-            "id": "0a59-6b84-ac3e-5adf",
+            "name": "Terminator Warp Strike",
+            "id": "01c8-a0ac-20a6-c9fc",
             "hidden": false,
             "import": true,
             "type": "upgrade",
-            "constraints": [{"id": "26f7-9889-7095-3339", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "categoryLinks": [{"name": "Terminator", "id": "e58d-6d58-72d5-34ba", "hidden": false, "primary": false, "targetId": "d747-2934-6257-7735"}],
+            "constraints": [{"id": "6317-092d-8a68-9760", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
             "rules": [
               {
-                "id": "0ccc-ad63-8a66-6de5",
-                "description": "When a friendly Tactical Squad targets an enemy unit within half range, add 1 to the attacks characteristic of each ranged weapon equipped by that unit.",
+                "name": "Warp Strike",
+                "id": "987d-0e79-3f03-baa4",
+                "description": "When a friendly Terminator Squad makes an ingress move, its attacks have +1 to hit rolls until the end of the turn.",
                 "hidden": false
               }
             ]
+          },
+          {
+            "name": "Terminator Company",
+            "id": "7b3c-f17e-79ea-215c",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Terminator", "id": "63a5-c8f6-45b3-e0b6", "hidden": false, "primary": false, "targetId": "d747-2934-6257-7735"}],
+            "constraints": [{"id": "71cd-1caf-5b3e-7f2c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [{"name": "Terminator Armoury", "id": "519a-2314-0737-464b", "description": "You can take up to 4 Terminator units, instead of only 2.", "hidden": false}]
+          },
+          {
+            "name": "Veteran Company",
+            "id": "8dce-fe7d-b434-eb09",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Veteran", "id": "4e90-5383-22c7-26f8", "hidden": false, "primary": false, "targetId": "f6e0-4f04-60fb-ae7a"}],
+            "constraints": [{"id": "255c-2f0a-f05f-c045", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [{"name": "Only the Best!", "id": "f56c-16d9-d00d-f70b", "description": "You can take up to 4 Veteran Squads, instead of only 2.", "hidden": false}]
+          },
+          {
+            "name": "Honoured Veterans",
+            "id": "f3df-56b4-b4a2-612d",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Veteran", "id": "823f-c22b-db61-3967", "hidden": false, "primary": false, "targetId": "f6e0-4f04-60fb-ae7a"}],
+            "constraints": [{"id": "23e2-5ceb-67c7-8626", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [{"name": "Veteran Iron Halo", "id": "9c93-bf25-4ff3-b8db", "description": "Veteran Squads have a 5+ Invulnerable Save.", "hidden": false}]
+          },
+          {
+            "name": "Adamantine Vanguard",
+            "id": "56df-7e15-911e-8328",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Dreadnought", "id": "b503-dc8d-3395-f466", "hidden": false, "primary": false, "targetId": "d49c-c921-bd9e-15ce"}],
+            "constraints": [{"id": "a074-54a0-dac0-4d0a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [{"name": "Dreadnought Heroes", "id": "8387-9212-17db-4478", "description": "You can include up to 5 Dreadnoughts, instead of only 3.", "hidden": false}]
           }
         ]
       },
@@ -3354,6 +3474,23 @@
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "ca38-d68d-d154-556d",
+            "type": "set",
+            "value": 5,
+            "conditions": [
+              {
+                "childId": "56df-7e15-911e-8328",
+                "childName": "Adamantine Vanguard",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
                 "shared": true,
                 "type": "atLeast",
                 "value": 1
