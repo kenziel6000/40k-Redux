@@ -17,4 +17,5 @@ This is my take on the rules of 40k, using 11th edition as a base. This readme a
 
 - Jump Packs are now an activated ability that adds 3" of movement per turn up to 3 times.
 - Take to the skies only costs 1" for non-Monster/Vehicles with Fly.
-- 
+- Things are generally more expensive.
+- Unit counts are currently uncapped, but I may add some in the near future. I haven't figured out what I'd like to do with them yet.
