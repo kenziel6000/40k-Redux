@@ -2959,7 +2959,7 @@
                       {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
-                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                      {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
                     ]
                   }
                 ],
@@ -3049,7 +3049,7 @@
                       {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
-                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                      {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
                     ]
                   }
                 ],
@@ -3154,7 +3154,7 @@
                       {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
-                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                      {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
                     ]
                   }
                 ],
@@ -3335,7 +3335,7 @@
                       {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
-                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                      {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
                     ]
                   }
                 ],
