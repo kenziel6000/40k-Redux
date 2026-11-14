@@ -1,0 +1,3460 @@
+{
+  "catalogue": {
+    "name": "Space Marines",
+    "id": "f627-0574-346e-0e86",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-aeaf-f07a-9d60-52ee",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "categoryEntries": [
+      {
+        "name": "Doctrine",
+        "id": "5966-d33f-2e10-24b0",
+        "hidden": false,
+        "constraints": [{"id": "db2c-b595-7248-d564", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Phobos",
+        "id": "81e2-9a81-b22d-d42b",
+        "hidden": false,
+        "constraints": [{"id": "fd69-4de9-d39e-e779", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Tacticus",
+        "id": "7e3d-0b83-4f6a-b8c8",
+        "hidden": false,
+        "constraints": [{"id": "ebd2-eb87-f8fe-5c82", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}]
+      },
+      {
+        "name": "Gravis",
+        "id": "684b-6ea1-c9aa-a58d",
+        "hidden": false,
+        "constraints": [{"id": "7964-9b14-c767-039a", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}]
+      },
+      {"name": "Tactical Squad", "id": "7648-1827-6150-04a1", "hidden": false},
+      {"name": "Phobos Squad", "id": "28af-c619-08bc-4dc1", "hidden": false},
+      {"name": "Gravis Squad", "id": "d541-e8ac-65a6-43c1", "hidden": false}
+    ],
+    "entryLinks": [
+      {"name": "Detachments", "id": "4b54-7b52-d998-357e", "hidden": false, "targetId": "e1d9-cd47-ec23-6e60", "type": "selectionEntry"},
+      {"name": "Veteran Squad", "id": "834d-a4ee-e112-2937", "hidden": false, "targetId": "9d1f-94bd-ebed-d47a", "type": "selectionEntry"},
+      {"name": "Terminator Squad", "id": "f8e0-1cb5-4607-ba8e", "hidden": false, "targetId": "0adb-9462-301d-851b", "type": "selectionEntry"},
+      {"name": "Tactical Squad", "id": "b3e8-68c7-3e6e-f236", "hidden": false, "import": true, "targetId": "6467-83e0-9bc3-8f40", "type": "selectionEntry"},
+      {"name": "Phobos Squad", "id": "f10d-3ca9-c2ac-4f43", "hidden": false, "import": true, "targetId": "141d-d750-abb1-4603", "type": "selectionEntry"},
+      {"name": "Gravis Squad", "id": "4cbe-5ad8-7f5f-fcb0", "hidden": false, "import": true, "targetId": "f475-150c-d919-642a", "type": "selectionEntry"},
+      {"name": "Dreadnought", "id": "1c4e-d305-0da5-0a9e", "hidden": false, "import": true, "targetId": "b458-6413-e703-e866", "type": "selectionEntry"}
+    ],
+    "infoLinks": [
+      {"name": "Feel No Pain X+", "id": "8549-4147-31e0-ea31", "hidden": false, "targetId": "5bf4-3222-c49f-6294", "type": "rule"},
+      {"name": "Ignores Cover", "id": "5206-0de9-644f-0dea", "hidden": false, "targetId": "1c63-0ea9-d3b8-5f0c", "type": "rule"},
+      {"name": "Precision", "id": "d01a-6e01-0a57-c197", "hidden": false, "targetId": "ac98-561d-b4b9-e845", "type": "rule"},
+      {"name": "Hazardous", "id": "d02e-966b-646d-9276", "hidden": false, "targetId": "0d8b-1227-f17c-d5e0", "type": "rule"},
+      {"name": "Melee", "id": "16c4-51c5-e209-c0e4", "hidden": false, "targetId": "9bd9-9830-be2c-5532", "type": "rule"},
+      {"name": "Assault", "id": "03f4-de56-92f7-ccb9", "hidden": false, "targetId": "2d1b-fc3b-61d8-d325", "type": "rule"},
+      {"name": "Heavy", "id": "4cec-cc10-8c1c-8002", "hidden": false, "targetId": "edf7-88d5-1556-e3c3", "type": "rule"},
+      {"name": "Torrent", "id": "bb99-af91-15c2-3a27", "hidden": false, "targetId": "a2d7-5271-6671-228a", "type": "rule"},
+      {"name": "Jump Pack", "id": "e4c7-09c3-09c1-dceb", "hidden": false, "targetId": "5bd2-4391-1716-2d91", "type": "rule"},
+      {"name": "Combat Doctrines", "id": "25f2-bc2b-fde8-6abe", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"},
+      {"name": "Critical: X", "id": "43dd-26de-1e79-fe65", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"},
+      {"name": "Deep Strike", "id": "0bd5-0b65-df64-48e3", "hidden": false, "targetId": "b85b-fd47-3ce5-cd10", "type": "rule"},
+      {"name": "Melta X", "id": "e84f-119e-9ed1-88cd", "hidden": false, "targetId": "7b9b-01a0-8243-f217", "type": "rule"}
+    ],
+    "profileTypes": [
+      {
+        "name": "Ranged Weapons",
+        "id": "f77d-b953-8fa4-b762",
+        "hidden": false,
+        "sortIndex": 2,
+        "characteristicTypes": [
+          {"name": "Range", "id": "9896-9419-16a1-92fc"},
+          {"name": "A", "id": "3bb-c35f-f54-fb08"},
+          {"name": "BS", "id": "94d-8a98-cf90-183e"},
+          {"name": "AP", "id": "9ead-8a10-520-de15"},
+          {"name": "D", "id": "a354-c1c8-a745-f9e3"},
+          {"name": "Keywords", "id": "7f1b-8591-2fcf-d01c"}
+        ]
+      },
+      {
+        "name": "Unit",
+        "id": "c547-1836-d8a-ff4f",
+        "hidden": false,
+        "sortIndex": 1,
+        "characteristicTypes": [
+          {"name": "M", "id": "e703-ecb6-5ce7-aec1"},
+          {"name": "Dodge", "id": "0398-77db-0833-6880"},
+          {"name": "Sv", "id": "450-a17e-9d5e-29da"},
+          {"name": "InSv", "id": "55a7-5b54-c60d-11dc"},
+          {"name": "W", "id": "750a-a2ec-90d3-21fe"},
+          {"name": "LD", "id": "58d2-b879-49c7-43bc"},
+          {"name": "Base", "id": "nr-base-size"}
+        ]
+      },
+      {
+        "name": "Melee Weapons",
+        "id": "8a40-4aaa-c780-9046",
+        "hidden": false,
+        "sortIndex": 3,
+        "characteristicTypes": [
+          {"name": "Range", "id": "914c-b413-91e3-a132", "defaultValue": "Melee"},
+          {"name": "A", "id": "2337-daa1-6682-b110"},
+          {"name": "WS", "id": "95d1-95f-45b4-11d6"},
+          {"name": "AP", "id": "41a0-1301-112a-e2f2"},
+          {"name": "D", "id": "3254-9fe6-d824-513e"},
+          {"name": "Keywords", "id": "893f-9000-ccf7-648e", "defaultValue": "Melee"}
+        ]
+      },
+      {"name": "Transport", "id": "74f8-5443-9d6d-1f1e", "hidden": false, "sortIndex": 6, "characteristicTypes": [{"name": "Capacity", "id": "30f2-be70-861d-1b84"}]},
+      {
+        "name": "Psychic Abilities",
+        "id": "7e03-38c2-7fea-e955",
+        "hidden": false,
+        "sortIndex": 4,
+        "characteristicTypes": [{"name": "Descriptions", "id": "1917-301f-5d49-2f76"}]
+      },
+      {
+        "name": "Abilities",
+        "id": "9cc3-6d83-4dd3-9b64",
+        "hidden": false,
+        "sortIndex": 5,
+        "characteristicTypes": [{"name": "Description", "id": "9b8f-694b-e5e-b573"}]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Combat Doctrines",
+        "id": "2fa7-69dd-9016-4554",
+        "description": "At the start of your Command phase, you can select one Combat Doctrine listed below. If you do, that Combat Doctrine is active for friendly ADEPTUS ASTARTES units with this ability until the start of your next Command Phase\nAssault Doctrine\nWhen this unit is selected to make an Advance move, that Advance move does not prevent this unit from being eligible to declare a charge.\n\n\n\n\nDevastator Doctrine\nThis unit's ranged attacks have [ASSAULT]\n\n\n\n\nTactical Doctrine\nWhen this unit is selected to make a Fall-back move, that Fall-back move does not prevent this unit from being eligible to shoot and eligible to declare a charge.\n\n\n\n\nUnless otherwise stated.\n\n\nYou can only select each Combat Doctrine once per battle\nOnly one Combat Doctrine can be active for each unit. If a rule make a Combat Doctrine active for a unit, any Combat Doctrine previously active for that unit is no longer active for that unit.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Terminator Squad",
+        "id": "0adb-9462-301d-851b",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Elites", "id": "cee7-033b-2602-ddde", "hidden": false, "primary": true, "targetId": "97e0-7273-8b73-ded5"},
+          {"name": "Infantry", "id": "4ff0-88d3-ee17-d451", "hidden": false, "primary": false, "targetId": "35fa-30e7-f803-c8a7"},
+          {"name": "Grenades", "id": "5218-71d1-f352-ac7c", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"}
+        ],
+        "costs": [{"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "infoLinks": [{"name": "Combat Doctrines", "id": "a0e8-97a0-16cf-4759", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "ac44-b708-9c42-4440",
+            "hidden": false,
+            "constraints": [
+              {"id": "3d25-11e6-8b23-0d73", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "7dc1-62f2-c1ef-d1e5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Teleport Homer",
+                "id": "bc1d-cf13-cee9-4f2e",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "rules": [
+                  {
+                    "name": "Teleport Homer",
+                    "id": "a4b4-9c8a-f5e0-caab",
+                    "description": "(Once per game, per unit): Use the Rapid Ingress stratagem for 0CP. The unit must be placed outside of 10\" from the nearest enemy model when using this ability.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Storm Shield",
+                "id": "a049-49b7-5776-f1e2",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "modifiers": [
+                  {"affects": "self.entries.profiles.Unit", "field": "750a-a2ec-90d3-21fe", "scope": "f8e0-1cb5-4607-ba8e", "type": "increment", "value": 1},
+                  {
+                    "field": "acdc-8926-b4b9-633c",
+                    "type": "increment",
+                    "value": 5,
+                    "repeats": [
+                      {
+                        "childId": "model",
+                        "childName": "model",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "f8e0-1cb5-4607-ba8e",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [{"name": "Storm Shield", "id": "dc77-ee40-13a7-902c", "description": "This unit has +1W", "hidden": false}]
+              },
+              {
+                "name": "Bigger Bolts",
+                "id": "c890-9ba5-ed0d-166f",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "modifiers": [
+                  {
+                    "affects": "self.entries.recursive.baea-d279-8ba3-1f8a.profiles.Ranged Weapons",
+                    "field": "9ead-8a10-520-de15",
+                    "scope": "f8e0-1cb5-4607-ba8e",
+                    "type": "increment",
+                    "value": 1
+                  },
+                  {
+                    "affects": "self.entries.recursive.6ba6-6b07-3fa2-4a0d.profiles.Ranged Weapons",
+                    "field": "9ead-8a10-520-de15",
+                    "scope": "f8e0-1cb5-4607-ba8e",
+                    "type": "increment",
+                    "value": 1
+                  },
+                  {
+                    "affects": "self.entries.recursive.baa0-535a-76f0-ce2d.profiles.Ranged Weapons",
+                    "field": "9ead-8a10-520-de15",
+                    "scope": "f8e0-1cb5-4607-ba8e",
+                    "type": "increment",
+                    "value": 1
+                  }
+                ],
+                "rules": [{"name": "Bigger Bolts", "id": "ceac-5f91-e082-81b7", "description": "Storm Bolterx and Assault Cannons equipped by this unit have +1 AP.", "hidden": false}]
+              }
+            ]
+          },
+          {
+            "name": "Terminators",
+            "id": "a0a4-17ed-caf2-3768",
+            "hidden": false,
+            "constraints": [
+              {"id": "01d7-a275-d11f-5481", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "9d49-2560-8fd1-e9b7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 5}
+            ],
+            "infoLinks": [{"name": "Deep Strike", "id": "6b5b-a423-6675-01f6", "hidden": false, "targetId": "b85b-fd47-3ce5-cd10", "type": "rule"}],
+            "selectionEntries": [
+              {
+                "name": "Terminator w/ Lightning Claws",
+                "id": "e4a2-9fb3-c996-f5b3",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "model",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 45}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [{"name": "Critical: X", "id": "ec40-dff4-01d3-30d3", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Terminator",
+                    "id": "ce6d-ab0b-410f-3a0f",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Lightning Claws",
+                    "id": "ced5-cd57-09ae-f70b",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "7972-73ae-541c-6895", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "221b-d7f2-e023-968a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Lightning Claws",
+                        "id": "3843-fdfb-34ec-dcb6",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "6", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "1", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee, Critical: Extra Hit", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Terminator w/ Power Fist and Special Weapon",
+                "id": "9b74-eea0-cba9-51f0",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "type": "model",
+                "constraints": [{"id": "9944-2cbc-97c0-8ae8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 50}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [{"name": "Critical: X", "id": "7a84-1a2d-8746-1805", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                "modifiers": [
+                  {
+                    "field": "9944-2cbc-97c0-8ae8",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "model",
+                        "childName": "model",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "f8e0-1cb5-4607-ba8e",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 4
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Terminator",
+                    "id": "449b-a7a7-a99d-8b11",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Power Fist",
+                    "id": "e620-fb7a-afd7-59f6",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "fe2b-fc22-1dbd-4e80", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "e2ce-f43c-a156-a2f7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Power Fist",
+                        "id": "3916-3fa5-58fd-89c6",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "3", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "1", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee, Critical: +1 AP", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Storm Bolter",
+                    "id": "baa0-535a-76f0-ce2d",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "f0bb-3a52-deed-9075", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "4f9b-2e1a-3531-a321", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Storm Bolter",
+                        "id": "4f54-e681-10b0-7741",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "4", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Special Weapon",
+                    "id": "8f65-dbb2-e4b8-d8ce",
+                    "collapsible": true,
+                    "hidden": false,
+                    "constraints": [
+                      {"id": "eead-2c40-7247-ffc5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "4bf6-c8a3-150d-14f8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "selectionEntries": [
+                      {
+                        "name": "Missile Launcher",
+                        "id": "b012-d386-3559-7ba7",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "profiles": [
+                          {
+                            "name": "Missile Launcher - Frag",
+                            "id": "b0da-85b4-b2d3-f61a",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "9", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "4", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Critical: Extra Hit", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          },
+                          {
+                            "name": "Missile Launcher - Krak",
+                            "id": "f58b-c532-800a-79f3",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "AP", "$text": "2", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Assault Cannon",
+                        "id": "6ba6-6b07-3fa2-4a0d",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "infoLinks": [{"name": "Assault", "id": "1a22-e043-71af-2509", "hidden": false, "targetId": "2d1b-fc3b-61d8-d325", "type": "rule"}],
+                        "profiles": [
+                          {
+                            "name": "Assault Cannon",
+                            "id": "8e07-196d-134e-e47d",
+                            "hidden": false,
+                            "selectable": true,
+                            "selectionGroup": "Special Weapon",
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "8", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "4", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Assault, Critical: Extra Hit", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Terminator w/ Thunder Hammer",
+                "id": "cddd-48a1-2106-9cc7",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "type": "model",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 45}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "profiles": [
+                  {
+                    "name": "Terminator",
+                    "id": "593d-78fa-cccd-1f9a",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Thunder Hammer",
+                    "id": "ac7e-d66f-05db-47c6",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "bd7d-4eac-e073-f789", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "3969-ee7d-9e96-6872", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Thunder Hammer",
+                        "id": "992f-a811-4e8e-d6d3",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "1", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "3", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Terminator w/ Power Fist and Storm Bolter",
+                "id": "14f4-b57b-9206-51a9",
+                "defaultAmount": "5",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "model",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 45}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [{"name": "Critical: X", "id": "54d8-3e41-8731-f22a", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Terminator",
+                    "id": "23f0-6ab3-01c8-d58f",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Power Fist",
+                    "id": "0c72-f9a0-b81d-a89a",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "7718-69e2-a935-297e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "bab7-40a1-7f52-7686", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Power Fist",
+                        "id": "fb80-8c39-c08c-edb1",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "3", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "1", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee, Critical: +1 AP", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Storm Bolter",
+                    "id": "baea-d279-8ba3-1f8a",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "8376-3bf2-5ab9-322f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "94e6-fb90-bd6f-3d32", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Storm Bolter",
+                        "id": "df7b-30bd-845b-a87d",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "4", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Veteran Squad",
+        "id": "9d1f-94bd-ebed-d47a",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Elites", "id": "7385-fef2-3ae1-dbb8", "hidden": false, "primary": true, "targetId": "97e0-7273-8b73-ded5"},
+          {"name": "Infantry", "id": "cdd5-da90-6ec6-6941", "hidden": false, "primary": false, "targetId": "35fa-30e7-f803-c8a7"},
+          {"name": "Grenades", "id": "9c57-3a4d-ba32-bada", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"}
+        ],
+        "infoLinks": [{"name": "Combat Doctrines", "id": "acee-fbbc-a8c8-c713", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "category",
+            "type": "add",
+            "value": "b3be-306e-6f3e-625b",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "childId": "49a4-cf67-bc69-d1cd",
+                    "childName": "Bladeguard Veterans",
+                    "field": "selections",
+                    "scope": "834d-a4ee-e112-2937",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  },
+                  {
+                    "childId": "cc9f-eb6c-9050-3419",
+                    "childName": "Sternguard Veterans",
+                    "field": "selections",
+                    "scope": "834d-a4ee-e112-2937",
+                    "shared": true,
+                    "type": "lessThan",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Veterans",
+            "id": "409c-3e19-efeb-b5b4",
+            "hidden": false,
+            "sortIndex": 1,
+            "constraints": [
+              {"id": "c328-9ef2-ae83-deda", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0a0d-4f85-a5fd-9d94", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Bladeguard Veterans",
+                "id": "49a4-cf67-bc69-d1cd",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "model",
+                "constraints": [{"id": "7e29-26cc-d007-aef3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "profiles": [
+                  {
+                    "name": "Bladeguard Veterans",
+                    "id": "25cc-4344-c17f-96b8",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Master Crafted Power Weapon",
+                    "id": "814a-0f8a-5d29-31f9",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "e8f4-dec5-9dfd-111a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "c109-3196-ee1c-4789", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Critical: X", "id": "8a8d-ddcb-034c-a8de", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Master Crafted Power Weapon",
+                        "id": "cc76-1938-416f-047c",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "4", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "1", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee, Critical: Extra Hit", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Bolt Pistol",
+                    "id": "6483-bf8a-4669-5945",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "9c6a-bb60-a1e1-ee89", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "73d8-d202-4853-c7e2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Bolt Pistol",
+                        "id": "9669-9d37-f9fb-4697",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Vanguard Veterans",
+                "id": "6208-0885-64f8-3c3d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "model",
+                "constraints": [{"id": "4c76-8d2e-786e-e2ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 22}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [
+                  {
+                    "name": "Deep Strike",
+                    "id": "d926-60f0-4882-c631",
+                    "hidden": false,
+                    "targetId": "b85b-fd47-3ce5-cd10",
+                    "type": "rule",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "49a4-cf67-bc69-d1cd",
+                                "childName": "Bladeguard Veterans",
+                                "field": "selections",
+                                "scope": "834d-a4ee-e112-2937",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "cc9f-eb6c-9050-3419",
+                                "childName": "Sternguard Veterans",
+                                "field": "selections",
+                                "scope": "834d-a4ee-e112-2937",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Jump Pack",
+                    "id": "b14c-95c4-a4c7-e903",
+                    "hidden": false,
+                    "targetId": "5bd2-4391-1716-2d91",
+                    "type": "rule",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "49a4-cf67-bc69-d1cd",
+                                "childName": "Bladeguard Veterans",
+                                "field": "selections",
+                                "scope": "834d-a4ee-e112-2937",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "cc9f-eb6c-9050-3419",
+                                "childName": "Sternguard Veterans",
+                                "field": "selections",
+                                "scope": "834d-a4ee-e112-2937",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Vanguard Veterans",
+                    "id": "ad64-38ef-e5ca-c9da",
+                    "hidden": false,
+                    "noindex": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Vanguard Jump Packs",
+                    "id": "5a10-3ded-e758-5445",
+                    "description": "If all models in this unit are Vanguard Veterans, this unit has Deep Strike, and the Jump Pack rule.",
+                    "hidden": false
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Bolt Pistol",
+                    "id": "eefd-79d4-c28a-eed6",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "4ef0-74c9-04bf-c7ab", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "35ec-f383-9750-9fee", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Bolt Pistol",
+                        "id": "7729-7a88-fa26-6f80",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Master Crafted Power Weapon",
+                    "id": "a125-853a-14fc-71b8",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "fc29-aa17-d355-301a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "0dd8-4688-881a-0d45", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Critical: X", "id": "144b-e667-1ca4-da95", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Master Crafted Power Weapon",
+                        "id": "95b6-c67e-fac4-4e9b",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "4", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "1", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee, Critical: Extra Hit", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Sternguard Veterans",
+                "id": "cc9f-eb6c-9050-3419",
+                "hidden": false,
+                "sortIndex": 3,
+                "constraints": [{"id": "c4bf-0ddc-8173-e0a4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}],
+                "selectionEntries": [
+                  {
+                    "name": "Sternguard Veterans",
+                    "id": "0eb1-8c51-b9b8-a9ad",
+                    "defaultAmount": "5",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "type": "model",
+                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 22}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                    "infoLinks": [
+                      {"name": "Melta X", "id": "5c7f-d082-095d-3041", "hidden": false, "targetId": "7b9b-01a0-8243-f217", "type": "rule"},
+                      {"name": "Critical: X", "id": "9bbf-6cb3-2441-c1f5", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Sternguard Veterans",
+                        "id": "b889-2536-ab75-1abb",
+                        "hidden": false,
+                        "typeId": "c547-1836-d8a-ff4f",
+                        "typeName": "Unit",
+                        "characteristics": [
+                          {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                          {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                          {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                          {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+                          {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                          {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                          {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "name": "Forge Bolter",
+                        "id": "5a81-3eae-be03-3c4f",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "88ed-a6a8-f75e-bece", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "8c85-6f9f-8c8d-68ab", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
+                        "infoLinks": [{"name": "Assault", "id": "ef7c-9ed7-6e9e-22f9", "hidden": false, "targetId": "2d1b-fc3b-61d8-d325", "type": "rule"}],
+                        "profiles": [
+                          {
+                            "name": "Forge Bolter - Damnatus",
+                            "id": "abe7-b259-fa0d-e057",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "AP", "$text": "2", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "D3+2", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Melta 1", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          },
+                          {
+                            "name": "Forge Bolter - Infernus",
+                            "id": "c848-cd69-d708-3917",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "4", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Assault, Critical: Extra Hit", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          },
+                          {
+                            "name": "Forge Bolter - Purgatus",
+                            "id": "e739-2875-c8b1-31b0",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Critical: +1 AP", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Fists",
+                        "id": "bb23-d37c-a3bd-5fcf",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "1e33-93e3-41a0-75ee", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "1575-b421-feb0-7d64", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Fists",
+                            "id": "e4c9-59e7-f3e7-587d",
+                            "hidden": false,
+                            "typeId": "8a40-4aaa-c780-9046",
+                            "typeName": "Melee Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                              {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                              {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+                              {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                              {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                              {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Sternguard Veteran with Special Weapon",
+                    "id": "5519-353c-2239-dde8",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "type": "model",
+                    "constraints": [{"id": "65ac-9657-e99f-98fc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
+                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                    "modifiers": [
+                      {
+                        "field": "65ac-9657-e99f-98fc",
+                        "type": "set",
+                        "value": 2,
+                        "conditions": [
+                          {
+                            "childId": "model",
+                            "childName": "model",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "834d-a4ee-e112-2937",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 9
+                          }
+                        ]
+                      },
+                      {
+                        "field": "65ac-9657-e99f-98fc",
+                        "type": "set",
+                        "value": 1,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "model",
+                                "childName": "model",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "834d-a4ee-e112-2937",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 4
+                              },
+                              {
+                                "childId": "model",
+                                "childName": "model",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "834d-a4ee-e112-2937",
+                                "shared": true,
+                                "type": "atMost",
+                                "value": 9
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Sternguard Veterans",
+                        "id": "098e-6f47-398e-4156",
+                        "hidden": false,
+                        "typeId": "c547-1836-d8a-ff4f",
+                        "typeName": "Unit",
+                        "characteristics": [
+                          {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                          {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                          {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                          {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
+                          {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                          {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                          {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "name": "Fists",
+                        "id": "19ee-91ad-cbcf-5689",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "cb1b-49a2-0310-1c4f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "5fc4-195f-9be0-f320", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Fists",
+                            "id": "f8fa-5960-13a0-e229",
+                            "hidden": false,
+                            "typeId": "8a40-4aaa-c780-9046",
+                            "typeName": "Melee Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                              {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                              {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+                              {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                              {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                              {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Special Weapon",
+                        "id": "4b1d-e62a-0cc5-5396",
+                        "collapsible": true,
+                        "hidden": false,
+                        "constraints": [
+                          {"id": "bfef-ccf2-eab2-4d7d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "89c3-b415-1aa1-1fb2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
+                        "selectionEntries": [
+                          {
+                            "name": "Heavy Bolter",
+                            "id": "1160-2ae1-bacc-637e",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "infoLinks": [
+                              {"name": "Heavy", "id": "5419-f3cc-9a46-9afe", "hidden": false, "targetId": "edf7-88d5-1556-e3c3", "type": "rule"},
+                              {"name": "Critical: X", "id": "53dd-9d3f-fe49-6eab", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}
+                            ],
+                            "profiles": [
+                              {
+                                "name": "Heavy Bolter",
+                                "id": "feef-14b2-e6bb-1b2b",
+                                "hidden": false,
+                                "typeId": "f77d-b953-8fa4-b762",
+                                "typeName": "Ranged Weapons",
+                                "characteristics": [
+                                  {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
+                                  {"name": "A", "$text": "6", "typeId": "3bb-c35f-f54-fb08"},
+                                  {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                                  {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                                  {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                                  {"name": "Keywords", "$text": "Heavy, Critical: Extra Hit, Critical: +1AP", "typeId": "7f1b-8591-2fcf-d01c"}
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Pyrecannon",
+                            "id": "6fb2-d078-a9a8-7330",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "infoLinks": [{"name": "Torrent", "id": "4b37-1c83-69b0-7676", "hidden": false, "targetId": "a2d7-5271-6671-228a", "type": "rule"}],
+                            "profiles": [
+                              {
+                                "name": "Pyrecannon",
+                                "id": "4648-0594-3723-dc34",
+                                "hidden": false,
+                                "selectable": true,
+                                "selectionGroup": "Special Weapon",
+                                "typeId": "f77d-b953-8fa4-b762",
+                                "typeName": "Ranged Weapons",
+                                "characteristics": [
+                                  {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+                                  {"name": "A", "$text": "D3+5", "typeId": "3bb-c35f-f54-fb08"},
+                                  {"name": "BS", "$text": "-", "typeId": "94d-8a98-cf90-183e"},
+                                  {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                                  {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                                  {"name": "Keywords", "$text": "Torrent", "typeId": "7f1b-8591-2fcf-d01c"}
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wargear",
+            "id": "5ad0-1872-6e72-ee5e",
+            "hidden": false,
+            "sortIndex": 2,
+            "constraints": [
+              {"id": "6aa6-165f-5f16-3dfc", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "88a0-2d7e-4b61-7ffb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Grenade Belt",
+                "id": "0fd8-6b04-4992-2a9e",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "rules": [
+                  {
+                    "name": "Grenade Belt",
+                    "id": "5f5a-ee5b-0b24-6ccf",
+                    "description": "(Once per turn, per unit): This unit can use the Explosives stratagem for 0CP.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Auspex Scanner",
+                "id": "8056-0c54-9273-cb57",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "rules": [{"name": "Auspex Scanner", "id": "13dc-dd69-b4be-fa31", "description": "Each time this unit makes an attack, re-roll a hit roll of 1.", "hidden": false}]
+              },
+              {
+                "name": "Hardened Grit",
+                "id": "8122-debf-4a91-1d8f",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "rules": [{"name": "Hardened Grit", "id": "4e96-feb8-8dea-a3db", "description": "Melee attacks against this unit have -1 to hit.", "hidden": false}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Detachments",
+        "id": "e1d9-cd47-ec23-6e60",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Configuration", "id": "970f-e5be-7569-c710", "hidden": false, "primary": true, "targetId": "d039-d79f-f083-6e3b"}],
+        "constraints": [
+          {"id": "1580-d11c-7a40-94a0", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "660f-ea52-b4a7-416a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Gladius Task Force",
+            "id": "20be-5279-39da-f752",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "fd24-5754-c515-5bd9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 3}],
+            "rules": [{"name": "Codex Discipline", "id": "e9b1-407e-33b1-5346", "description": "You can use the all doctrines an additional time.", "hidden": false}]
+          },
+          {
+            "name": "Tacticus Assault Force",
+            "id": "ec31-ae3f-4032-3bfd",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Tacticus", "id": "3898-2ac6-e2ef-cb01", "hidden": false, "primary": false, "targetId": "7e3d-0b83-4f6a-b8c8"}],
+            "constraints": [{"id": "282b-042d-4f3a-b66a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [{"name": "Tactical Speed", "id": "6318-1001-32cc-ad09", "description": "Friendly Tactical Squad units can re-roll advance rolls.", "hidden": false}]
+          },
+          {
+            "name": "Gravis Defense Force",
+            "id": "f750-c85f-9dc3-0363",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Gravis", "id": "b631-cee8-a8cc-3f71", "hidden": false, "primary": false, "targetId": "684b-6ea1-c9aa-a58d"}],
+            "constraints": [{"id": "d53d-41ee-b320-5bd8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [{"name": "Heavy Sentinels", "id": "b51a-ae70-dd5a-56bb", "description": "Friendly Gravis Squad units have a 5+ Invulnerable Save.", "hidden": false}]
+          },
+          {
+            "name": "Anvil Defense Force",
+            "id": "610e-e4d6-ca18-7f9d",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "2e1a-c9a4-f1b2-a947", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "modifiers": [{"affects": "self.entries.130b-99ae-79be-9e2b.profiles.Unit", "field": "55a7-5b54-c60d-11dc", "scope": "force", "type": "set", "value": "6+"}],
+            "rules": [{"name": "Shield Upgrade", "id": "368a-450d-79e3-e2ad", "description": "Friendly Vehicle units have a 6+ Invulnerable Save.", "hidden": false}]
+          },
+          {
+            "name": "Gauntlet Task Force",
+            "id": "62cd-8f4c-57c6-68f9",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "df55-7f1a-761e-5ed7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [
+              {
+                "name": "Transport Support",
+                "id": "b8f9-8fce-711e-335f",
+                "description": "When a unit disembarks from a transport, its ranged weapons have +1 to hit.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Tacticus Firestorm Force",
+            "id": "3df0-4a2a-230b-40ed",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Tacticus", "id": "e295-f4c1-66cd-020e", "hidden": false, "primary": false, "targetId": "7e3d-0b83-4f6a-b8c8"}],
+            "constraints": [{"id": "c13d-c784-4585-2341", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [
+              {
+                "name": "Firestorm",
+                "id": "31f7-1688-fb5b-650e",
+                "description": "When a friendly Tactical Squad targets an enemy unit within half range, add 1 to the attacks characteristic of each ranged weapon equipped by that unit.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Phobos Assassination Force",
+            "id": "fd78-d8c4-60e4-4e58",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Phobos", "id": "aa0b-e21a-f3d9-0efa", "hidden": false, "primary": false, "targetId": "81e2-9a81-b22d-d42b"}],
+            "constraints": [{"id": "e39f-8798-851a-9d1d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [
+              {
+                "name": "Assassin Prowess",
+                "id": "e877-018e-1add-2867",
+                "description": "Each time a phobos unit makes an attack against a Character unit, that attack has +1AP.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Phobos Shadow Force",
+            "id": "4bae-8b4b-7484-84b6",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Phobos", "id": "e5e7-82d4-bc26-f191", "hidden": false, "primary": false, "targetId": "81e2-9a81-b22d-d42b"}],
+            "constraints": [{"id": "955a-3f68-41f0-983c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [{"name": "Shadow Mastery", "id": "4f68-0e8d-384c-ea87", "description": "Friendly Phobos Squads do not lose hidden when shooting.", "hidden": false}]
+          },
+          {
+            "name": "Ironclad Champions",
+            "id": "236f-36c4-c4e0-6fd3",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "3d35-6f66-f782-d912", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [
+              {
+                "name": "Dreadnought Strength",
+                "id": "9196-6189-73e5-8467",
+                "description": "Each time a friendly Walker unit makes an attack, re-roll a hit roll of 1.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Assault Company",
+            "id": "a023-acaf-a3fe-a60d",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Doctrine", "id": "f666-e2b3-2078-5159", "hidden": false, "primary": false, "targetId": "5966-d33f-2e10-24b0"}],
+            "constraints": [{"id": "3b05-d6ab-b94e-49ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [{"name": "Assault Mastery", "id": "22c3-1d01-ceed-876b", "description": "You can use the Assault Doctrine an additional time.", "hidden": false}]
+          },
+          {
+            "name": "Devastator Company",
+            "id": "fdd8-039c-d689-743b",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Doctrine", "id": "7ef7-164e-0f48-5387", "hidden": false, "primary": false, "targetId": "5966-d33f-2e10-24b0"}],
+            "constraints": [{"id": "ca08-89e3-b4c4-6f0d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [{"name": "Devastator Mastery", "id": "05df-66a2-53a8-bd85", "description": "You can use the Devastator Doctrine an additional time.", "hidden": false}]
+          },
+          {
+            "name": "Tactical Company",
+            "id": "c622-973a-0f25-877c",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Doctrine", "id": "8b4f-7e88-a1ad-beac", "hidden": false, "primary": false, "targetId": "5966-d33f-2e10-24b0"}],
+            "constraints": [{"id": "a235-e059-a384-58ac", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [{"name": "Tactical Mastery", "id": "26e6-40ba-d661-104c", "description": "You can use the Tactical Doctrine an additional time.", "hidden": false}]
+          },
+          {
+            "name": "Gravis Siege Force",
+            "id": "3680-f0c0-4d48-ea15",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Gravis", "id": "0eca-08bd-e188-ee66", "hidden": false, "primary": false, "targetId": "684b-6ea1-c9aa-a58d"}],
+            "constraints": [{"id": "78c0-a3e0-4f7b-37a3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [
+              {
+                "name": "Heavy Onslaught",
+                "id": "8814-1369-3702-04b0",
+                "description": "When a friendly Gravis Squad targets an enemy unit, if your unit controls an objective, add 1 to the attacks characteristic of each ranged weapon equipped by that unit.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tactical Squad",
+        "id": "6467-83e0-9bc3-8f40",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "8824-4745-9397-1616", "hidden": false, "primary": false, "targetId": "35fa-30e7-f803-c8a7"},
+          {"name": "Grenades", "id": "9219-4841-137b-2cea", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"},
+          {"name": "Battleline", "id": "5ec7-ea11-61b3-85d4", "hidden": false, "primary": true, "targetId": "48a2-a96a-636c-ecff"},
+          {"name": "Tactical Squad", "id": "0d45-1c65-fa7e-1679", "hidden": false, "primary": false, "targetId": "7648-1827-6150-04a1"}
+        ],
+        "costs": [{"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "infoLinks": [{"name": "Combat Doctrines", "id": "ca4d-a174-05db-0ba9", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "1daf-ce12-adc5-ccca",
+            "hidden": false,
+            "constraints": [
+              {"id": "fc0b-318f-9268-b725", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "65ad-a61a-9578-e8fb", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Jump Packs",
+                "id": "7955-636b-a773-2058",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [{"name": "Jump Pack", "id": "5ea9-097e-ee30-7bd0", "hidden": false, "targetId": "5bd2-4391-1716-2d91", "type": "rule"}],
+                "modifiers": [
+                  {
+                    "field": "acdc-8926-b4b9-633c",
+                    "type": "increment",
+                    "value": 2,
+                    "repeats": [
+                      {
+                        "childId": "3cbf-3bb7-37ba-6c27",
+                        "childName": "Tactical Marine w/ Plasma Rifle",
+                        "field": "selections",
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "b3e8-68c7-3e6e-f236",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "acdc-8926-b4b9-633c",
+                    "type": "increment",
+                    "value": 2,
+                    "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "b3e8-68c7-3e6e-f236", "shared": true, "value": 1}]
+                  }
+                ]
+              },
+              {
+                "name": "Large Armoury",
+                "id": "dd64-d6c3-01a1-83a5",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "modifiers": [
+                  {
+                    "affects": "self.entries.recursive.b3e8-68c7-3e6e-f236.profiles.Ranged Weapons",
+                    "field": "3bb-c35f-f54-fb08",
+                    "scope": "parent",
+                    "type": "increment",
+                    "value": 1
+                  },
+                  {
+                    "affects": "self.entries.recursive.967d-18e3-2e8c-de0f.profiles.Melee Weapons",
+                    "field": "3bb-c35f-f54-fb08",
+                    "scope": "parent",
+                    "type": "increment",
+                    "value": 1
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Large Armoury",
+                    "id": "f6d6-f47c-70c9-f538",
+                    "description": "Add 1 to the attacks characteristic of Bolt Rifles and Chainswords in this unit.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Medical Supplies",
+                "id": "6847-c706-5776-e696",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "rules": [
+                  {
+                    "name": "Medical Supplies",
+                    "id": "4933-7922-0a94-c433",
+                    "description": "In your command phase, roll a D6. On a 4+, return 1 destroyed non-character model to your unit.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tactical Marines",
+            "id": "bdda-67ab-03e2-e5c6",
+            "hidden": false,
+            "constraints": [
+              {"id": "8c73-8eff-6d15-11fd", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "88a0-2c09-00ea-4c2b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Tactical Marine w/ Bolt Rifle",
+                "id": "a577-46f9-777d-1247",
+                "defaultAmount": "5",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "model",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 18}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [{"name": "Assault", "id": "707f-3e93-e09d-003a", "hidden": false, "targetId": "2d1b-fc3b-61d8-d325", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Tactical Marine",
+                    "id": "d1df-b848-115a-4fad",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Bolt Rifle",
+                    "id": "6feb-a41d-9d7e-29e5",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "dd60-438b-8f26-eb8b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "b6a0-51ec-2b1a-6e2b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Bolt Rifle",
+                        "id": "39b4-c790-1cfd-93ee",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "4", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Assault", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Fists",
+                    "id": "11ea-57ae-a69d-6396",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "7fb9-10b3-d8db-d85c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "c6e7-a6b2-ae70-ef71", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Melee", "id": "34ca-ea22-03a6-e36d", "hidden": false, "targetId": "9bd9-9830-be2c-5532", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Fists",
+                        "id": "d1ff-d17e-5ac2-a2f8",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tactical Marine w/ Plasma Incinerator",
+                "id": "3cbf-3bb7-37ba-6c27",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "type": "model",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 22}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "profiles": [
+                  {
+                    "name": "Tactical Marine",
+                    "id": "86d6-37d9-eea6-67e7",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Plasma Incinerator",
+                    "id": "4165-3ab4-153b-592a",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "f3c7-5743-db88-79bd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "2341-f9bc-043b-3361", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Hazardous", "id": "951a-d26d-1a33-3025", "hidden": false, "targetId": "0d8b-1227-f17c-d5e0", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Plasma Incinerator",
+                        "id": "b3fd-d844-d279-1651",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Critical: +1AP, Hazardous", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Fists",
+                    "id": "2973-0604-8825-23cf",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "d86a-3ad6-7ec0-3b2e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "338d-cd24-cb36-7731", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Melee", "id": "9fa3-b24b-a14b-287c", "hidden": false, "targetId": "9bd9-9830-be2c-5532", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Fists",
+                        "id": "8f39-5f78-23ed-b28d",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tactical Marine w/ Chainsword",
+                "id": "967d-18e3-2e8c-de0f",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "model",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 18}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [{"name": "Critical: X", "id": "cacc-43b0-2ab3-8427", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Tactical Marine",
+                    "id": "2478-2d0f-75e9-cea8",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Chainsword",
+                    "id": "e1eb-b000-aa9d-aa94",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "7113-eae6-a29b-5e87", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "0647-14e4-5907-cc3c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Melee", "id": "3011-3b03-9a0d-4d2b", "hidden": false, "targetId": "9bd9-9830-be2c-5532", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Chainsword",
+                        "id": "5091-bc26-fae3-b736",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "4", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee, Critical: Extra Hit", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Pistol",
+                    "id": "f30a-7944-6c87-d8ae",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "8b98-fe05-c371-d115", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "be14-c2df-1794-3604", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Bolt Pistol",
+                        "id": "e564-be39-020f-22c2",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tactical Marine w/ Flamer",
+                "id": "41be-8ed5-05b3-6724",
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 19}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [{"name": "Torrent", "id": "54ee-a1ef-c67d-20f0", "hidden": false, "targetId": "a2d7-5271-6671-228a", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Tactical Marine",
+                    "id": "e0aa-39b9-add5-5293",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Flamer",
+                    "id": "5afd-95aa-863f-216b",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "445d-23df-f32d-b81d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "4eae-12c0-9a89-5e48", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Flamer",
+                        "id": "277d-6228-7994-b93f",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "D3+2", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Torrent", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Fists",
+                    "id": "14a1-e255-ca00-c2e7",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "9752-f1dd-60c9-8032", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "81c6-6907-ca6b-b902", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Melee", "id": "f1d2-e0b9-7dac-14f8", "hidden": false, "targetId": "9bd9-9830-be2c-5532", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Fists",
+                        "id": "d70a-f277-6b03-d7f5",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Phobos Squad",
+        "id": "141d-d750-abb1-4603",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "e64e-1895-e0c7-7d64", "hidden": false, "primary": false, "targetId": "35fa-30e7-f803-c8a7"},
+          {"name": "Grenades", "id": "8068-1c86-56c8-c00c", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"},
+          {"name": "Battleline", "id": "9228-adc4-5fb4-7c9e", "hidden": false, "primary": true, "targetId": "48a2-a96a-636c-ecff"},
+          {"name": "Phobos Squad", "id": "48ee-a5f3-99af-d3ba", "hidden": false, "primary": false, "targetId": "28af-c619-08bc-4dc1"}
+        ],
+        "costs": [{"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "infoLinks": [{"name": "Combat Doctrines", "id": "1c67-5bd5-03c8-bd32", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "a158-2b9f-5727-2648",
+            "hidden": false,
+            "constraints": [
+              {"id": "dd6b-e49e-d727-4c2c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "7eb9-5867-e570-979f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Special Optics",
+                "id": "a9a7-276d-f437-bb86",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [{"name": "Ignores Cover", "id": "e05b-446e-7603-dc43", "hidden": false, "targetId": "1c63-0ea9-d3b8-5f0c", "type": "rule"}],
+                "modifiers": [
+                  {
+                    "affects": "self.entries.recursive.profiles.Ranged Weapons",
+                    "field": "7f1b-8591-2fcf-d01c",
+                    "join": ", ",
+                    "scope": "parent",
+                    "type": "append",
+                    "value": "Ignores Cover"
+                  }
+                ],
+                "rules": [{"name": "Special Optics", "id": "f1f0-0ca0-771e-2249", "description": "This unit's ranged attacks have Ignore Cover.", "hidden": false}]
+              },
+              {
+                "name": "Camo Cloaks",
+                "id": "a8de-18fe-a2f8-d23c",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "rules": [{"name": "Camo Cloaks", "id": "84a7-83a7-39a0-9168", "description": "This unit has -3\" detection range.", "hidden": false}]
+              },
+              {
+                "name": "Special Ammunition",
+                "id": "b7c0-a991-3c14-ad3c",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "rules": [
+                  {
+                    "name": "Special Ammunition",
+                    "id": "2442-75f2-0e57-e82f",
+                    "description": "When an enemy unit is hit by one or more of this unit's ranged attacks, that unit has +3\" detection range until the end of the shooting phase.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Terror Training",
+                "id": "773f-7b3b-b125-7ce5",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "rules": [
+                  {
+                    "name": "Fearsome Assault",
+                    "id": "b5dd-769b-313c-25af",
+                    "description": "When this unit ends a charge move, each unit within 2\" must take a battleshock test with -1 to the roll.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Divinator-Class Auspex",
+                "id": "93f8-241f-2ab2-522e",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "rules": [
+                  {
+                    "name": "Divinator-Class Auspex",
+                    "id": "cd68-3902-408e-b312",
+                    "description": "When this unit has shot, select one enemy unit hit by its attacks. When a friendly infantry unit makes a ranged attack against that unit, re-roll a hit roll of 1.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Phobos Marines",
+            "id": "3a54-ac52-0c6e-5228",
+            "hidden": false,
+            "constraints": [
+              {"id": "ed6a-f8a5-bfe5-c30d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "e98a-7e0d-e89d-0dbb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Phobos Marine w/ Bolt Carbine",
+                "id": "f8dc-a409-9cca-7449",
+                "defaultAmount": "5",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "model",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 16}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [{"name": "Assault", "id": "5468-2cc4-d8f7-997e", "hidden": false, "targetId": "2d1b-fc3b-61d8-d325", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Phobos Marine",
+                    "id": "fa30-bbc0-14ee-46ce",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "6\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "5+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Bolt Carbine",
+                    "id": "a012-54bf-e06b-1f44",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "9442-c5d0-2a4c-73e6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "d4ea-19c3-2e96-4889", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Precision", "id": "5717-2ae7-6436-1930", "hidden": false, "targetId": "ac98-561d-b4b9-e845", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Bolt Rifle",
+                        "id": "0fa9-4943-751e-b750",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Assault, Precision", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Fists",
+                    "id": "2a45-a349-43b1-5aed",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "4237-2499-c711-8eb5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "1348-cb13-4d99-c35e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Melee", "id": "8112-311f-b147-f39d", "hidden": false, "targetId": "9bd9-9830-be2c-5532", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Fists",
+                        "id": "8efb-b029-d31f-63d9",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Phobos Marine w/ Assassin Blades",
+                "id": "f574-d1fe-3c7a-904f",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "model",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 16}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "profiles": [
+                  {
+                    "name": "Phobos Marine",
+                    "id": "3530-0c09-9b87-acc2",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "6\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "5+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Assassin Blades",
+                    "id": "077f-8850-2c02-becc",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "4dfa-fbeb-481a-288e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "4733-8c8c-fd42-e235", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [
+                      {"name": "Melee", "id": "c9f9-f24f-a0cb-2352", "hidden": false, "targetId": "9bd9-9830-be2c-5532", "type": "rule"},
+                      {"name": "Precision", "id": "031e-af65-ce09-61cf", "hidden": false, "targetId": "ac98-561d-b4b9-e845", "type": "rule"}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Assassin Blades",
+                        "id": "719e-0317-168b-be23",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "1", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee, Precision", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Pistol",
+                    "id": "680e-a5f8-8691-b234",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "2531-96e3-6607-c4c8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "4534-6204-2f86-0a0d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Bolt Pistol",
+                        "id": "8d48-ed69-4ef9-5dd1",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Phobos Marine w/ Sniper Rifle",
+                "id": "b4c6-4dcd-dd9b-c6ad",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "model",
+                "constraints": [{"id": "8f7f-cf7c-8b77-c590", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "profiles": [
+                  {
+                    "name": "Phobos Marine",
+                    "id": "8bde-7834-da7b-02c5",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "6\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "5+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "2", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Sniper Rifle",
+                    "id": "b656-dcbb-833f-ed51",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "b8d3-2911-00e0-fd2b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "3b52-f6bc-fb50-d6f9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [
+                      {"name": "Precision", "id": "3eda-d23a-1077-64f3", "hidden": false, "targetId": "ac98-561d-b4b9-e845", "type": "rule"},
+                      {"name": "Heavy", "id": "a5df-f3fa-56b6-2fda", "hidden": false, "targetId": "edf7-88d5-1556-e3c3", "type": "rule"}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Bolt Rifle",
+                        "id": "e050-6fba-bc0a-dd7b",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Heavy, Precision", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Fists",
+                    "id": "6478-1062-b2e9-6412",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "7f10-e69a-addd-e8ad", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "2409-aec5-8049-ef88", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Melee", "id": "3ea4-c238-dbb3-93c5", "hidden": false, "targetId": "9bd9-9830-be2c-5532", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Fists",
+                        "id": "a565-c5af-7201-52a5",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unit Ability",
+            "id": "3f00-c3c9-413c-06e4",
+            "hidden": false,
+            "constraints": [
+              {"id": "30d9-d7b5-f924-5fb4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0e2a-0458-7494-3eec", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Scout 6\"",
+                "id": "b93f-4b28-6ddf-9651",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [{"name": "Scouts 6\"", "id": "1197-7451-2763-506a", "hidden": false, "targetId": "08fb-4cb5-36fb-d638", "type": "rule"}]
+              },
+              {
+                "name": "Infiltrators",
+                "id": "1872-cb03-39e2-0660",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [{"name": "Infiltrators", "id": "fa2b-4b1c-c141-de0b", "hidden": false, "targetId": "c05d-f4c3-f091-4938", "type": "rule"}]
+              },
+              {
+                "name": "Deep Strike",
+                "id": "d169-5e00-8a56-dcb5",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [{"name": "Deep Strike", "id": "160c-1983-81bc-d1cf", "hidden": false, "targetId": "b85b-fd47-3ce5-cd10", "type": "rule"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gravis Squad",
+        "id": "f475-150c-d919-642a",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "4c58-72c3-22cb-14ce", "hidden": false, "primary": false, "targetId": "35fa-30e7-f803-c8a7"},
+          {"name": "Grenades", "id": "23c1-928a-cbcb-132a", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"},
+          {"name": "Battleline", "id": "aa09-bfc5-8fe9-3180", "hidden": false, "primary": true, "targetId": "48a2-a96a-636c-ecff"},
+          {"name": "Gravis Squad", "id": "f442-04b3-dde1-7f46", "hidden": false, "primary": false, "targetId": "d541-e8ac-65a6-43c1"}
+        ],
+        "costs": [{"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "infoLinks": [{"name": "Combat Doctrines", "id": "b8da-dd2b-584f-5a28", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
+        "modifiers": [
+          {
+            "affects": "self.entries.recursive.model.profiles.Unit",
+            "field": "55a7-5b54-c60d-11dc",
+            "scope": "4cbe-5ad8-7f5f-fcb0",
+            "type": "set",
+            "value": "5+",
+            "conditions": [
+              {
+                "childId": "f750-c85f-9dc3-0363",
+                "childName": "Gravis Defense Force",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "9f45-16a2-6e11-2296",
+            "hidden": false,
+            "sortIndex": 2,
+            "constraints": [
+              {"id": "2542-f0d4-ea3f-cd78", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "2a79-9507-c568-51e2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Heavy Shells",
+                "id": "35a3-4324-40c8-d2ec",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "upgrade",
+                "rules": [
+                  {
+                    "name": "Heavy Shells",
+                    "id": "4312-1e88-1223-f36a",
+                    "description": "When this unit makes a ranged attack against an enemy unit within 8\", that attack has +1AP.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Ceramite Hardening",
+                "id": "f497-5c54-712b-e6d3",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 15}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "rules": [
+                  {
+                    "name": "Ceramite Hardening",
+                    "id": "c720-a701-31ca-b501",
+                    "description": "When this unit controls an objective, attacks against this unit have -1AP.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Gravis Shield Wall",
+                "id": "33f6-cd49-68f0-7465",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "upgrade",
+                "rules": [
+                  {
+                    "name": "Shielding",
+                    "id": "7cf5-73b8-cdc6-7fe3",
+                    "description": "When an enemy unit makes a ranged attack against a friendly unit, if the friendly unit is lightly obscured by a model in this unit, that unit has the benefit of cover.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Gravis Marines",
+            "id": "e6ba-c469-624b-fd57",
+            "hidden": false,
+            "sortIndex": 1,
+            "constraints": [
+              {"id": "b775-b2f7-6215-b3ae", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "5216-70de-1784-8197", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Gravis Marine w/ Heavy Bolt Rifle",
+                "id": "b6e5-22f4-6874-0ac0",
+                "defaultAmount": "5",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "model",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "profiles": [
+                  {
+                    "name": "Gravis Marine",
+                    "id": "c233-a670-d6c5-8899",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "6+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Heavy Bolt Rifle",
+                    "id": "40ba-30b7-258b-e2a9",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "2eb1-724e-ff17-22dd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "829e-7fd0-bc90-5327", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Heavy", "id": "d84e-7466-9368-7d08", "hidden": false, "targetId": "edf7-88d5-1556-e3c3", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Heavy Bolt Rifle",
+                        "id": "942a-2a29-b9fa-91ee",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Heavy", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Fists",
+                    "id": "47bf-de57-11ac-8d21",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "9981-b354-2757-60e3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "dc17-c379-ccbe-bdcf", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Melee", "id": "c08e-0b1e-84c5-80d1", "hidden": false, "targetId": "9bd9-9830-be2c-5532", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Fists",
+                        "id": "9c8c-19f8-25e7-18b9",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Gravis Marine w/ Melta Rifle",
+                "id": "d378-ce19-b724-d1f4",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "type": "model",
+                "constraints": [{"id": "52c1-6985-cfc1-3297", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "profiles": [
+                  {
+                    "name": "Gravis Marine",
+                    "id": "1282-ba8e-d7ec-e3db",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "6+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Melta Rifle",
+                    "id": "0c98-79fb-1ecf-bae4",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "d4fc-8a60-3c00-c94f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "889b-7376-2fdc-19c2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Melta X", "id": "d1a3-0c57-619b-d4f7", "hidden": false, "targetId": "7b9b-01a0-8243-f217", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Melta Rifle - Hunter: Monster/Vehicle",
+                        "id": "d490-2c35-1cd0-32a0",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "2", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "D3+3", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Melta 2", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      },
+                      {
+                        "name": "Melta Rifle",
+                        "id": "3f14-9c67-c956-578a",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "1", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "2", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "D3+2", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Melta 1", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Fists",
+                    "id": "8227-d556-a7b4-a034",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "e913-0603-1f20-9ad9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "9eef-c54c-7d39-1032", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Melee", "id": "ed4b-169b-79b5-f260", "hidden": false, "targetId": "9bd9-9830-be2c-5532", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Fists",
+                        "id": "7c43-dee3-5f20-13e1",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Gravis Marine w/ Twin Power Fist and Gauntlets",
+                "id": "84ea-33e9-5bae-cc30",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "type": "model",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 40}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "profiles": [
+                  {
+                    "name": "Gravis Marine",
+                    "id": "63a4-8204-e226-4137",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "6+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Twin Power Fists",
+                    "id": "45fc-2893-9377-e099",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "4255-5e71-e750-4b5d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "6c86-4477-7409-14bb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Critical: X", "id": "648f-df6b-96a6-5177", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Twin Power Fists",
+                        "id": "62e1-ba64-eb5d-d52b",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "4", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "1", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee, Critical: +1 AP", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Gauntlet Options",
+                    "id": "53dd-2ed7-2cd1-fd19",
+                    "hidden": false,
+                    "constraints": [
+                      {"id": "fec1-8f8a-7ecc-bad9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "d03f-e158-cb89-2955", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "selectionEntries": [
+                      {
+                        "name": "Boltstorm Gauntlets",
+                        "id": "bd72-dc62-365b-203b",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "infoLinks": [{"name": "Critical: X", "id": "e178-2699-cb45-2437", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                        "profiles": [
+                          {
+                            "name": "Boltstorm Gauntlets",
+                            "id": "4b10-b567-9ef9-14cc",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "5", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Critical: Extra Hit", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Flamestorm Gauntlets",
+                        "id": "44e0-572c-6a60-d727",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "infoLinks": [{"name": "Torrent", "id": "b5b3-1df9-820c-c62f", "hidden": false, "targetId": "a2d7-5271-6671-228a", "type": "rule"}],
+                        "profiles": [
+                          {
+                            "name": "Flamestorm Gauntlets",
+                            "id": "85ff-60b7-dc37-f006",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "D3+2", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Torrent", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Gravis Marine w/ Heavy Jump Pack",
+                "id": "9654-722a-667b-00e7",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "model",
+                "constraints": [{"id": "ba3c-badf-0afd-22da", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [
+                  {
+                    "name": "Jump Pack",
+                    "id": "092f-3b97-ba01-4844",
+                    "hidden": false,
+                    "targetId": "5bd2-4391-1716-2d91",
+                    "type": "rule",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "84ea-33e9-5bae-cc30",
+                                "childName": "Gravis Marine w/ Twin Power Fist and Gauntlets",
+                                "field": "selections",
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "b6e5-22f4-6874-0ac0",
+                                "childName": "Gravis Marine w/ Heavy Bolt Rifle",
+                                "field": "selections",
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "d378-ce19-b724-d1f4",
+                                "childName": "Gravis Marine w/ Melta Rifle",
+                                "field": "selections",
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Deep Strike",
+                    "id": "7537-5736-7b22-f90f",
+                    "hidden": false,
+                    "targetId": "b85b-fd47-3ce5-cd10",
+                    "type": "rule",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "d378-ce19-b724-d1f4",
+                                "childName": "Gravis Marine w/ Melta Rifle",
+                                "field": "selections",
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "b6e5-22f4-6874-0ac0",
+                                "childName": "Gravis Marine w/ Heavy Bolt Rifle",
+                                "field": "selections",
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "84ea-33e9-5bae-cc30",
+                                "childName": "Gravis Marine w/ Twin Power Fist and Gauntlets",
+                                "field": "selections",
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Gravis Marine",
+                    "id": "8f69-9e8b-6328-abc7",
+                    "hidden": false,
+                    "typeId": "c547-1836-d8a-ff4f",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                      {"name": "Dodge", "$text": "5+", "typeId": "0398-77db-0833-6880"},
+                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "InSv", "$text": "6+", "typeId": "55a7-5b54-c60d-11dc"},
+                      {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
+                      {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                      {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Heavy Jump Packs",
+                    "id": "c476-46ba-e8f1-4c88",
+                    "description": "If all models in this unit are Gravis Marines w/ Heavy Jump Pack, this unit has Deep Strike, and the Jump Pack rule.",
+                    "hidden": false
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Fists",
+                    "id": "08b2-094b-4125-49f5",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "3604-8e3c-29f3-a49c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "09d3-4f12-f281-6a25", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Melee", "id": "05e1-36a0-3bb7-4454", "hidden": false, "targetId": "9bd9-9830-be2c-5532", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Fists",
+                        "id": "9bfd-5323-bfeb-2880",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "2", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Weapon Options",
+                    "id": "4339-eba3-a980-3f73",
+                    "hidden": false,
+                    "constraints": [
+                      {"id": "fa24-8e68-9f05-c62c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "5c15-257a-9225-9c4c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Assault", "id": "d872-f1bd-df7d-72b9", "hidden": false, "targetId": "2d1b-fc3b-61d8-d325", "type": "rule"}],
+                    "selectionEntries": [
+                      {
+                        "name": "Assault Bolter",
+                        "id": "9e28-2e59-6446-c262",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "profiles": [
+                          {
+                            "name": "Assault Bolter",
+                            "id": "3c0d-fd98-9615-9dc7",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "5", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Assault, Critical: Extra Hit", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Plasma Exterminator",
+                        "id": "aa44-aee3-954a-0ab2",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "infoLinks": [{"name": "Hazardous", "id": "a1a4-c8ea-84ed-1446", "hidden": false, "targetId": "0d8b-1227-f17c-d5e0", "type": "rule"}],
+                        "profiles": [
+                          {
+                            "name": "Plasma Exterminator",
+                            "id": "3e14-2222-f08a-9b07",
+                            "hidden": false,
+                            "typeId": "f77d-b953-8fa4-b762",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                              {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                              {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                              {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                              {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                              {"name": "Keywords", "$text": "Assault, Critical: +1AP", "typeId": "7f1b-8591-2fcf-d01c"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dreadnought",
+        "id": "b458-6413-e703-e866",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Vehicle", "id": "0868-323c-6180-c00f", "hidden": false, "primary": true, "targetId": "130b-99ae-79be-9e2b"},
+          {"name": "Walker", "id": "b680-c2b6-e6a4-a79a", "hidden": false, "primary": false, "targetId": "13b9-7786-ae17-f8f9"}
+        ],
+        "modifiers": [
+          {
+            "affects": "self.entries.recursive.model.profiles.Unit",
+            "field": "55a7-5b54-c60d-11dc",
+            "scope": "1c4e-d305-0da5-0a9e",
+            "type": "set",
+            "value": "6+",
+            "conditions": [
+              {
+                "childId": "610e-e4d6-ca18-7f9d",
+                "childName": "Anvil Defense Force",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Dreadnought",
+            "id": "b27b-1134-f070-2c11",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "46a9-713b-bf29-1b56", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "d668-828d-0040-e645", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 160}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+            "profiles": [
+              {
+                "name": "Dreadnought",
+                "id": "e981-04cc-8117-f0e9",
+                "hidden": false,
+                "typeId": "c547-1836-d8a-ff4f",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "7\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                  {"name": "Dodge", "$text": "5\"", "typeId": "0398-77db-0833-6880"},
+                  {"name": "Sv", "$text": "3\"", "typeId": "450-a17e-9d5e-29da"},
+                  {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"},
+                  {"name": "W", "$text": "12", "typeId": "750a-a2ec-90d3-21fe"},
+                  {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                  {"name": "Base", "$text": "90mm", "typeId": "nr-base-size"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Armoured Feet",
+                "id": "19ae-8223-9760-7346",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "949e-ac26-5b01-bfc5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "cac5-5b0c-6bf3-565c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Armoured Feet",
+                    "id": "1726-3171-46d8-4f54",
+                    "hidden": false,
+                    "typeId": "8a40-4aaa-c780-9046",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                      {"name": "A", "$text": "7", "typeId": "2337-daa1-6682-b110"},
+                      {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                      {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
+                      {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                      {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Ranged Weapon",
+                "id": "8293-7fed-8a6d-e88c",
+                "hidden": false,
+                "sortIndex": 1,
+                "constraints": [
+                  {"id": "9f36-1141-5813-1626", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "f932-7e67-912d-4d43", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Lascannon and Missile Launcher",
+                    "id": "602e-cd64-b462-2438",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "type": "upgrade",
+                    "infoLinks": [{"name": "Heavy", "id": "df74-b0bb-754b-158e", "hidden": false, "targetId": "edf7-88d5-1556-e3c3", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Lascannon",
+                        "id": "0730-96f9-357a-7d4d",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "36\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "3", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "3", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "D6+1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Heavy", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      },
+                      {
+                        "name": "Missile Launcher",
+                        "id": "22d4-c4d1-f319-d4b8",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "5", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "3", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Plasma Cannon",
+                    "id": "f58c-d3a3-0a0b-3f52",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 4,
+                    "type": "upgrade",
+                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                    "infoLinks": [{"name": "Hazardous", "id": "62f2-9f65-af9a-b1e0", "hidden": false, "targetId": "0d8b-1227-f17c-d5e0", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Heavy Plasma Incinerator",
+                        "id": "a165-4edd-97c8-3ce2",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "6", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "2", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Hazardous, Critical: +1AP", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Multi Meltas and Storm Bolters",
+                    "id": "5ab9-4c75-ceec-4bf1",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "type": "upgrade",
+                    "infoLinks": [{"name": "Melta X", "id": "ab45-0dd8-dc78-3585", "hidden": false, "targetId": "7b9b-01a0-8243-f217", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Multi Meltas",
+                        "id": "47f0-f5f7-9543-3996",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "\"12\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "2", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "D3+3", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Assault, Melta 1", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      },
+                      {
+                        "name": "Storm Bolters",
+                        "id": "1764-69f9-6e20-cf6f",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "10", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Assault", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Onslaught Gatling Cannon",
+                    "id": "a088-2352-1409-654a",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 3,
+                    "type": "upgrade",
+                    "infoLinks": [{"name": "Critical: X", "id": "ccc8-ee12-6114-32b8", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Heavy Onslaught Gatling Cannon",
+                        "id": "b8fe-d035-839c-ed3e",
+                        "hidden": false,
+                        "typeId": "f77d-b953-8fa4-b762",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "18\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "A", "$text": "15", "typeId": "3bb-c35f-f54-fb08"},
+                          {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
+                          {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                          {"name": "D", "$text": "1", "typeId": "a354-c1c8-a745-f9e3"},
+                          {"name": "Keywords", "$text": "Critical: Extra Hit", "typeId": "7f1b-8591-2fcf-d01c"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Melee Weapon",
+                "id": "fdfa-9e9a-ce5a-4f62",
+                "hidden": false,
+                "sortIndex": 2,
+                "constraints": [
+                  {"id": "bca4-2efa-bcf4-9267", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2c3b-eb1e-f011-a2d6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "modifiers": [
+                  {
+                    "field": "2c3b-eb1e-f011-a2d6",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "602e-cd64-b462-2438",
+                        "childName": "Lascannon and Missiles",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "bca4-2efa-bcf4-9267",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "602e-cd64-b462-2438",
+                        "childName": "Lascannon and Missile Launcher",
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Dreadnought Talons",
+                    "id": "51a3-eea6-0da2-d5d2",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "type": "upgrade",
+                    "constraints": [{"id": "7601-0a7e-ba8c-ef4d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "infoLinks": [{"name": "Critical: X", "id": "8a7e-8dcf-0649-1a20", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                    "modifiers": [
+                      {
+                        "field": "7601-0a7e-ba8c-ef4d",
+                        "type": "set",
+                        "value": 0,
+                        "conditions": [{"childId": "f58c-d3a3-0a0b-3f52", "childName": "Plasma Cannon", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Dreadnought Talons",
+                        "id": "f385-520f-e0d3-6049",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "10", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "1", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee, Critical: Extra Hit", "typeId": "893f-9000-ccf7-648e"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Dreadnought Fist",
+                    "id": "fd60-edea-9c82-c84f",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "type": "upgrade",
+                    "infoLinks": [{"name": "Critical: X", "id": "6c2a-e89e-7e77-98b1", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Dreadnought Fist",
+                        "id": "7ae1-4a3e-701f-8fe1",
+                        "hidden": false,
+                        "typeId": "8a40-4aaa-c780-9046",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                          {"name": "A", "$text": "4", "typeId": "2337-daa1-6682-b110"},
+                          {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
+                          {"name": "AP", "$text": "3", "typeId": "41a0-1301-112a-e2f2"},
+                          {"name": "D", "$text": "D3+3", "typeId": "3254-9fe6-d824-513e"},
+                          {"name": "Keywords", "$text": "Melee, Critical: Re-roll Damage", "typeId": "893f-9000-ccf7-648e"}
+                        ],
+                        "modifiers": [
+                          {
+                            "field": "2337-daa1-6682-b110",
+                            "type": "set",
+                            "value": "7",
+                            "conditions": [
+                              {
+                                "childId": "5ab9-4c75-ceec-4bf1",
+                                "childName": "Multi Meltas and Storm Bolters",
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Wargear",
+            "id": "d5b2-b7ab-3ed9-f4c2",
+            "hidden": false,
+            "constraints": [
+              {"id": "27b2-18d8-ce1b-b1df", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "8e10-69f1-9ac1-9eeb", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Ballistus Strike",
+                "id": "eddb-f7e0-45cb-5450",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "upgrade",
+                "infoLinks": [{"name": "Critical: X", "id": "92b9-c3d0-11a6-f88b", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                "rules": [
+                  {
+                    "name": "Ballistus Strike",
+                    "id": "6ab2-b415-635a-45b4",
+                    "description": "This unit's ranged attacks that target an enemy unit within 12\" have Critical: Extra Hit.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Brutalis Charge",
+                "id": "1327-b9d6-42e2-b0b4",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "upgrade",
+                "rules": [
+                  {
+                    "name": "Brutalis Charge",
+                    "id": "8e67-dd29-54f0-ebeb",
+                    "description": "(Once per turn, per unit): This unit can use the Crushing Impact stratagem for 0CP.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Heavy Sarcophagus",
+                "id": "dbc2-c219-34fd-ae9e",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "type": "upgrade",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [{"name": "Feel No Pain X+", "id": "fa2b-71aa-e474-4f7d", "hidden": false, "targetId": "5bf4-3222-c49f-6294", "type": "rule"}],
+                "rules": [{"name": "Duty Eternal", "id": "7ead-8aa1-ea77-d4a4", "description": "This unit has Feel No Pain 6+.", "hidden": false}]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

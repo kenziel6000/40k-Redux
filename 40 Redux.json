@@ -1,0 +1,211 @@
+{
+  "gameSystem": {
+    "name": "40 Redux",
+    "id": "sys-aeaf-f07a-9d60-52ee",
+    "battleScribeVersion": "2.03",
+    "revision": 1,
+    "type": "gameSystem",
+    "categoryEntries": [
+      {"name": "Default Category", "id": "default-category"},
+      {"name": "Epic Hero", "id": "07a3-d9f5-7ead-b17d", "hidden": false},
+      {"name": "Character", "id": "351f-2cd0-e63e-a1e4", "hidden": false},
+      {"name": "Battleline", "id": "48a2-a96a-636c-ecff", "hidden": false},
+      {"name": "Elites", "id": "97e0-7273-8b73-ded5", "hidden": false},
+      {"name": "Swarm", "id": "e4de-a047-1261-0ddb", "hidden": false},
+      {"name": "Mounted", "id": "c6ee-25c5-d80e-a51a", "hidden": false},
+      {"name": "Beast", "id": "6e6c-cae7-0807-c3ce", "hidden": false},
+      {"name": "Monster", "id": "43a3-e81e-c4fd-d158", "hidden": false},
+      {"name": "Vehicle", "id": "130b-99ae-79be-9e2b", "hidden": false},
+      {"name": "Transport", "id": "c829-a91d-839c-62cd", "hidden": false},
+      {"name": "Infantry", "id": "35fa-30e7-f803-c8a7", "hidden": false},
+      {"name": "Smoke", "id": "543a-24bc-bd55-80fe", "hidden": false},
+      {"name": "Grenades", "id": "2630-d0bd-d058-68a2", "hidden": false},
+      {"name": "Configuration", "id": "d039-d79f-f083-6e3b", "hidden": false},
+      {"name": "Walker", "id": "13b9-7786-ae17-f8f9", "hidden": false},
+      {"name": "Terminator", "id": "0d0b-3232-731e-07e7", "hidden": false},
+      {"name": "Veteran", "id": "b1ba-cb00-f7c7-0aa3", "hidden": false},
+      {"name": "Fly", "id": "b3be-306e-6f3e-625b", "hidden": false}
+    ],
+    "costTypes": [
+      {"name": "Points", "id": "acdc-8926-b4b9-633c", "defaultCostLimit": 2000, "hidden": false},
+      {"name": "Detachment Points (DP)", "id": "e3b7-e73c-d6b7-b429", "defaultCostLimit": 3, "hidden": false}
+    ],
+    "forceEntries": [
+      {
+        "name": "Army Roster",
+        "id": "bb9d-299a-ed60-2d8a",
+        "hidden": false,
+        "readme": "\n",
+        "categoryLinks": [
+          {"name": "Configuration", "id": "8bf4-59ce-7288-a6fc", "hidden": false, "targetId": "d039-d79f-f083-6e3b"},
+          {"name": "Epic Hero", "id": "16fc-8e39-ee82-cf96", "hidden": false, "primary": false, "targetId": "07a3-d9f5-7ead-b17d"},
+          {"name": "Character", "id": "c932-1176-dc9-b390", "hidden": false, "primary": false, "targetId": "351f-2cd0-e63e-a1e4"},
+          {"name": "Battleline", "id": "b3ba-1e1a-a92d-60d2", "hidden": false, "primary": false, "targetId": "48a2-a96a-636c-ecff"},
+          {"name": "Elites", "id": "f34c-b933-3dcd-d32d", "hidden": false, "targetId": "97e0-7273-8b73-ded5"},
+          {"name": "Swarm", "id": "f5d5-b603-69b3-411c", "hidden": false, "primary": false, "targetId": "e4de-a047-1261-0ddb"},
+          {"name": "Mounted", "id": "6503-057c-cb62-badb", "hidden": false, "primary": false, "targetId": "c6ee-25c5-d80e-a51a"},
+          {"name": "Beast", "id": "87ea-37d2-7b40-c708", "hidden": false, "primary": false, "targetId": "6e6c-cae7-0807-c3ce"},
+          {"name": "Monster", "id": "8e39-465e-7cfc-3085", "hidden": false, "primary": false, "targetId": "43a3-e81e-c4fd-d158"},
+          {"name": "Vehicle", "id": "2c76-65c5-bad0-8208", "hidden": false, "primary": false, "targetId": "130b-99ae-79be-9e2b"},
+          {"name": "Transport", "id": "cf3e-2c24-fe34-39f9", "hidden": false, "primary": false, "targetId": "c829-a91d-839c-62cd"},
+          {"name": "Infantry", "id": "5a8a-fbbf-7686-f2d7", "hidden": false, "targetId": "35fa-30e7-f803-c8a7"}
+        ]
+      }
+    ],
+    "infoLinks": [
+      {"name": "Support", "id": "69b7-eb10-7768-5248", "hidden": false, "targetId": "3342-2180-9c5d-925f", "type": "rule"},
+      {"name": "Leader", "id": "c90d-8632-a300-675d", "hidden": false, "targetId": "b4dd-3e1f-41cb-218f", "type": "rule"},
+      {"name": "Deadly Demise", "id": "d0e2-2359-9af6-9117", "hidden": false, "targetId": "b68a-5ded-65ac-98c", "type": "rule"},
+      {"name": "Scouts 8\"", "id": "e6c9-c4ac-9352-07c0", "hidden": false, "targetId": "a5f4-4af8-4735-7384", "type": "rule"},
+      {"name": "Scouts 9\"", "id": "c45c-4e6f-5dd2-2aa0", "hidden": false, "targetId": "9ea5-acc2-a2ac-257b", "type": "rule"},
+      {"name": "Scouts 5\"", "id": "bb38-6ec5-1d33-c328", "hidden": false, "targetId": "b4d7-ba95-ed79-bafe", "type": "rule"},
+      {"name": "Infiltrators", "id": "8567-0d1b-a2b4-5d42", "hidden": false, "targetId": "c05d-f4c3-f091-4938", "type": "rule"},
+      {"name": "Scouts 7\"", "id": "98e5-531e-10b1-7eee", "hidden": false, "targetId": "6a04-6476-b45b-aef8", "type": "rule"},
+      {"name": "Scouts 6\"", "id": "cfa4-4453-1d20-e59b", "hidden": false, "targetId": "08fb-4cb5-36fb-d638", "type": "rule"}
+    ],
+    "selectionEntries": [
+      {
+        "name": "Default Root Entry",
+        "id": "default-entry",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Default Category", "id": "default-category-link", "hidden": false, "primary": true, "targetId": "default-category"}]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Scouts 8\"",
+        "id": "a5f4-4af8-4735-7384",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Infiltrators",
+        "id": "c05d-f4c3-f091-4938",
+        "description": "During deployment, if every model in a unit has this ability, it can be set up anywhere on the battlefield that is more than 8\" horizontally from your opponent’s deployment zone and all enemy units.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Scouts 6\"",
+        "id": "08fb-4cb5-36fb-d638",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Deadly Demise",
+        "id": "b68a-5ded-65ac-98c",
+        "description": "This ability always takes the form **Deadly Demise X**. Each time a model in this unit is **destroyed**, after the units embarked within it (if any) have made their **emergency disembark moves**, roll one D6. On a 6, that model suffers a **deadly demise**; each unit within 6\" of that model suffers a number of **mortal wounds** denoted by **X** (if this is a random number, roll separately for each unit within 6\"). \n***Example:** An Impulsor with a unit of Intercessors embarked within it is **destroyed** by ranged attacks. First, any unresolved attacks made by the attacking unit are resolved. Then the Intercessors make an **emergency disembark move**. Then the roll is made for the **Deadly Demise** ability, and on a 6, that ability is resolved. Finally, the Impulsor is removed from the battlefield.*",
+        "hidden": false,
+        "page": 23,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Scouts 7\"",
+        "id": "6a04-6476-b45b-aef8",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Scouts 5\"",
+        "id": "b4d7-ba95-ed79-bafe",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Scouts 9\"",
+        "id": "9ea5-acc2-a2ac-257b",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Leader",
+        "id": "b4dd-3e1f-41cb-218f",
+        "description": "Before the battle, in the Muster Armies step, for each leader and support unit in your army, you can select one friendly bodyguard unit that unit can lead. That unit will then lead that bodyguard unit for the battle and form an attached unit with it. Unless otherwise stated, each bodyguard unit can only have one leader unit and one support unit attached to it.",
+        "hidden": false,
+        "page": 39,
+        "publicationId": "48fc-15aa-b307-9443"
+      },
+      {
+        "name": "Support",
+        "id": "3342-2180-9c5d-925f",
+        "description": "Before the battle, in the Muster Armies step, for each **leader** and **support** unit in your army, you can select one friendly **bodyguard** unit that unit can lead. That unit will then lead that **bodyguard** unit for the battle and form an **attached** unit with it. \nUnless otherwise stated, each **bodyguard** unit can only have one **leader** unit and one **support** unit attached to it.",
+        "hidden": false
+      },
+      {
+        "name": "Melta X",
+        "id": "7b9b-01a0-8243-f217",
+        "description": "When damage is dealt with a Melta weapon, if the attacking model is within half range of the target, add X to the damage.",
+        "hidden": false
+      },
+      {
+        "name": "Jump Pack",
+        "id": "5bd2-4391-1716-2d91",
+        "description": "(Three times per game, per unit): In the movement phase, add 3\" to this unit's move characteristic.",
+        "hidden": false
+      },
+      {
+        "name": "Deep Strike",
+        "id": "b85b-fd47-3ce5-cd10",
+        "description": "If all models in this unit have Deep Strike, you can follow the Deep Strike portion of the Arriving From Reserves rules.",
+        "hidden": false
+      },
+      {
+        "name": "Critical: X",
+        "id": "ca1f-0384-7deb-dd31",
+        "description": "On an unmodified hit roll of 6, a weapon triggers the additional effect \"X\".",
+        "hidden": false
+      },
+      {
+        "name": "Torrent",
+        "id": "a2d7-5271-6671-228a",
+        "description": "Do not make a hit roll for weapons with this keyword, they automatically hit.",
+        "hidden": false
+      },
+      {"name": "Heavy", "id": "edf7-88d5-1556-e3c3", "description": "If a unit moved less than 3\" this turn, it has +1 to hit with this weapon.", "hidden": false},
+      {"name": "Assault", "id": "2d1b-fc3b-61d8-d325", "description": "When selected to shoot, this unit can follow the Assault Shooting rules.", "hidden": false},
+      {
+        "name": "Melee",
+        "id": "9bd9-9830-be2c-5532",
+        "description": "Weapons with this keyword do not suffer the penalty for being within 2\" of an enemy Infantry/Beast/Swarm unit.",
+        "hidden": false
+      },
+      {
+        "name": "Hazardous",
+        "id": "0d8b-1227-f17c-d5e0",
+        "description": "Each time an attack is made with a Hazardous weapon, on an unmodified Hit roll of 1, the attacking unit suffers 1 mortal wound before any re-rolls are made.",
+        "hidden": false
+      },
+      {
+        "name": "Precision",
+        "id": "ac98-561d-b4b9-e845",
+        "description": "When an attack with a Precision weapon is made against a character unit, saves against that attack can be allocated to a character model in that unit instead of the bodyguard.",
+        "hidden": false
+      },
+      {
+        "name": "Ignores Cover",
+        "id": "1c63-0ea9-d3b8-5f0c",
+        "description": "The penalty for shooting a unit in cover does not apply to this weapon.",
+        "hidden": false
+      },
+      {
+        "name": "Feel No Pain X+",
+        "id": "5bf4-3222-c49f-6294",
+        "description": "When a unit with this ability takes damage, roll a D6 for each point of damage. A successful roll of X+ reduces the incoming damage by 1.",
+        "hidden": false
+      }
+    ]
+  }
+}
