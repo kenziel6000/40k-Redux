@@ -66,6 +66,7 @@
         "name": "Ranged Weapons",
         "id": "f77d-b953-8fa4-b762",
         "hidden": false,
+        "kind": "weapon",
         "sortIndex": 2,
         "characteristicTypes": [
           {"name": "Range", "id": "9896-9419-16a1-92fc"},
@@ -80,6 +81,7 @@
         "name": "Unit",
         "id": "c547-1836-d8a-ff4f",
         "hidden": false,
+        "kind": "model",
         "sortIndex": 1,
         "characteristicTypes": [
           {"name": "M", "id": "e703-ecb6-5ce7-aec1"},
@@ -95,6 +97,7 @@
         "name": "Melee Weapons",
         "id": "8a40-4aaa-c780-9046",
         "hidden": false,
+        "kind": "weapon",
         "sortIndex": 3,
         "characteristicTypes": [
           {"name": "Range", "id": "914c-b413-91e3-a132", "defaultValue": "Melee"},
@@ -105,11 +108,19 @@
           {"name": "Keywords", "id": "893f-9000-ccf7-648e", "defaultValue": "Melee"}
         ]
       },
-      {"name": "Transport", "id": "74f8-5443-9d6d-1f1e", "hidden": false, "sortIndex": 6, "characteristicTypes": [{"name": "Capacity", "id": "30f2-be70-861d-1b84"}]},
+      {
+        "name": "Transport",
+        "id": "74f8-5443-9d6d-1f1e",
+        "hidden": false,
+        "kind": "ability",
+        "sortIndex": 6,
+        "characteristicTypes": [{"name": "Capacity", "id": "30f2-be70-861d-1b84"}]
+      },
       {
         "name": "Psychic Abilities",
         "id": "7e03-38c2-7fea-e955",
         "hidden": false,
+        "kind": "ability",
         "sortIndex": 4,
         "characteristicTypes": [{"name": "Descriptions", "id": "1917-301f-5d49-2f76"}]
       },
@@ -117,6 +128,7 @@
         "name": "Abilities",
         "id": "9cc3-6d83-4dd3-9b64",
         "hidden": false,
+        "kind": "ability",
         "sortIndex": 5,
         "characteristicTypes": [{"name": "Description", "id": "9b8f-694b-e5e-b573"}]
       }
@@ -785,86 +797,6 @@
                 "type": "model",
                 "constraints": [{"id": "4c76-8d2e-786e-e2ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}],
                 "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 22}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
-                "infoLinks": [
-                  {
-                    "name": "Deep Strike",
-                    "id": "d926-60f0-4882-c631",
-                    "hidden": false,
-                    "targetId": "b85b-fd47-3ce5-cd10",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": false,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "49a4-cf67-bc69-d1cd",
-                                "childName": "Bladeguard Veterans",
-                                "field": "selections",
-                                "scope": "834d-a4ee-e112-2937",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "cc9f-eb6c-9050-3419",
-                                "childName": "Sternguard Veterans",
-                                "field": "selections",
-                                "scope": "834d-a4ee-e112-2937",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Jump Pack",
-                    "id": "b14c-95c4-a4c7-e903",
-                    "hidden": false,
-                    "targetId": "5bd2-4391-1716-2d91",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": false,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "49a4-cf67-bc69-d1cd",
-                                "childName": "Bladeguard Veterans",
-                                "field": "selections",
-                                "scope": "834d-a4ee-e112-2937",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "cc9f-eb6c-9050-3419",
-                                "childName": "Sternguard Veterans",
-                                "field": "selections",
-                                "scope": "834d-a4ee-e112-2937",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
                 "profiles": [
                   {
                     "name": "Vanguard Veterans",
@@ -882,13 +814,58 @@
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
                       {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
                     ]
+                  },
+                  {
+                    "name": "Jump Packs",
+                    "id": "c715-9422-7e61-6dcb",
+                    "hidden": true,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "(Three times per game, per unit): In the movement phase, add 3\" to this unit's move characteristic.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditions": [
+                          {
+                            "childId": "cc9f-eb6c-9050-3419",
+                            "childName": "Sternguard Veterans",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "scope": "834d-a4ee-e112-2937",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          },
+                          {
+                            "childId": "49a4-cf67-bc69-d1cd",
+                            "childName": "Bladeguard Veterans",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "scope": "834d-a4ee-e112-2937",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "rules": [
                   {
                     "name": "Vanguard Jump Packs",
                     "id": "5a10-3ded-e758-5445",
-                    "description": "If all models in this unit are Vanguard Veterans, this unit has Deep Strike, and the Jump Pack rule.",
+                    "description": "If all models in this unit are Vanguard Veterans, this unit has Fly, has Deep Strike, and the Jump Pack rule.",
                     "hidden": false
                   }
                 ],
@@ -1528,7 +1505,6 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "infoLinks": [{"name": "Jump Pack", "id": "5ea9-097e-ee30-7bd0", "hidden": false, "targetId": "5bd2-4391-1716-2d91", "type": "rule"}],
                 "modifiers": [
                   {
                     "field": "acdc-8926-b4b9-633c",
@@ -1552,6 +1528,23 @@
                     "type": "increment",
                     "value": 2,
                     "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "b3e8-68c7-3e6e-f236", "shared": true, "value": 1}]
+                  },
+                  {"field": "category", "type": "add", "value": "b3be-306e-6f3e-625b"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Jump Packs",
+                    "id": "62ce-f575-f823-c274",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "(Three times per game, per unit): In the movement phase, add 3\" to this unit's move characteristic.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
                   }
                 ]
               },
@@ -1577,12 +1570,14 @@
                     "value": 1
                   }
                 ],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Large Armoury",
-                    "id": "f6d6-f47c-70c9-f538",
-                    "description": "Add 1 to the attacks characteristic of Bolt Rifles and Chainswords in this unit.",
-                    "hidden": false
+                    "id": "9954-4036-08c6-ddb1",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "Add 1 to the attacks characteristic of Bolt Rifles and Chainswords in this unit.", "typeId": "9b8f-694b-e5e-b573"}]
                   }
                 ]
               },
@@ -1592,12 +1587,20 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "rules": [
+                "profiles": [
                   {
                     "name": "Medical Supplies",
-                    "id": "4933-7922-0a94-c433",
-                    "description": "In your command phase, roll a D6. On a 4+, return 1 destroyed non-character model to your unit.",
-                    "hidden": false
+                    "id": "3c46-a619-2a27-8ae9",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "In your command phase, roll a D6. On a 4+, return 1 destroyed non-character model to your unit.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
                   }
                 ]
               }
@@ -2005,7 +2008,16 @@
                     "value": "Ignores Cover"
                   }
                 ],
-                "rules": [{"name": "Special Optics", "id": "f1f0-0ca0-771e-2249", "description": "This unit's ranged attacks have Ignore Cover.", "hidden": false}]
+                "profiles": [
+                  {
+                    "name": "Special Optics",
+                    "id": "ddc1-ecc2-19d9-d8a9",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "This unit's ranged attacks have Ignores Cover.", "typeId": "9b8f-694b-e5e-b573"}]
+                  }
+                ]
               },
               {
                 "name": "Camo Cloaks",
@@ -2013,7 +2025,16 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "rules": [{"name": "Camo Cloaks", "id": "84a7-83a7-39a0-9168", "description": "This unit has -3\" detection range.", "hidden": false}]
+                "profiles": [
+                  {
+                    "name": "Camo Cloaks",
+                    "id": "7ab3-d371-c3a0-0985",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "This unit has -3\" detection range.", "typeId": "9b8f-694b-e5e-b573"}]
+                  }
+                ]
               },
               {
                 "name": "Special Ammunition",
@@ -2021,12 +2042,20 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "rules": [
+                "profiles": [
                   {
                     "name": "Special Ammunition",
-                    "id": "2442-75f2-0e57-e82f",
-                    "description": "When an enemy unit is hit by one or more of this unit's ranged attacks, that unit has +3\" detection range until the end of the shooting phase.",
-                    "hidden": false
+                    "id": "ffbf-7921-4fb2-adf9",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "When an enemy unit is hit by one or more of this unit's ranged attacks, that unit has +3\" detection range until the end of the shooting phase.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2036,12 +2065,20 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "rules": [
+                "profiles": [
                   {
-                    "name": "Fearsome Assault",
-                    "id": "b5dd-769b-313c-25af",
-                    "description": "When this unit ends a charge move, each unit within 2\" must take a battleshock test with -1 to the roll.",
-                    "hidden": false
+                    "name": "Terror Training",
+                    "id": "5bd6-fe11-e7d0-e43e",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "When this unit ends a charge move, each unit within 2\" must take a battleshock test with -1 to the roll.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2051,12 +2088,20 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "rules": [
+                "profiles": [
                   {
                     "name": "Divinator-Class Auspex",
-                    "id": "cd68-3902-408e-b312",
-                    "description": "When this unit has shot, select one enemy unit hit by its attacks. When a friendly infantry unit makes a ranged attack against that unit, re-roll a hit roll of 1.",
-                    "hidden": false
+                    "id": "5b90-9cef-11a4-54c4",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "When this unit has shot, select one enemy unit hit by its attacks. When a friendly infantry unit makes a ranged attack against that unit, re-roll a hit roll of 1.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
                   }
                 ]
               }
@@ -2357,7 +2402,17 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "infoLinks": [{"name": "Scouts 6\"", "id": "1197-7451-2763-506a", "hidden": false, "targetId": "08fb-4cb5-36fb-d638", "type": "rule"}]
+                "infoLinks": [{"name": "Scouts 6\"", "id": "1197-7451-2763-506a", "hidden": false, "targetId": "08fb-4cb5-36fb-d638", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Scout 6\"",
+                    "id": "650a-3391-6eab-dfd7",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "This unit has Scout 6\".", "typeId": "9b8f-694b-e5e-b573"}]
+                  }
+                ]
               },
               {
                 "name": "Infiltrators",
@@ -2365,7 +2420,17 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "infoLinks": [{"name": "Infiltrators", "id": "fa2b-4b1c-c141-de0b", "hidden": false, "targetId": "c05d-f4c3-f091-4938", "type": "rule"}]
+                "infoLinks": [{"name": "Infiltrators", "id": "fa2b-4b1c-c141-de0b", "hidden": false, "targetId": "c05d-f4c3-f091-4938", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Infiltrators",
+                    "id": "5662-a7d4-71f3-6fae",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "This unit has Infiltrators.", "typeId": "9b8f-694b-e5e-b573"}]
+                  }
+                ]
               },
               {
                 "name": "Deep Strike",
@@ -2373,7 +2438,17 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "infoLinks": [{"name": "Deep Strike", "id": "160c-1983-81bc-d1cf", "hidden": false, "targetId": "b85b-fd47-3ce5-cd10", "type": "rule"}]
+                "infoLinks": [{"name": "Deep Strike", "id": "160c-1983-81bc-d1cf", "hidden": false, "targetId": "b85b-fd47-3ce5-cd10", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Deep Strike",
+                    "id": "0198-4d92-90eb-80e7",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "This unit has Deep Strike.", "typeId": "9b8f-694b-e5e-b573"}]
+                  }
+                ]
               }
             ]
           }
@@ -2412,6 +2487,46 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "category",
+            "type": "add",
+            "value": "b3be-306e-6f3e-625b",
+            "conditions": [
+              {
+                "childId": "d378-ce19-b724-d1f4",
+                "childName": "Gravis Marine w/ Melta Rifle",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "4cbe-5ad8-7f5f-fcb0",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              },
+              {
+                "childId": "b6e5-22f4-6874-0ac0",
+                "childName": "Gravis Marine w/ Heavy Bolt Rifle",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "4cbe-5ad8-7f5f-fcb0",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              },
+              {
+                "childId": "84ea-33e9-5bae-cc30",
+                "childName": "Gravis Marine w/ Twin Power Fist and Gauntlets",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "4cbe-5ad8-7f5f-fcb0",
+                "shared": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -2432,12 +2547,16 @@
                 "import": true,
                 "sortIndex": 1,
                 "type": "upgrade",
-                "rules": [
+                "profiles": [
                   {
                     "name": "Heavy Shells",
-                    "id": "4312-1e88-1223-f36a",
-                    "description": "When this unit makes a ranged attack against an enemy unit within 8\", that attack has +1AP.",
-                    "hidden": false
+                    "id": "80c7-ddc8-734a-e366",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {"name": "Description", "$text": "When this unit makes a ranged attack against an enemy unit within 8\", that attack has +1AP.", "typeId": "9b8f-694b-e5e-b573"}
+                    ]
                   }
                 ]
               },
@@ -2448,12 +2567,14 @@
                 "import": true,
                 "type": "upgrade",
                 "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 15}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Ceramite Hardening",
-                    "id": "c720-a701-31ca-b501",
-                    "description": "When this unit controls an objective, attacks against this unit have -1AP.",
-                    "hidden": false
+                    "id": "6dfd-56f7-06c0-2c66",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "When this unit controls an objective, attacks against this unit have -1AP.", "typeId": "9b8f-694b-e5e-b573"}]
                   }
                 ]
               },
@@ -2464,12 +2585,20 @@
                 "import": true,
                 "sortIndex": 2,
                 "type": "upgrade",
-                "rules": [
+                "profiles": [
                   {
-                    "name": "Shielding",
-                    "id": "7cf5-73b8-cdc6-7fe3",
-                    "description": "When an enemy unit makes a ranged attack against a friendly unit, if the friendly unit is lightly obscured by a model in this unit, that unit has the benefit of cover.",
-                    "hidden": false
+                    "name": "Gravis Shield Wall",
+                    "id": "ed72-6158-4da8-f6dc",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "When an enemy unit makes a ranged attack against a friendly unit, if the friendly unit is lightly obscured by a model in this unit, that unit has the benefit of cover.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ]
                   }
                 ]
               }
@@ -2806,104 +2935,6 @@
                 "type": "model",
                 "constraints": [{"id": "ba3c-badf-0afd-22da", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}],
                 "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
-                "infoLinks": [
-                  {
-                    "name": "Jump Pack",
-                    "id": "092f-3b97-ba01-4844",
-                    "hidden": false,
-                    "targetId": "5bd2-4391-1716-2d91",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": false,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "84ea-33e9-5bae-cc30",
-                                "childName": "Gravis Marine w/ Twin Power Fist and Gauntlets",
-                                "field": "selections",
-                                "scope": "4cbe-5ad8-7f5f-fcb0",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "b6e5-22f4-6874-0ac0",
-                                "childName": "Gravis Marine w/ Heavy Bolt Rifle",
-                                "field": "selections",
-                                "scope": "4cbe-5ad8-7f5f-fcb0",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "d378-ce19-b724-d1f4",
-                                "childName": "Gravis Marine w/ Melta Rifle",
-                                "field": "selections",
-                                "scope": "4cbe-5ad8-7f5f-fcb0",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Deep Strike",
-                    "id": "7537-5736-7b22-f90f",
-                    "hidden": false,
-                    "targetId": "b85b-fd47-3ce5-cd10",
-                    "type": "rule",
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": false,
-                        "conditionGroups": [
-                          {
-                            "type": "and",
-                            "conditions": [
-                              {
-                                "childId": "d378-ce19-b724-d1f4",
-                                "childName": "Gravis Marine w/ Melta Rifle",
-                                "field": "selections",
-                                "scope": "4cbe-5ad8-7f5f-fcb0",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "b6e5-22f4-6874-0ac0",
-                                "childName": "Gravis Marine w/ Heavy Bolt Rifle",
-                                "field": "selections",
-                                "scope": "4cbe-5ad8-7f5f-fcb0",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              },
-                              {
-                                "childId": "84ea-33e9-5bae-cc30",
-                                "childName": "Gravis Marine w/ Twin Power Fist and Gauntlets",
-                                "field": "selections",
-                                "scope": "4cbe-5ad8-7f5f-fcb0",
-                                "shared": true,
-                                "type": "lessThan",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
                 "profiles": [
                   {
                     "name": "Gravis Marine",
@@ -2920,13 +2951,69 @@
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
                       {"name": "Base", "$text": "32mm", "typeId": "nr-base-size"}
                     ]
+                  },
+                  {
+                    "name": "Jump Packs",
+                    "id": "36c6-0782-d5d7-d66b",
+                    "hidden": true,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "(Three times per game, per unit): In the movement phase, add 3\" to this unit's move characteristic.",
+                        "typeId": "9b8f-694b-e5e-b573"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditions": [
+                          {
+                            "childId": "d378-ce19-b724-d1f4",
+                            "childName": "Gravis Marine w/ Melta Rifle",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "scope": "4cbe-5ad8-7f5f-fcb0",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          },
+                          {
+                            "childId": "b6e5-22f4-6874-0ac0",
+                            "childName": "Gravis Marine w/ Heavy Bolt Rifle",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "scope": "4cbe-5ad8-7f5f-fcb0",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          },
+                          {
+                            "childId": "84ea-33e9-5bae-cc30",
+                            "childName": "Gravis Marine w/ Twin Power Fist and Gauntlets",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "scope": "4cbe-5ad8-7f5f-fcb0",
+                            "shared": true,
+                            "type": "lessThan",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "rules": [
                   {
                     "name": "Heavy Jump Packs",
                     "id": "c476-46ba-e8f1-4c88",
-                    "description": "If all models in this unit are Gravis Marines w/ Heavy Jump Pack, this unit has Deep Strike, and the Jump Pack rule.",
+                    "description": "If all models in this unit are Gravis Marines w/ Heavy Jump Pack, this unit has Fly, has Deep Strike, and the Jump Pack ability.",
                     "hidden": false
                   }
                 ],
@@ -3216,7 +3303,7 @@
                         "typeId": "f77d-b953-8fa4-b762",
                         "typeName": "Ranged Weapons",
                         "characteristics": [
-                          {"name": "Range", "$text": "\"12\"", "typeId": "9896-9419-16a1-92fc"},
+                          {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
                           {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
                           {"name": "BS", "$text": "4+", "typeId": "94d-8a98-cf90-183e"},
                           {"name": "AP", "$text": "2", "typeId": "9ead-8a10-520-de15"},
@@ -3415,12 +3502,14 @@
                 "sortIndex": 1,
                 "type": "upgrade",
                 "infoLinks": [{"name": "Critical: X", "id": "92b9-c3d0-11a6-f88b", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
-                "rules": [
+                "profiles": [
                   {
                     "name": "Ballistus Strike",
-                    "id": "6ab2-b415-635a-45b4",
-                    "description": "This unit's ranged attacks that target an enemy unit within 12\" have Critical: Extra Hit.",
-                    "hidden": false
+                    "id": "f90e-ff0e-a06f-7071",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "This unit's ranged attacks that target an enemy unit within 12\" have Critical: Extra Hit.", "typeId": "9b8f-694b-e5e-b573"}]
                   }
                 ]
               },
@@ -3431,12 +3520,14 @@
                 "import": true,
                 "sortIndex": 2,
                 "type": "upgrade",
-                "rules": [
+                "profiles": [
                   {
                     "name": "Brutalis Charge",
-                    "id": "8e67-dd29-54f0-ebeb",
-                    "description": "(Once per turn, per unit): This unit can use the Crushing Impact stratagem for 0CP.",
-                    "hidden": false
+                    "id": "1d34-3566-d598-c1a2",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "(Once per turn, per unit): This unit can use the Crushing Impact stratagem for 0CP.", "typeId": "9b8f-694b-e5e-b573"}]
                   }
                 ]
               },
@@ -3449,7 +3540,16 @@
                 "type": "upgrade",
                 "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "infoLinks": [{"name": "Feel No Pain X+", "id": "fa2b-71aa-e474-4f7d", "hidden": false, "targetId": "5bf4-3222-c49f-6294", "type": "rule"}],
-                "rules": [{"name": "Duty Eternal", "id": "7ead-8aa1-ea77-d4a4", "description": "This unit has Feel No Pain 6+.", "hidden": false}]
+                "profiles": [
+                  {
+                    "name": "Duty Eternal",
+                    "id": "7ce0-00ab-b81a-83e1",
+                    "hidden": false,
+                    "typeId": "9cc3-6d83-4dd3-9b64",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "This unit has Feel No Pain 6+.", "typeId": "9b8f-694b-e5e-b573"}]
+                  }
+                ]
               }
             ]
           }

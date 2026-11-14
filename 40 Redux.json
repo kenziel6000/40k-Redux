@@ -159,7 +159,7 @@
       {
         "name": "Deep Strike",
         "id": "b85b-fd47-3ce5-cd10",
-        "description": "If all models in this unit have Deep Strike, you can follow the Deep Strike portion of the Arriving From Reserves rules.",
+        "description": "When this unit makes an ingress move, it can be set up anywhere outside of 8\" horizontally from enemy units.",
         "hidden": false
       },
       {
