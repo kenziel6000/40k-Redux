@@ -156,7 +156,7 @@
           {"name": "Grenades", "id": "5218-71d1-f352-ac7c", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"}
         ],
         "constraints": [{"id": "9b35-30b2-c494-aa89", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
-        "costs": [{"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "infoLinks": [{"name": "Combat Doctrines", "id": "a0e8-97a0-16cf-4759", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
         "selectionEntryGroups": [
           {
@@ -304,7 +304,7 @@
                 "import": true,
                 "sortIndex": 1,
                 "type": "model",
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 45}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 35}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "infoLinks": [{"name": "Critical: X", "id": "ec40-dff4-01d3-30d3", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
                 "profiles": [
                   {
@@ -364,7 +364,7 @@
                 "sortIndex": 4,
                 "type": "model",
                 "constraints": [{"id": "9944-2cbc-97c0-8ae8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 50}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 45}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "infoLinks": [{"name": "Critical: X", "id": "7a84-1a2d-8746-1805", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
                 "modifiers": [
                   {
@@ -554,7 +554,7 @@
                 "import": true,
                 "sortIndex": 3,
                 "type": "model",
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 45}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 35}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "profiles": [
                   {
                     "name": "Terminator",
@@ -613,7 +613,7 @@
                 "import": true,
                 "sortIndex": 2,
                 "type": "model",
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 45}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 35}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "infoLinks": [{"name": "Critical: X", "id": "54d8-3e41-8731-f22a", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
                 "profiles": [
                   {
@@ -710,6 +710,7 @@
           {"name": "Grenades", "id": "9c57-3a4d-ba32-bada", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"}
         ],
         "constraints": [{"id": "59fa-4fd6-cfc2-657e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
+        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "infoLinks": [{"name": "Combat Doctrines", "id": "acee-fbbc-a8c8-c713", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
         "modifiers": [
           {
@@ -762,7 +763,7 @@
                 "sortIndex": 2,
                 "type": "model",
                 "constraints": [{"id": "7e29-26cc-d007-aef3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}],
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "profiles": [
                   {
                     "name": "Bladeguard Veterans",
@@ -851,7 +852,7 @@
                 "sortIndex": 1,
                 "type": "model",
                 "constraints": [{"id": "4c76-8d2e-786e-e2ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}],
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 22}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "profiles": [
                   {
                     "name": "Vanguard Veterans",
@@ -1003,7 +1004,7 @@
                     "import": true,
                     "sortIndex": 1,
                     "type": "model",
-                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 22}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                     "infoLinks": [
                       {"name": "Melta X", "id": "5c7f-d082-095d-3041", "hidden": false, "targetId": "7b9b-01a0-8243-f217", "type": "rule"},
                       {"name": "Critical: X", "id": "9bbf-6cb3-2441-c1f5", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}
@@ -1128,7 +1129,7 @@
                     "sortIndex": 2,
                     "type": "model",
                     "constraints": [{"id": "65ac-9657-e99f-98fc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
-                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                     "modifiers": [
                       {
                         "field": "65ac-9657-e99f-98fc",
@@ -1577,6 +1578,22 @@
                 "hidden": false
               }
             ]
+          },
+          {
+            "name": "Terminator Warp Force",
+            "id": "0a59-6b84-ac3e-5adf",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "26f7-9889-7095-3339", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
+            "rules": [
+              {
+                "id": "0ccc-ad63-8a66-6de5",
+                "description": "When a friendly Tactical Squad targets an enemy unit within half range, add 1 to the attacks characteristic of each ranged weapon equipped by that unit.",
+                "hidden": false
+              }
+            ]
           }
         ]
       },
@@ -1593,7 +1610,7 @@
           {"name": "Tactical Squad", "id": "0d45-1c65-fa7e-1679", "hidden": false, "primary": false, "targetId": "7648-1827-6150-04a1"}
         ],
         "constraints": [{"id": "481c-fc5e-cbc0-1426", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 6}],
-        "costs": [{"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "infoLinks": [{"name": "Combat Doctrines", "id": "ca4d-a174-05db-0ba9", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
         "selectionEntryGroups": [
           {
@@ -1676,16 +1693,16 @@
                 "type": "upgrade",
                 "modifiers": [
                   {
-                    "affects": "self.entries.recursive.b3e8-68c7-3e6e-f236.profiles.Ranged Weapons",
+                    "affects": "self.entries.recursive.6feb-a41d-9d7e-29e5.profiles.Ranged Weapons",
                     "field": "3bb-c35f-f54-fb08",
-                    "scope": "parent",
+                    "scope": "b3e8-68c7-3e6e-f236",
                     "type": "increment",
                     "value": 1
                   },
                   {
-                    "affects": "self.entries.recursive.967d-18e3-2e8c-de0f.profiles.Melee Weapons",
-                    "field": "3bb-c35f-f54-fb08",
-                    "scope": "parent",
+                    "affects": "self.entries.recursive.e1eb-b000-aa9d-aa94.profiles.Melee Weapons",
+                    "field": "2337-daa1-6682-b110",
+                    "scope": "b3e8-68c7-3e6e-f236",
                     "type": "increment",
                     "value": 1
                   }
@@ -2108,7 +2125,7 @@
           {"name": "Phobos Squad", "id": "48ee-a5f3-99af-d3ba", "hidden": false, "primary": false, "targetId": "28af-c619-08bc-4dc1"}
         ],
         "constraints": [{"id": "b9e6-0aec-1141-e935", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 6}],
-        "costs": [{"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "infoLinks": [{"name": "Combat Doctrines", "id": "1c67-5bd5-03c8-bd32", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
         "selectionEntryGroups": [
           {
@@ -2616,7 +2633,7 @@
           {"name": "Gravis Squad", "id": "f442-04b3-dde1-7f46", "hidden": false, "primary": false, "targetId": "d541-e8ac-65a6-43c1"}
         ],
         "constraints": [{"id": "af7c-a59d-f5f4-1370", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 6}],
-        "costs": [{"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "infoLinks": [{"name": "Combat Doctrines", "id": "b8da-dd2b-584f-5a28", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
         "modifiers": [
           {
@@ -2730,7 +2747,28 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 15}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "modifiers": [
+                  {
+                    "field": "acdc-8926-b4b9-633c",
+                    "type": "increment",
+                    "value": 5,
+                    "repeats": [
+                      {
+                        "childId": "model",
+                        "childName": "model",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "4cbe-5ad8-7f5f-fcb0",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
                 "profiles": [
                   {
                     "name": "Ceramite Hardening",
@@ -2786,7 +2824,7 @@
                 "import": true,
                 "sortIndex": 1,
                 "type": "model",
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 22}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "profiles": [
                   {
                     "name": "Gravis Marine",
@@ -2876,7 +2914,7 @@
                 "sortIndex": 3,
                 "type": "model",
                 "constraints": [{"id": "52c1-6985-cfc1-3297", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}],
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "profiles": [
                   {
                     "name": "Gravis Marine",
@@ -2981,7 +3019,7 @@
                 "import": true,
                 "sortIndex": 4,
                 "type": "model",
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 40}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "profiles": [
                   {
                     "name": "Gravis Marine",
@@ -3106,7 +3144,7 @@
                 "sortIndex": 2,
                 "type": "model",
                 "constraints": [{"id": "ba3c-badf-0afd-22da", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}],
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 35}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "profiles": [
                   {
                     "name": "Jump Packs",
@@ -3334,7 +3372,7 @@
               {"id": "46a9-713b-bf29-1b56", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "d668-828d-0040-e645", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 160}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 180}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
             "profiles": [
               {
                 "name": "Dreadnought",
