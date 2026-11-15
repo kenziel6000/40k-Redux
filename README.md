@@ -18,3 +18,4 @@ This is my take on the rules of 40k, using 11th edition as a base. This readme a
 - Take to the skies only costs 1" for non-Monster/Vehicles with Fly.
 - Things are generally more expensive.
 - You can have up to 6 of each Battleline unit, up to 2 of each Elite unit, and up to 3 of each Vehicle/Monster unit. Some detachments increase this limit for certain unit types.
+- AP is now a positive number and +AP increases the penalty to armour saves and -AP decreases it.
