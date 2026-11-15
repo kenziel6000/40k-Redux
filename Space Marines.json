@@ -770,7 +770,7 @@
                                 "type": "not",
                                 "conditions": [
                                   {
-                                    "childId": "1f4f-12d8-5a5b-0c2b",
+                                    "childId": "db9b-446e-11b1-4675",
                                     "childName": "Tacticus w/ Jump Pack",
                                     "field": "selections",
                                     "includeChildForces": false,
@@ -800,7 +800,7 @@
                         ],
                         "conditions": [
                           {
-                            "childId": "8a3a-9889-0b8a-ff13",
+                            "childId": "11cb-2061-a0cb-ce86",
                             "childName": "Tacticus",
                             "field": "selections",
                             "includeChildSelections": true,
@@ -1019,7 +1019,7 @@
                                 "value": 1
                               },
                               {
-                                "childId": "8a3a-9889-0b8a-ff13",
+                                "childId": "11cb-2061-a0cb-ce86",
                                 "childName": "Tacticus",
                                 "field": "selections",
                                 "includeChildForces": false,
@@ -1090,7 +1090,7 @@
                                             "type": "not",
                                             "conditions": [
                                               {
-                                                "childId": "1f4f-12d8-5a5b-0c2b",
+                                                "childId": "db9b-446e-11b1-4675",
                                                 "childName": "Tacticus w/ Jump Pack",
                                                 "field": "selections",
                                                 "includeChildForces": false,
@@ -1120,7 +1120,7 @@
                                     ],
                                     "conditions": [
                                       {
-                                        "childId": "8a3a-9889-0b8a-ff13",
+                                        "childId": "11cb-2061-a0cb-ce86",
                                         "childName": "Tacticus",
                                         "field": "selections",
                                         "includeChildSelections": true,
@@ -2011,7 +2011,7 @@
                                     "type": "not",
                                     "conditions": [
                                       {
-                                        "childId": "1f4f-12d8-5a5b-0c2b",
+                                        "childId": "db9b-446e-11b1-4675",
                                         "childName": "Tacticus w/ Jump Pack",
                                         "field": "selections",
                                         "includeChildForces": false,
@@ -2041,7 +2041,7 @@
                             ],
                             "conditions": [
                               {
-                                "childId": "8a3a-9889-0b8a-ff13",
+                                "childId": "11cb-2061-a0cb-ce86",
                                 "childName": "Tacticus",
                                 "field": "selections",
                                 "includeChildSelections": true,
@@ -2146,7 +2146,7 @@
                                 "type": "not",
                                 "conditions": [
                                   {
-                                    "childId": "1f4f-12d8-5a5b-0c2b",
+                                    "childId": "db9b-446e-11b1-4675",
                                     "childName": "Tacticus w/ Jump Pack",
                                     "field": "selections",
                                     "includeChildForces": false,
@@ -2176,7 +2176,7 @@
                         ],
                         "conditions": [
                           {
-                            "childId": "8a3a-9889-0b8a-ff13",
+                            "childId": "11cb-2061-a0cb-ce86",
                             "childName": "Tacticus",
                             "field": "selections",
                             "includeChildSelections": true,
@@ -5493,11 +5493,198 @@
         "hidden": false,
         "import": true,
         "type": "unit",
+        "associations": [
+          {
+            "name": "Leading",
+            "id": "245d-e84c-9a1b-3729",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "includeChildSelections": true,
+            "label": "Led by",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "b3e8-68c7-3e6e-f236",
+                            "childName": "Tactical Squad",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "834d-a4ee-e112-2937",
+                            "childName": "Veteran Squad",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "11cb-2061-a0cb-ce86",
+                            "childName": "Tacticus",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "queryFromSelf": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "db9b-446e-11b1-4675",
+                            "childName": "Tacticus w/ Jump Pack",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "queryFromSelf": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "4cbe-5ad8-7f5f-fcb0",
+                            "childName": "Gravis Squad",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "4b34-765f-44ce-4bda",
+                            "childName": "Gravis",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "queryFromSelf": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "f8e0-1cb5-4607-ba8e",
+                            "childName": "Terminator Squad",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "9fc1-89b2-1ba1-7573",
+                            "childName": "Terminator",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "queryFromSelf": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "f10d-3ca9-c2ac-4f43",
+                            "childName": "Phobos Squad",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "a07a-77fb-163d-c675",
+                            "childName": "Phobos",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "queryFromSelf": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
         "categoryLinks": [
           {"name": "Infantry", "id": "dd64-bdb4-b0b9-2cc1", "hidden": false, "primary": false, "targetId": "35fa-30e7-f803-c8a7"},
           {"name": "Character", "id": "0c0f-3dcf-8e6f-4cc6", "hidden": false, "primary": true, "targetId": "351f-2cd0-e63e-a1e4"},
           {"name": "Explosives", "id": "77c9-09dd-d520-559f", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"}
         ],
+        "constraints": [{"id": "7c3f-da52-e600-2788", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
         "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 90}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "selectionEntries": [
           {
@@ -5506,193 +5693,10 @@
             "hidden": false,
             "import": true,
             "type": "model",
-            "associations": [
-              {
-                "name": "Leading",
-                "id": "245d-e84c-9a1b-3729",
-                "action": "group",
-                "childId": "unit",
-                "childName": "unit",
-                "includeChildSelections": true,
-                "label": "Led by",
-                "max": 1,
-                "min": 0,
-                "scope": "force",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditionGroups": [
-                      {
-                        "type": "and",
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "b3e8-68c7-3e6e-f236",
-                                "childName": "Tactical Squad",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "self",
-                                "shared": true,
-                                "type": "instanceOf",
-                                "value": 1
-                              },
-                              {
-                                "childId": "834d-a4ee-e112-2937",
-                                "childName": "Veteran Squad",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "self",
-                                "shared": true,
-                                "type": "instanceOf",
-                                "value": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "8a3a-9889-0b8a-ff13",
-                                "childName": "Tacticus",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "queryFromSelf": true,
-                                "scope": "self",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              },
-                              {
-                                "childId": "1f4f-12d8-5a5b-0c2b",
-                                "childName": "Tacticus w/ Jump Pack",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "queryFromSelf": true,
-                                "scope": "self",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "type": "and",
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "4cbe-5ad8-7f5f-fcb0",
-                                "childName": "Gravis Squad",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "self",
-                                "shared": true,
-                                "type": "instanceOf",
-                                "value": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "cbfa-781f-ae42-46cb",
-                                "childName": "Gravis",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "queryFromSelf": true,
-                                "scope": "self",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "type": "and",
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "f8e0-1cb5-4607-ba8e",
-                                "childName": "Terminator Squad",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "self",
-                                "shared": true,
-                                "type": "instanceOf",
-                                "value": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "8ba5-df8d-04ba-82fa",
-                                "childName": "Terminator",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "queryFromSelf": true,
-                                "scope": "self",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "type": "and",
-                        "conditionGroups": [
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "f10d-3ca9-c2ac-4f43",
-                                "childName": "Phobos Squad",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "scope": "self",
-                                "shared": true,
-                                "type": "instanceOf",
-                                "value": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "or",
-                            "conditions": [
-                              {
-                                "childId": "8969-16e3-72cc-3886",
-                                "childName": "Phobos",
-                                "field": "selections",
-                                "includeChildSelections": true,
-                                "queryFromSelf": true,
-                                "scope": "self",
-                                "shared": true,
-                                "type": "atLeast",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
+            "constraints": [
+              {"id": "e3fa-c5d9-b53d-3c64", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "1c94-1526-5e8f-b84f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "constraints": [{"id": "7c3f-da52-e600-2788", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
             "selectionEntries": [
               {
                 "name": "Warlord",
@@ -6442,6 +6446,10 @@
                         "name": "Melee Weapon",
                         "id": "cb27-395b-d409-759a",
                         "hidden": false,
+                        "constraints": [
+                          {"id": "e1a7-119d-f44a-81ff", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "3f54-a22f-0446-a1bc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
                         "selectionEntries": [
                           {
                             "name": "Power Fist",
@@ -6449,10 +6457,6 @@
                             "hidden": false,
                             "import": true,
                             "type": "upgrade",
-                            "constraints": [
-                              {"id": "e8c9-86f5-a951-ca8f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-                              {"id": "a24b-0ae6-e30f-d64f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-                            ],
                             "profiles": [
                               {
                                 "name": "Power Fist",
