@@ -8,6 +8,7 @@ This is my take on the rules of 40k, using 11th edition as a base. This readme a
 
 - Warlord now does something! It works as a -1CP ability for the unit.
 - Full revamp of unit characteristics to decrease lethality and limit games becoming lopsided too quickly.
+- Read your keywords/abilities/rules! Some are different.
 - Much more customisation through unlocked model numbers, as well as new wargear options for each unit type.
 - Lethal Hits and Sustained Hits are replaced by Critical: X. When an unmodified hit roll of 6 is scored, follow the added effect "X".
 - Advance rolls are now D3 rather than D6.
