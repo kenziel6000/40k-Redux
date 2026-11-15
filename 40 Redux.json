@@ -149,12 +149,6 @@
         "hidden": false
       },
       {
-        "name": "Jump Pack",
-        "id": "5bd2-4391-1716-2d91",
-        "description": "(Three times per game, per unit): In the movement phase, add 3\" to this unit's move characteristic.",
-        "hidden": false
-      },
-      {
         "name": "Deep Strike",
         "id": "b85b-fd47-3ce5-cd10",
         "description": "When this unit makes an ingress move, it can be set up anywhere outside of 8\" horizontally from enemy units.",
