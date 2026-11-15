@@ -3,6 +3,7 @@
     "name": "40 Redux",
     "id": "sys-aeaf-f07a-9d60-52ee",
     "battleScribeVersion": "2.03",
+    "hidden": true,
     "revision": 1,
     "type": "gameSystem",
     "categoryEntries": [
@@ -19,10 +20,20 @@
       {"name": "Transport", "id": "c829-a91d-839c-62cd", "hidden": false},
       {"name": "Infantry", "id": "35fa-30e7-f803-c8a7", "hidden": false},
       {"name": "Smoke", "id": "543a-24bc-bd55-80fe", "hidden": false},
-      {"name": "Grenades", "id": "2630-d0bd-d058-68a2", "hidden": false},
+      {"name": "Explosives", "id": "2630-d0bd-d058-68a2", "hidden": false},
       {"name": "Configuration", "id": "d039-d79f-f083-6e3b", "hidden": false},
       {"name": "Walker", "id": "13b9-7786-ae17-f8f9", "hidden": false},
-      {"name": "Fly", "id": "b3be-306e-6f3e-625b", "hidden": false}
+      {"name": "Fly", "id": "b3be-306e-6f3e-625b", "hidden": false},
+      {
+        "name": "Warlord",
+        "id": "947e-e67c-ae12-87a4",
+        "hidden": false,
+        "constraints": [
+          {"id": "316e-5ed8-807b-f9a5-min", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 1},
+          {"id": "316e-5ed8-807b-f9a5-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Warlord", "id": "b083-e6b4-8015-0c27", "hidden": false, "targetId": "c7cd-a65d-5ebc-95da", "type": "rule"}]
+      }
     ],
     "costTypes": [
       {"name": "Points", "id": "acdc-8926-b4b9-633c", "defaultCostLimit": 2000, "hidden": false},
@@ -49,17 +60,6 @@
           {"name": "Infantry", "id": "5a8a-fbbf-7686-f2d7", "hidden": false, "targetId": "35fa-30e7-f803-c8a7"}
         ]
       }
-    ],
-    "infoLinks": [
-      {"name": "Support", "id": "69b7-eb10-7768-5248", "hidden": false, "targetId": "3342-2180-9c5d-925f", "type": "rule"},
-      {"name": "Leader", "id": "c90d-8632-a300-675d", "hidden": false, "targetId": "b4dd-3e1f-41cb-218f", "type": "rule"},
-      {"name": "Deadly Demise", "id": "d0e2-2359-9af6-9117", "hidden": false, "targetId": "b68a-5ded-65ac-98c", "type": "rule"},
-      {"name": "Scouts 8\"", "id": "e6c9-c4ac-9352-07c0", "hidden": false, "targetId": "a5f4-4af8-4735-7384", "type": "rule"},
-      {"name": "Scouts 9\"", "id": "c45c-4e6f-5dd2-2aa0", "hidden": false, "targetId": "9ea5-acc2-a2ac-257b", "type": "rule"},
-      {"name": "Scouts 5\"", "id": "bb38-6ec5-1d33-c328", "hidden": false, "targetId": "b4d7-ba95-ed79-bafe", "type": "rule"},
-      {"name": "Infiltrators", "id": "8567-0d1b-a2b4-5d42", "hidden": false, "targetId": "c05d-f4c3-f091-4938", "type": "rule"},
-      {"name": "Scouts 7\"", "id": "98e5-531e-10b1-7eee", "hidden": false, "targetId": "6a04-6476-b45b-aef8", "type": "rule"},
-      {"name": "Scouts 6\"", "id": "cfa4-4453-1d20-e59b", "hidden": false, "targetId": "08fb-4cb5-36fb-d638", "type": "rule"}
     ],
     "selectionEntries": [
       {
@@ -151,7 +151,7 @@
       {
         "name": "Deep Strike",
         "id": "b85b-fd47-3ce5-cd10",
-        "description": "When this unit makes an ingress move, it can be set up anywhere outside of 8\" horizontally from enemy units.",
+        "description": "When this unit makes an ingress move, if every model in this unit has this ability, it can be set up anywhere outside of 8\" horizontally from enemy units.",
         "hidden": false
       },
       {
@@ -196,6 +196,12 @@
         "name": "Feel No Pain X+",
         "id": "5bf4-3222-c49f-6294",
         "description": "When a unit with this ability takes damage, roll a D6 for each point of damage. A successful roll of X+ reduces the incoming damage by 1.",
+        "hidden": false
+      },
+      {
+        "name": "Warlord",
+        "id": "c7cd-a65d-5ebc-95da",
+        "description": "When the unit containing the Warlord model is targeted with a stratagem, reduce the cost of that stratagem by 1CP.",
         "hidden": false
       }
     ]
