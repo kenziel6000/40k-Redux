@@ -2001,7 +2001,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "Use when an enemy unit targets a friendly unit that is within 3\" of a friendly transport it is eligible to embark within. That unit embarks that transport, and the enemy unit is able to reselect targets.",
+                        "$text": "Use in your opponent's shooting phase, when an enemy unit targets a friendly unit that is wholly within 6\" of a friendly transport it is eligible to embark within. That unit embarks that transport, and the enemy unit is able to reselect targets.",
                         "typeId": "3d0a-3b95-50e8-caaa"
                       }
                     ]
