@@ -150,6 +150,13 @@
         "kind": "ability",
         "sortIndex": 5,
         "characteristicTypes": [{"name": "Description", "id": "9b8f-694b-e5e-b573"}]
+      },
+      {
+        "name": "Stratagem",
+        "id": "64cb-e4cc-9252-4240",
+        "hidden": false,
+        "sortIndex": 7,
+        "characteristicTypes": [{"name": "Description", "id": "3d0a-3b95-50e8-caaa", "kind": "longText"}]
       }
     ],
     "sharedRules": [
@@ -1649,7 +1656,115 @@
             "type": "upgrade",
             "constraints": [{"id": "fd24-5754-c515-5bd9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 3}],
-            "rules": [{"name": "Codex Discipline", "id": "e9b1-407e-33b1-5346", "description": "You can use the all doctrines an additional time.", "hidden": false}]
+            "profiles": [
+              {
+                "name": "Codex Discipline",
+                "id": "fa1a-5658-2bf5-59d0",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "You can use one doctrine an additional time.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "ecf2-39ee-2fb7-921c",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "c769-70b9-198a-3043", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "928a-5cab-9096-a62a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Armour of Contempt",
+                    "id": "f728-0ee3-8b67-ec80",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when an enemy unit targets a friendly unit. Attacks against that unit have -1 AP until the attacking unit has shot.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Seasoned Strikes (1 CP)",
+                    "id": "907e-a432-a1db-71b6",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when a friendly unit is selected to fight. That unit's melee attacks have either:\n- Critical: +1AP\nor \n- Critical: +1S.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Well Aimed Shots (1 CP)",
+                    "id": "0a19-bb24-027b-abec",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when a friendly unit is selected to shoot. That unit's ranged attacks have either:\n- Critical: Extra Hit\nor \n- Critical: +1S.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Adaptive Strategy (1 CP)",
+                    "id": "7894-0240-ada2-0a1a",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your command phase. Select a friendly unit. That unit benefits from a doctrine of your choice.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Medical Airdrop (1 CP)",
+                    "id": "2cab-20cf-03ea-0d82",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your command phase. Select 2 friendly infantry units. Each selected unit heals D3+2 wounds.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Heroic Stand Off (1 CP)",
+                    "id": "467c-3da9-6693-ef41",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when an enemy unit is selected to fight a friendly unit that hasn't fought this phase. When a model in that friendly unit is destroyed, roll a D6. On a 4+, do not remove it from the battlefield until its unit has fought.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Tacticus Attack Force",
@@ -1660,7 +1775,59 @@
             "categoryLinks": [{"name": "Tacticus", "id": "3898-2ac6-e2ef-cb01", "hidden": false, "primary": false, "targetId": "7e3d-0b83-4f6a-b8c8"}],
             "constraints": [{"id": "282b-042d-4f3a-b66a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [{"name": "Tactical Speed", "id": "6318-1001-32cc-ad09", "description": "Friendly Tactical Squad units have +1 to advance rolls.", "hidden": false}]
+            "profiles": [
+              {
+                "name": "Tactical Speed",
+                "id": "7575-6732-b906-9682",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "Friendly Tactical Squad units have +1 to advance rolls.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "7f83-5c9f-7201-017c",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "b2f9-5743-b8c7-f5db", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "ac0e-fa89-58ed-fe06", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Planned Strike (1 CP)",
+                    "id": "4e5d-538c-c131-3f43",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your command phase. Select 1 enemy unit. Until the end of the turn, each time a friendly Tactical Squad makes a melee attack against that enemy unit, that attack has\nCritical: +1AP.\nor\nCritical: Re-roll 1s to wound.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Dive into Fire (1 CP)",
+                    "id": "96f3-4140-3a79-5727",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your opponent's shooting phase, when an enemy unit destroys a model in a friendly Tactical Squad. That unit can make a surge move up to D6+1\".",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Gravis Defense Force",
@@ -1671,12 +1838,63 @@
             "categoryLinks": [{"name": "Gravis", "id": "b631-cee8-a8cc-3f71", "hidden": false, "primary": false, "targetId": "684b-6ea1-c9aa-a58d"}],
             "constraints": [{"id": "d53d-41ee-b320-5bd8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [
+            "profiles": [
               {
                 "name": "Heavy Sentinels",
-                "id": "b51a-ae70-dd5a-56bb",
-                "description": "Friendly Gravis Squad units have a 6+ Invulnerable Save, and if a friendly Gravis Squad is controlling an objective it has a 5+ Invulnerable Save.",
-                "hidden": false
+                "id": "8cf4-84a0-c228-5d3f",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "$text": "Friendly Gravis Squad units have a 6+ Invulnerable Save, and if a friendly Gravis Squad is controlling an objective it has a 5+ Invulnerable Save.",
+                    "typeId": "9b8f-694b-e5e-b573"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "30c4-1557-e0fa-67ad",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "271d-83e9-2579-de69", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "e6c0-64e2-4c44-88d6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Shrug It Off (1 CP)",
+                    "id": "f02a-acad-6941-7e79",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when an enemy unit targets a friendly Gravis Squad. Until that unit has finished making its attacks, that Gravis Squad has Feel No Pain 6+.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Heavy Hitting (1 CP)",
+                    "id": "297a-cf74-0a8f-d8da",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when a friendly Gravis Squad is selected to make attacks. Those attacks have Critical: +1S.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1690,7 +1908,59 @@
             "constraints": [{"id": "2e1a-c9a4-f1b2-a947", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
             "modifiers": [{"affects": "self.entries.130b-99ae-79be-9e2b.profiles.Unit", "field": "55a7-5b54-c60d-11dc", "scope": "force", "type": "set", "value": "6+"}],
-            "rules": [{"name": "Shield Upgrade", "id": "368a-450d-79e3-e2ad", "description": "Friendly Vehicle units have a 6+ Invulnerable Save.", "hidden": false}]
+            "profiles": [
+              {
+                "name": "Shield Upgrade",
+                "id": "fc31-6391-1244-37ad",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "Friendly vehicle units have a 6+ Invulnerable Save.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "1d84-60b1-635e-5f0d",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "4fcf-c275-98d4-2bf3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2751-0931-214a-f148", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Vehicular Shield (1 CP)",
+                    "id": "f49d-82a8-1054-a3c3",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when an enemy unit targets a friendly non-monster/vehicle unit within 6\" of a friendly vehicle unit. Attacks against that unit have -1 to wound until that enemy unit has shot.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Launch Bombardment (1 CP)",
+                    "id": "a2d1-c7ea-3fac-3f49",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use at the start of your shooting phase. Select two enemy units within 18\" of a friendly vehicle unit. Then, those enemy units either:\n- Loses the benefit of cover until the end of your shooting phase\nor \n- Has -2 to its movement characteristic until the start of your next command phase.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Gauntlet Task Force",
@@ -1700,12 +1970,57 @@
             "type": "upgrade",
             "constraints": [{"id": "df55-7f1a-761e-5ed7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [
+            "profiles": [
               {
                 "name": "Transport Support",
-                "id": "b8f9-8fce-711e-335f",
-                "description": "When a unit disembarks from a transport, its ranged weapons have +1 to hit.",
-                "hidden": false
+                "id": "908b-6877-3813-0ddb",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "When a unit disembarks from a transport, its ranged weapons have +1 to hit.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "88c1-9fa8-7b1e-7e7b",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "6b82-232a-3f0b-56ce", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "e00b-fd59-9893-1325", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Reactive Re-embarkation (1 CP)",
+                    "id": "6659-a0c7-9ef2-8120",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when an enemy unit targets a friendly unit that is within 3\" of a friendly transport it is eligible to embark within. That unit embarks that transport, and the enemy unit is able to reselect targets.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Quick Disembarkation (1 CP)",
+                    "id": "08b4-33db-29a5-9085",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when a friendly unit disembarks from a friendly transport. That unit can disembark wholly within 4\" of that transport, rather than wholly within 3\".",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1718,12 +2033,63 @@
             "categoryLinks": [{"name": "Tacticus", "id": "e295-f4c1-66cd-020e", "hidden": false, "primary": false, "targetId": "7e3d-0b83-4f6a-b8c8"}],
             "constraints": [{"id": "c13d-c784-4585-2341", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [
+            "profiles": [
               {
                 "name": "Tactical Firestorm",
-                "id": "31f7-1688-fb5b-650e",
-                "description": "When a friendly Tactical Squad targets an enemy unit within half range, add 1 to the attacks characteristic of each ranged weapon equipped by that unit.",
-                "hidden": false
+                "id": "f1fd-674e-a822-3c09",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "$text": "When a friendly Tactical Squad targets an enemy unit within half range, add 1 to the attacks characteristic of each ranged weapon equipped by that unit.",
+                    "typeId": "9b8f-694b-e5e-b573"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "5553-bc13-4045-5cb4",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "20be-7433-8c86-2697", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "6a30-c98a-4d5e-1a92", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Trained Gunline (1 CP)",
+                    "id": "2150-521e-4144-5d2d",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your shooting phase. Select up to two friendly Tactical Squads. Then, select an enemy unit. Until they have shot, attacks by your selected units have:\nCritical: +1AP.\nor\nCritical: Re-roll 1s to wound.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Take Cover (1 CP)",
+                    "id": "b083-f94d-7574-7801",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your opponent's shooting phase, when an enemy unit targets a friendly Tactical Squad. Until that unit has shot, attacks against that Tactical Squad have -1 to hit.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1736,12 +2102,57 @@
             "categoryLinks": [{"name": "Phobos", "id": "aa0b-e21a-f3d9-0efa", "hidden": false, "primary": false, "targetId": "81e2-9a81-b22d-d42b"}],
             "constraints": [{"id": "e39f-8798-851a-9d1d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [
+            "profiles": [
               {
                 "name": "Assassin Prowess",
-                "id": "e877-018e-1add-2867",
-                "description": "Each time a phobos unit makes an attack against a Character unit, that attack has +1AP.",
-                "hidden": false
+                "id": "611a-44f2-91f0-1071",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "Each time a Phobos Squad makes an attack against a character unit, that attack has +1AP.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "6af2-60d7-e14b-98cc",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "1d42-6d8f-ce55-0567", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "7655-454f-2610-044e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Strike from Shadows (1 CP)",
+                    "id": "4dbc-aa9c-9a3c-2e4f",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when a friendly Phobos Squad is selected to make attacks. Until that unit finishes making attacks, it has:\n- +1 to hit\nor\n- Critical: +1S.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Quick Reaction (1 CP)",
+                    "id": "6ebb-0c6e-46a6-74cb",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your opponent's movement phase, when an enemy unit ends a move within 8\" of a friendly unengaged Phobos Squad unit. That unit can make a normal move up to D6\", or up to 6\" if the tactical doctrine is active for this unit.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1754,7 +2165,59 @@
             "categoryLinks": [{"name": "Phobos", "id": "e5e7-82d4-bc26-f191", "hidden": false, "primary": false, "targetId": "81e2-9a81-b22d-d42b"}],
             "constraints": [{"id": "955a-3f68-41f0-983c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [{"name": "Shadow Mastery", "id": "4f68-0e8d-384c-ea87", "description": "Friendly Phobos Squads do not lose hidden when shooting.", "hidden": false}]
+            "profiles": [
+              {
+                "name": "Shadow Mastery",
+                "id": "e1bc-f32a-e1a3-67e5",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "Friendly Phobos Squads do not lose hidden when shooting.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "84eb-f8f1-ef5f-3a65",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "7875-54b1-668e-575e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "dab1-71eb-c811-491c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Umbral Evasion (1 CP)",
+                    "id": "65d9-a145-410a-387f",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your opponent's shooting phase, when an enemy unit targets a friendly Phobos Squad. Until that unit has shot, attacks against that Phobos Squad have -1 to hit.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Return to Shadows (1 CP)",
+                    "id": "d5cd-9e45-a332-43ec",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use at the end of your opponent's fight phase. Select one friendly Phobos Squad. That unit returns to reserves.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Dread Champions",
@@ -1765,12 +2228,57 @@
             "categoryLinks": [{"name": "Dreadnought", "id": "53fd-5943-3662-1e98", "hidden": false, "primary": false, "targetId": "d49c-c921-bd9e-15ce"}],
             "constraints": [{"id": "3d35-6f66-f782-d912", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [
+            "profiles": [
               {
                 "name": "Dreadnought Strength",
-                "id": "9196-6189-73e5-8467",
-                "description": "Each time a friendly Walker unit makes an attack, re-roll a hit roll of 1.",
-                "hidden": false
+                "id": "dbf0-a982-edab-1e1d",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "Each time a friendly walker unit makes an attack, re-roll a hit roll of 1.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "c877-e209-24d6-fa2a",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "53f8-0a6f-3fac-05a9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "57c8-a7d3-03c8-7b9c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Ancient Hero (1 CP)",
+                    "id": "4575-9226-9739-4dc2",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use at the end of your movement phase. Select one friendly Dreadnought. That units weapons have +1 to wound until the end of the turn.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Eternal Sentinel (1 CP)",
+                    "id": "cb27-46c7-bcaa-e401",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when a friendly Dreadnought is targeted by an enemy unit. Until the end of the phase, that Dreadnought has +1T.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1783,7 +2291,59 @@
             "categoryLinks": [{"name": "Doctrine", "id": "f666-e2b3-2078-5159", "hidden": false, "primary": false, "targetId": "5966-d33f-2e10-24b0"}],
             "constraints": [{"id": "3b05-d6ab-b94e-49ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [{"name": "Assault Mastery", "id": "22c3-1d01-ceed-876b", "description": "You can use the Assault Doctrine an additional time.", "hidden": false}]
+            "profiles": [
+              {
+                "name": "Assault Mastery",
+                "id": "ce28-26de-ce2a-3bc1",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "You can use the Assault Doctrine an additional time.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "85fe-7fea-af89-aa97",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "d78f-e613-b820-3742", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "fe77-b935-5c35-bcf6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Leaping Charge (1 CP)",
+                    "id": "6bad-7817-a22f-4b63",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use at the start of the charge phase. Select two friendly units. They have +1 to charge rolls until the end of the phase.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Hammer of Wrath (1 CP)",
+                    "id": "220e-23cd-ca21-5e8c",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when a friendly unit that charged this turn is selected to fight. That units weapons have +1A until it has fought.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Devastator Company",
@@ -1794,7 +2354,59 @@
             "categoryLinks": [{"name": "Doctrine", "id": "7ef7-164e-0f48-5387", "hidden": false, "primary": false, "targetId": "5966-d33f-2e10-24b0"}],
             "constraints": [{"id": "ca08-89e3-b4c4-6f0d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [{"name": "Devastator Mastery", "id": "05df-66a2-53a8-bd85", "description": "You can use the Devastator Doctrine an additional time.", "hidden": false}]
+            "profiles": [
+              {
+                "name": "Devastator Mastery",
+                "id": "a200-54c1-05ab-7ce7",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "You can use the Devastator Doctrine an additional time.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "8462-a3c0-79f0-7366",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "ac83-d167-661e-5dc9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "a631-730e-93bd-4eff", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Devastating Return Fire (1 CP)",
+                    "id": "e023-dae3-13fd-5b68",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your opponent's shooting phase, when an enemy unit has finished shooting and hit a friendly unit with any of those attacks. Your unit can shoot back using snap shooting, but can hit on both unmodified 5s and 6s.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Small Burst Airstrike (1 CP)",
+                    "id": "20b0-8cc4-ff4a-3707",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use at the start of your shooting phase. Select one friendly unit. Then, select a visible point within 18\" of that unit. For each unit within 3\" of that point, roll a D6. On a roll of 1, nothing happens. On a roll of 2-5, that unit takes D3 mortal wounds. On a roll of 6, that unit takes D3+3 mortal wounds.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Tactical Company",
@@ -1805,7 +2417,59 @@
             "categoryLinks": [{"name": "Doctrine", "id": "8b4f-7e88-a1ad-beac", "hidden": false, "primary": false, "targetId": "5966-d33f-2e10-24b0"}],
             "constraints": [{"id": "a235-e059-a384-58ac", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [{"name": "Tactical Mastery", "id": "26e6-40ba-d661-104c", "description": "You can use the Tactical Doctrine an additional time.", "hidden": false}]
+            "profiles": [
+              {
+                "name": "Tactical Mastery",
+                "id": "d09a-4ba3-cb79-75b5",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "You can use the Tactical Doctrine an additional time.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "a95d-d95f-d3e7-9f32",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "45cc-d315-dc66-04ea", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "84b7-ad02-451b-a5b1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Feigned Retreat (1 CP)",
+                    "id": "d4e6-935b-9108-9d2e",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when a unit that fell back this turn is selected to make attacks. Until that unit has finished making attacks, its attacks have:\nCritical: +1AP\nor\nCritical: Re-roll 1s to wound.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Tactical Retreat (1 CP)",
+                    "id": "d1c1-f63c-3d37-b980",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your opponent's movement phase, when an enemy unit ends a move within 8\" of a friendly unengaged unit. That unit can make a normal move up to D6\", or up to 6\" if the tactical doctrine is active for this unit.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Gravis Siege Force",
@@ -1816,12 +2480,63 @@
             "categoryLinks": [{"name": "Gravis", "id": "0eca-08bd-e188-ee66", "hidden": false, "primary": false, "targetId": "684b-6ea1-c9aa-a58d"}],
             "constraints": [{"id": "78c0-a3e0-4f7b-37a3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [
+            "profiles": [
               {
                 "name": "Heavy Onslaught",
-                "id": "8814-1369-3702-04b0",
-                "description": "When a friendly Gravis Squad targets an enemy unit, if your unit controls an objective, add 1 to the attacks characteristic of each ranged weapon equipped by that unit.",
-                "hidden": false
+                "id": "d713-e4eb-1720-ea5d",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "$text": "When a friendly Gravis Squad targets an enemy unit, if your unit controls an objective, add 1 to the attacks characteristic of each ranged weapon equipped by that unit.",
+                    "typeId": "9b8f-694b-e5e-b573"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "5a3a-9177-b5a1-2c7b",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "cb3d-b86e-cecf-20cb", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "a3d1-6cea-0fd2-627c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Gun Emplacement (1 CP)",
+                    "id": "01fa-704e-7e97-b3ad",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use at the end of your opponent's movement phase, when an enemy unit is within 12\" of a friendly Gravis unit that controlled an objective it was in range of at the start of the phase. That unit can shoot using snap shooting, but can hit on both unmodified 5s and 6s.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Fortify Position (1 CP)",
+                    "id": "0c88-7704-262b-8906",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use at the end of your movement phase. Select a friendly Gravis Squad that controls an objective. That unit has +1OC.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1834,12 +2549,63 @@
             "categoryLinks": [{"name": "Terminator", "id": "e58d-6d58-72d5-34ba", "hidden": false, "primary": false, "targetId": "d747-2934-6257-7735"}],
             "constraints": [{"id": "6317-092d-8a68-9760", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [
+            "profiles": [
               {
                 "name": "Warp Strike",
-                "id": "987d-0e79-3f03-baa4",
-                "description": "When a friendly Terminator Squad makes an ingress move, its attacks have +1 to hit rolls until the end of the turn.",
-                "hidden": false
+                "id": "7d31-8108-5187-6528",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "$text": "When a friendly Terminator Squad makes an ingress move, its attacks have +1 to hit rolls until the end of the turn.",
+                    "typeId": "9b8f-694b-e5e-b573"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "87fb-0724-670b-ecf4",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "224d-44f1-88a4-2860", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "3d67-4844-546d-192e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Unbreakable Armour (1 CP)",
+                    "id": "8f15-1363-c316-8316",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when an enemy unit targets a friendly Terminator Squad. Attacks against that Terminator Squad have -1 to wound until that attacking unit has finished making attacks.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Contact Teleportarium (1 CP)",
+                    "id": "1636-2eb2-27c7-d81d",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use at the end of your opponent's fight phase. Select one friendly Terminator Squad . That unit returns to reserves.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1852,7 +2618,59 @@
             "categoryLinks": [{"name": "Terminator", "id": "63a5-c8f6-45b3-e0b6", "hidden": false, "primary": false, "targetId": "d747-2934-6257-7735"}],
             "constraints": [{"id": "71cd-1caf-5b3e-7f2c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [{"name": "Terminator Armoury", "id": "519a-2314-0737-464b", "description": "You can take up to 4 Terminator units, instead of only 2.", "hidden": false}]
+            "profiles": [
+              {
+                "name": "Terminator Armoury",
+                "id": "5550-db80-220a-3dd2",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "You can take up to 4 Terminator Squads, instead of only 2.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "f962-03c0-aea2-b78d",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "cf6f-3232-2720-1d8d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "5134-ebee-24d6-c9a2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Ceramite Plates (1 CP)",
+                    "id": "c177-4acc-3823-6763",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when an enemy unit targets a friendly Terminator Squad. Attacks against that Terminator Squad have -1 AP until that attacking unit has finished making attacks.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Overwhelming Bolt Storm (1 CP)",
+                    "id": "cc83-46c1-5126-cc6e",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your shooting phase. Select up to two friendly Terminator Squad. Then, select an enemy unit. Until they have shot, attacks by your selected units have:\nCritical: Extra Hit\nor\nCritical: +1S.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Veteran Company",
@@ -1863,7 +2681,59 @@
             "categoryLinks": [{"name": "Veteran", "id": "4e90-5383-22c7-26f8", "hidden": false, "primary": false, "targetId": "f6e0-4f04-60fb-ae7a"}],
             "constraints": [{"id": "255c-2f0a-f05f-c045", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [{"name": "Only the Best!", "id": "f56c-16d9-d00d-f70b", "description": "You can take up to 4 Veteran Squads, instead of only 2.", "hidden": false}]
+            "profiles": [
+              {
+                "name": "Famed Brothers",
+                "id": "a9df-c24e-9d8e-3f1d",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "You can take up to 4 Veteran Squads, instead of only 2.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "a5cc-2deb-5a91-572f",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "7511-9585-df97-88c4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "fcb4-3bfa-ad55-cca2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Impossible Will (1 CP)",
+                    "id": "9366-2fe6-8874-99f9",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "(Twice per game): Use when a Veteran Squad must make a battleshock test. That Veteran Squad passes that test without rolling..",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Trained Might (1 CP)",
+                    "id": "bd3e-5597-86bd-1603",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when a friendly Veteran Squad is selected to shoot or fight. Until the end of the phase, that unit's attacks have either:\n- Critical: Extra Hit\nor \n- Critical: +1S.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Honoured Veterans",
@@ -1874,7 +2744,59 @@
             "categoryLinks": [{"name": "Veteran", "id": "823f-c22b-db61-3967", "hidden": false, "primary": false, "targetId": "f6e0-4f04-60fb-ae7a"}],
             "constraints": [{"id": "23e2-5ceb-67c7-8626", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [{"name": "Veteran Iron Halo", "id": "9c93-bf25-4ff3-b8db", "description": "Veteran Squads have a 5+ Invulnerable Save.", "hidden": false}]
+            "profiles": [
+              {
+                "name": "Veteran Iron Halo",
+                "id": "45c0-b3d1-d7ce-9fe7",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "Veteran Squads have a 5+ Invulnerable Save.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "a476-52e0-a28e-3fb9",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "b0b6-dacd-cd01-827c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "6506-f499-f83a-d73d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Intelligent Maneuvers (1 CP)",
+                    "id": "ec5a-6095-d3ac-2f87",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your opponent's movement phase, when an enemy unit ends a move within 8\" of a friendly unengaged Veteran Squad unit. That unit can make a normal move up to D6\".",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Indomitable Talent (1 CP)",
+                    "id": "65ee-e3bb-be83-1cdf",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when an enemy unit is selected to fight a friendly Veteran Squad that hasn't fought this phase. When a model in that unit is destroyed, roll a D6. On a 4+, do not remove it from the battlefield until its unit has fought.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Adamantine Vanguard",
@@ -1885,7 +2807,59 @@
             "categoryLinks": [{"name": "Dreadnought", "id": "b503-dc8d-3395-f466", "hidden": false, "primary": false, "targetId": "d49c-c921-bd9e-15ce"}],
             "constraints": [{"id": "a074-54a0-dac0-4d0a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [{"name": "Dreadnought Heroes", "id": "8387-9212-17db-4478", "description": "You can include up to 5 Dreadnoughts, instead of only 3.", "hidden": false}]
+            "profiles": [
+              {
+                "name": "Dreadnought Heroes",
+                "id": "30e5-459f-286f-908e",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "You can include up to 5 Dreadnoughts, instead of only 3.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "4d34-42ca-2651-2f30",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "5119-5c44-7989-1ca1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "89a8-42b6-ee1b-d216", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Venerable Resilience (1 CP)",
+                    "id": "28a2-8846-9599-0fe6",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when an enemy unit targets a friendly Dreadnought. Attacks against that Dreadnought have -1 AP until that attacking unit has finished making attacks.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Walking Weapon (1 CP)",
+                    "id": "0594-2431-ad71-8f54",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when a friendly Dreadnought is selected to shoot or fight. Until that unit has finished making its attacks, its attacks have either:\n- +1 to hit\nor\n- Critical: +1S.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Stormlance Task Force",
@@ -1896,12 +2870,63 @@
             "categoryLinks": [{"name": "Speeder", "id": "199f-c025-b04d-345c", "hidden": false, "primary": false, "targetId": "3350-6909-6715-be25"}],
             "constraints": [{"id": "29a4-710b-f993-1079", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [
+            "profiles": [
               {
                 "name": "Stormlance Speed",
-                "id": "a48c-c37f-b72f-08d8",
-                "description": "Friendly Land Speeders and Storm Speeders have +1 to their move characteristic.",
-                "hidden": false
+                "id": "8382-f56a-cfda-81cd",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "$text": "Friendly Land Speeders, Storm Speeders, and Outrider Squads have +1 to their move characteristic.",
+                    "typeId": "9b8f-694b-e5e-b573"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "f28f-e6c6-acdb-b4e9",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "0717-1cef-43d5-f55c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "c534-1b66-ca6d-ad22", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Turn on Boosters (1 CP)",
+                    "id": "dda3-afc8-74c6-f3ed",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your movement phase, when a friendly Land Speeder, Storm Speeder, or Outrider squad is selected to advance. Do not roll to determine the extra distance. That unit automatically advances 3\".",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Destructive Speed (1 CP)",
+                    "id": "37cd-eea3-37c3-b446",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your shooting phase, when a friendly Land Speeder, Storm Speeder, or Outrider squad is selected to make attacks. Until it is finished making attacks, attacks by that unit have:\nRe-roll 1s to hit\nor\nCritical: Re-roll 1s to wound.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1914,12 +2939,57 @@
             "categoryLinks": [{"name": "Speeder", "id": "de5d-911a-2c02-a112", "hidden": false, "primary": false, "targetId": "3350-6909-6715-be25"}],
             "constraints": [{"id": "20f3-8944-c8b9-bc61", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [
+            "profiles": [
               {
                 "name": "Speeder Support",
-                "id": "c565-2a2d-5626-f7a0",
-                "description": "You can take up to 5 Land Speeders and 5 Storm Speeders, rather than only 3 each.",
-                "hidden": false
+                "id": "ce29-79c0-3c47-6214",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "You can take up to 5 Land Speeders and 5 Storm Speeders, rather than only 3 each.", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "8f37-1889-24b5-d285",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "df8b-d4f8-f82f-cb5b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "196f-2ac2-dcc3-0f18", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Speeder Crossfire (1 CP)",
+                    "id": "23a4-af1a-01cd-d632",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your shooting phase. Select up to two friendly Land Speeders or Storm Speeders (including one of each). Then, select an enemy unit. Until they have shot, attacks by your selected units have:\nCritical: Extra Hit\nor\nCritical: +1AP.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Speeder Withdrawal (1 CP)",
+                    "id": "735a-0fe7-e122-6641",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use at the end of your opponent's fight phase. Select one friendly Land Speeder or Storm Speeder. That unit returns to reserves.",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -1932,12 +3002,63 @@
             "categoryLinks": [{"name": "Engines", "id": "4b17-a6df-e423-2a53", "hidden": false, "primary": false, "targetId": "83d4-821b-fedd-3f7b"}],
             "constraints": [{"id": "399b-1a48-a684-7732", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 0}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 1}],
-            "rules": [
+            "profiles": [
               {
-                "name": "Ironstorm Auto-Targeters",
-                "id": "133a-f006-4c2b-64b7",
-                "description": "Friendly Vehicle units' (excluding Walker units) ranged attacks can:\n▪ Re-roll one hit roll\n▪ Re-roll one wound roll",
-                "hidden": false
+                "name": "Tank Auto-Targeters",
+                "id": "ead6-6b30-8b44-60eb",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "$text": "Friendly vehicle units' (excluding walker units) ranged attacks can:\n- Re-roll one hit roll\n- Re-roll one wound roll",
+                    "typeId": "9b8f-694b-e5e-b573"
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Stratagems",
+                "id": "f4f1-c432-845a-d1f4",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "9e30-a4a8-c0b3-de1e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "fa73-0bf6-5321-814c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Aim at Speed (1 CP)",
+                    "id": "3e3b-62bd-bc0e-3d4d",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use in your shooting phase, when a friendly vehicle unit selects targets. That unit's Heavy weapons still gain +1 to hit, even if the model moved more than 3\".",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Awaken Machine Spirit (1 CP)",
+                    "id": "b738-6a84-33e0-f18d",
+                    "hidden": false,
+                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeName": "Stratagem",
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Use when a friendly vehicle is selected to shoot. Until that unit has finished making its attacks, its attacks have either:\n- +1 to hit.\nor\n- Critical: +1S",
+                        "typeId": "3d0a-3b95-50e8-caaa"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -2098,7 +3219,7 @@
                                 "type": "not",
                                 "conditions": [
                                   {
-                                    "childId": "1f4f-12d8-5a5b-0c2b",
+                                    "childId": "db9b-446e-11b1-4675",
                                     "childName": "Tacticus w/ Jump Pack",
                                     "field": "selections",
                                     "includeChildForces": false,
@@ -2117,7 +3238,7 @@
                         ],
                         "conditions": [
                           {
-                            "childId": "8a3a-9889-0b8a-ff13",
+                            "childId": "11cb-2061-a0cb-ce86",
                             "childName": "Tacticus",
                             "field": "selections",
                             "includeChildSelections": true,
@@ -2254,13 +3375,7 @@
                     "hidden": false,
                     "typeId": "9cc3-6d83-4dd3-9b64",
                     "typeName": "Abilities",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "$text": "In your command phase, roll a D6. On a 4+, return 1 destroyed non-character model to your unit.",
-                        "typeId": "9b8f-694b-e5e-b573"
-                      }
-                    ]
+                    "characteristics": [{"name": "Description", "$text": "In your command phase, roll a D6. On a 4+, this unit heals 2 wounds.", "typeId": "9b8f-694b-e5e-b573"}]
                   }
                 ]
               },
@@ -5060,7 +6175,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "In your Shooting phase, when this unit has shot, select a Monster/Vehicle unit hit by this unit's attacks. Friendly unit's attacks against that unit have +1AP.",
+                        "$text": "In your Shooting phase, when this unit has shot, select a monster/vehicle unit hit by this unit's attacks. Friendly unit's attacks against that unit have +1AP.",
                         "typeId": "9b8f-694b-e5e-b573"
                       }
                     ]
@@ -5187,7 +6302,7 @@
                 "characteristics": [
                   {"name": "M", "$text": "8\"", "typeId": "e703-ecb6-5ce7-aec1"},
                   {"name": "T", "$text": "9", "typeId": "0398-77db-0833-6880"},
-                  {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                  {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
                   {"name": "InSv", "$text": "", "typeId": "55a7-5b54-c60d-11dc"},
                   {"name": "W", "$text": "10", "typeId": "750a-a2ec-90d3-21fe"},
                   {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
