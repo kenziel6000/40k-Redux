@@ -33,7 +33,10 @@
           {"id": "316e-5ed8-807b-f9a5-max", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [{"name": "Warlord", "id": "b083-e6b4-8015-0c27", "hidden": false, "targetId": "c7cd-a65d-5ebc-95da", "type": "rule"}]
-      }
+      },
+      {"name": "Frame", "id": "5411-4f0c-2c5a-5138", "hidden": false},
+      {"name": "Dedicated Transport", "id": "0056-d944-82bb-a91f", "hidden": false},
+      {"name": "Mobile", "id": "61c1-71c9-be7f-b6b5", "hidden": false}
     ],
     "costTypes": [
       {"name": "Points", "id": "acdc-8926-b4b9-633c", "defaultCostLimit": 2000, "hidden": false},
@@ -54,10 +57,9 @@
           {"name": "Swarm", "id": "f5d5-b603-69b3-411c", "hidden": false, "primary": false, "targetId": "e4de-a047-1261-0ddb"},
           {"name": "Mounted", "id": "6503-057c-cb62-badb", "hidden": false, "primary": false, "targetId": "c6ee-25c5-d80e-a51a"},
           {"name": "Beast", "id": "87ea-37d2-7b40-c708", "hidden": false, "primary": false, "targetId": "6e6c-cae7-0807-c3ce"},
+          {"name": "Dedicated Transport", "id": "0970-5e73-122a-77dd", "hidden": false, "targetId": "0056-d944-82bb-a91f"},
           {"name": "Monster", "id": "8e39-465e-7cfc-3085", "hidden": false, "primary": false, "targetId": "43a3-e81e-c4fd-d158"},
-          {"name": "Vehicle", "id": "2c76-65c5-bad0-8208", "hidden": false, "primary": false, "targetId": "130b-99ae-79be-9e2b"},
-          {"name": "Transport", "id": "cf3e-2c24-fe34-39f9", "hidden": false, "primary": false, "targetId": "c829-a91d-839c-62cd"},
-          {"name": "Infantry", "id": "5a8a-fbbf-7686-f2d7", "hidden": false, "targetId": "35fa-30e7-f803-c8a7"}
+          {"name": "Vehicle", "id": "2c76-65c5-bad0-8208", "hidden": false, "primary": false, "targetId": "130b-99ae-79be-9e2b"}
         ]
       }
     ],
@@ -75,7 +77,7 @@
       {
         "name": "Scouts 8\"",
         "id": "a5f4-4af8-4735-7384",
-        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a dedicated transport that is wholly within your deployment zone, and if every model embarked within that dedicated transport has the Scouts ability, that dedicated transport can make a **scout move**.",
         "hidden": false,
         "page": 39,
         "publicationId": "48fc-15aa-b307-9443"
@@ -91,7 +93,7 @@
       {
         "name": "Scouts 6\"",
         "id": "08fb-4cb5-36fb-d638",
-        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a dedicated transport that is wholly within your deployment zone, and if every model embarked within that dedicated transport has the Scouts ability, that dedicated transport can make a **scout move**.",
         "hidden": false,
         "page": 39,
         "publicationId": "48fc-15aa-b307-9443"
@@ -107,7 +109,7 @@
       {
         "name": "Scouts 7\"",
         "id": "6a04-6476-b45b-aef8",
-        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a dedicated transport that is wholly within your deployment zone, and if every model embarked within that dedicated transport has the Scouts ability, that dedicated transport can make a **scout move**.",
         "hidden": false,
         "page": 39,
         "publicationId": "48fc-15aa-b307-9443"
@@ -115,7 +117,7 @@
       {
         "name": "Scouts 5\"",
         "id": "b4d7-ba95-ed79-bafe",
-        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a dedicated transport that is wholly within your deployment zone, and if every model embarked within that dedicated transport has the Scouts ability, that dedicated transport can make a **scout move**.",
         "hidden": false,
         "page": 39,
         "publicationId": "48fc-15aa-b307-9443"
@@ -123,7 +125,7 @@
       {
         "name": "Scouts 9\"",
         "id": "9ea5-acc2-a2ac-257b",
-        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a **DEDICATED TRANSPORT** that is wholly within your deployment zone, and if every model embarked within that **DEDICATED TRANSPORT** has the Scouts ability, that **DEDICATED TRANSPORT** can make a **scout move**.",
+        "description": "This ability always takes the form **Scouts X\"**. In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following: \n- If that unit is in **strategic reserves**, you can set up that unit anywhere that is wholly within your deployment zone. \n- If that unit is wholly within your deployment zone, it can make a **scout move**. \n- If that unit is embarked within a dedicated transport that is wholly within your deployment zone, and if every model embarked within that dedicated transport has the Scouts ability, that dedicated transport can make a **scout move**.",
         "hidden": false,
         "page": 39,
         "publicationId": "48fc-15aa-b307-9443"
@@ -203,7 +205,14 @@
         "id": "c7cd-a65d-5ebc-95da",
         "description": "When the unit containing the Warlord model is targeted with a stratagem, reduce the cost of that stratagem by 1CP.",
         "hidden": false
-      }
+      },
+      {
+        "name": "Anti-X: Y+",
+        "id": "af41-cc39-113b-ad57",
+        "description": "When an weapon with this keyword rolls to wound, if the target unit has X keyword, attacks automatically wound on unmodified rolls of Y+ or better.",
+        "hidden": false
+      },
+      {"name": "One Shot", "id": "37ac-edea-5548-6182", "description": "This weapon can only be fired once per battle.", "hidden": false}
     ]
   }
 }
