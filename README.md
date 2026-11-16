@@ -12,7 +12,7 @@ This is my take on the rules of 40k, using 11th edition as a base. This readme a
 - Much more customisation through unlocked model numbers, as well as new wargear options for each unit type.
 - Lethal Hits and Sustained Hits are replaced by Critical: X. When an unmodified hit roll of 6 is scored, follow the added effect "X". The added effect only affects the attack it that unmodified 6 was rolled on.
 - Advance rolls are now D3 rather than D6.
-- All non-monster/vehicle unit types have 1 OC, but some have wargear to increase it. Monster and Vehicle unit types have 3 OC.
+- All non-monster/vehicle models have 1 OC, and Monster and Vehicle models have 3 OC. However, some units have wargear/abilities to increase it.
 - All Ranged weapons can be fired in engagement range, but when doing so they use Snap Shooting if the attacking unit is both in engagement range of an infantry, swarm, or beast model and not a vehicle/monster. Melee weapons have the Melee keyword which removes this penalty.
 
 ### Minor
