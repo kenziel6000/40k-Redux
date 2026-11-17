@@ -36,7 +36,9 @@
       },
       {"name": "Frame", "id": "5411-4f0c-2c5a-5138", "hidden": false},
       {"name": "Dedicated Transport", "id": "0056-d944-82bb-a91f", "hidden": false},
-      {"name": "Mobile", "id": "61c1-71c9-be7f-b6b5", "hidden": false}
+      {"name": "Mobile", "id": "61c1-71c9-be7f-b6b5", "hidden": false},
+      {"name": "Leader", "id": "26a7-d1c9-3a38-c6be", "hidden": false},
+      {"name": "Support", "id": "f260-f1b3-90a8-e783", "hidden": false}
     ],
     "costTypes": [
       {"name": "Points", "id": "acdc-8926-b4b9-633c", "defaultCostLimit": 2000, "hidden": false},
@@ -212,7 +214,14 @@
         "description": "When an weapon with this keyword rolls to wound, if the target unit has X keyword, attacks automatically wound on unmodified rolls of Y+ or better.",
         "hidden": false
       },
-      {"name": "One Shot", "id": "37ac-edea-5548-6182", "description": "This weapon can only be fired once per battle.", "hidden": false}
+      {"name": "One Shot", "id": "37ac-edea-5548-6182", "description": "This weapon can only be fired once per battle.", "hidden": false},
+      {
+        "name": "Lance",
+        "id": "843c-29ae-fab9-c5af",
+        "description": "If the model on which this weapon is equipped made a charge move this turn, this weapon has +1 to wound.",
+        "hidden": false
+      },
+      {"name": "Lone Operative X\"", "id": "ab6e-299f-d421-e2d6", "description": "This unit is not visible to any model outside of X\".", "hidden": false}
     ]
   }
 }
