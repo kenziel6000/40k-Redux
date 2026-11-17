@@ -20,5 +20,5 @@ This is my take on the rules of 40k, using 11th edition as a base. This readme a
 - Jump Packs are now an activated ability that adds 3" of movement per turn up to 3 times.
 - Take To The Skies only costs 1" for non-Monster/Vehicle units with Fly, and every model in the unit must have the Fly keyword to use Take To The Skies.
 - Things are generally more expensive.
-- You can have up to 6 of each Battleline and Dedicated Transport unit, and up to 3 of everything else. Some detachments increase this limit for certain unit types.
+- You can have up to 6 of each Battleline and Dedicated Transport unit, up to 2 of each Elite unit, and up to 3 of everything else. Some detachments increase this limit for certain unit types.
 - AP is now a positive number and +AP increases the penalty to armour saves and -AP decreases it.
