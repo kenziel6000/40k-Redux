@@ -38,7 +38,8 @@
       {"name": "Dedicated Transport", "id": "0056-d944-82bb-a91f", "hidden": false},
       {"name": "Mobile", "id": "61c1-71c9-be7f-b6b5", "hidden": false},
       {"name": "Leader", "id": "26a7-d1c9-3a38-c6be", "hidden": false},
-      {"name": "Support", "id": "f260-f1b3-90a8-e783", "hidden": false}
+      {"name": "Support", "id": "f260-f1b3-90a8-e783", "hidden": false},
+      {"name": "Psyker", "id": "9b44-962d-bb5d-2c57", "hidden": false}
     ],
     "costTypes": [
       {"name": "Points", "id": "acdc-8926-b4b9-633c", "defaultCostLimit": 2000, "hidden": false},
