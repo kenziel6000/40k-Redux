@@ -418,7 +418,7 @@
                     "characteristics": [
                       {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                      {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
                       {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -497,7 +497,7 @@
                     "characteristics": [
                       {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                      {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
                       {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -667,7 +667,7 @@
                     "characteristics": [
                       {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                      {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
                       {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -727,7 +727,7 @@
                     "characteristics": [
                       {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                      {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
                       {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -4919,7 +4919,7 @@
                     "characteristics": [
                       {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
                       {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -5008,7 +5008,7 @@
                     "characteristics": [
                       {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
                       {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -5112,7 +5112,7 @@
                     "characteristics": [
                       {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
                       {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -5385,7 +5385,7 @@
                     "characteristics": [
                       {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                       {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                      {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                      {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
                       {"name": "InSv", "$text": "\n", "typeId": "55a7-5b54-c60d-11dc"},
                       {"name": "W", "$text": "3", "typeId": "750a-a2ec-90d3-21fe"},
                       {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -7977,7 +7977,7 @@
                         "characteristics": [
                           {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                           {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                          {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                          {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
                           {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
                           {"name": "W", "$text": "5", "typeId": "750a-a2ec-90d3-21fe"},
                           {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -8183,7 +8183,7 @@
                         "characteristics": [
                           {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                           {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                          {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                          {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
                           {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
                           {"name": "W", "$text": "6", "typeId": "750a-a2ec-90d3-21fe"},
                           {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -11671,7 +11671,7 @@
                         "characteristics": [
                           {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                           {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                          {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                          {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
                           {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
                           {"name": "W", "$text": "6", "typeId": "750a-a2ec-90d3-21fe"},
                           {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -13306,7 +13306,7 @@
                         "characteristics": [
                           {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                           {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                          {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                          {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
                           {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
                           {"name": "W", "$text": "5", "typeId": "750a-a2ec-90d3-21fe"},
                           {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -13805,7 +13805,7 @@
                         "characteristics": [
                           {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                           {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                          {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                          {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
                           {"name": "InSv", "$text": "6+", "typeId": "55a7-5b54-c60d-11dc"},
                           {"name": "W", "$text": "5", "typeId": "750a-a2ec-90d3-21fe"},
                           {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
@@ -14368,7 +14368,7 @@
                     "type": "upgrade",
                     "profiles": [
                       {
-                        "name": "Captain",
+                        "name": "Librarian",
                         "id": "4220-9214-c6bc-e415",
                         "hidden": false,
                         "typeId": "c547-1836-d8a-ff4f",
@@ -14483,7 +14483,7 @@
                     ],
                     "profiles": [
                       {
-                        "name": "Captain in Phobos Armour",
+                        "name": "Librarian in Phobos Armour",
                         "id": "06cb-c70a-0814-51d4",
                         "hidden": false,
                         "typeId": "c547-1836-d8a-ff4f",
@@ -14608,7 +14608,7 @@
                     ],
                     "profiles": [
                       {
-                        "name": "Captain in Terminator Armour",
+                        "name": "Librarian in Terminator Armour",
                         "id": "b708-a784-99fc-3d10",
                         "hidden": false,
                         "typeId": "c547-1836-d8a-ff4f",
@@ -14616,7 +14616,7 @@
                         "characteristics": [
                           {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
                           {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
-                          {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
+                          {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
                           {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
                           {"name": "W", "$text": "6", "typeId": "750a-a2ec-90d3-21fe"},
                           {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
