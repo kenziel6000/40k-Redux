@@ -85,7 +85,9 @@
       {"name": "Outrider Squad", "id": "4357-2825-f58f-110e", "hidden": false, "import": true, "targetId": "88be-3ede-b67d-a969", "type": "selectionEntry"},
       {"name": "Chaplain", "id": "b8c5-3159-8e5f-5f61", "hidden": false, "import": true, "targetId": "0475-5801-1c81-03af", "type": "selectionEntry"},
       {"name": "Lieutenant", "id": "f78d-ffc4-f7f2-75d7", "hidden": false, "import": true, "targetId": "049a-e027-44bd-c0e6", "type": "selectionEntry"},
-      {"name": "Ancient", "id": "d41e-7695-375d-2ef0", "hidden": false, "import": true, "targetId": "c4cf-fa9a-60a8-fd52", "type": "selectionEntry"}
+      {"name": "Ancient", "id": "d41e-7695-375d-2ef0", "hidden": false, "import": true, "targetId": "c4cf-fa9a-60a8-fd52", "type": "selectionEntry"},
+      {"name": "Apothecary", "id": "bdb7-97af-c302-458d", "hidden": false, "import": true, "targetId": "21b6-0ec7-7ccf-d567", "type": "selectionEntry"},
+      {"name": "Techmarine", "id": "c7ce-eda0-19ce-f9fd", "hidden": false, "import": true, "targetId": "7cb1-f2e7-02fc-69a1", "type": "selectionEntry"}
     ],
     "infoLinks": [{"name": "Combat Doctrines", "id": "c1ed-fa00-2e67-55e2", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
     "profileTypes": [
@@ -1049,6 +1051,18 @@
                                 "traverseAssociationGroup": true,
                                 "type": "atLeast",
                                 "value": 1
+                              },
+                              {
+                                "childId": "eef1-2e0f-f9fe-558b",
+                                "childName": "Tacticus",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "traverseAssociationGroup": true,
+                                "type": "atLeast",
+                                "value": 1
                               }
                             ]
                           }
@@ -1122,6 +1136,18 @@
                             "childId": "a7d2-66d2-814f-ee6a",
                             "childName": "Tacticus",
                             "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "traverseAssociationGroup": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "eef1-2e0f-f9fe-558b",
+                            "childName": "Tacticus",
+                            "field": "selections",
+                            "includeChildForces": false,
                             "includeChildSelections": true,
                             "scope": "parent",
                             "shared": true,
@@ -1230,6 +1256,18 @@
                                 "childId": "a7d2-66d2-814f-ee6a",
                                 "childName": "Tacticus",
                                 "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "traverseAssociationGroup": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "eef1-2e0f-f9fe-558b",
+                                "childName": "Tacticus",
+                                "field": "selections",
+                                "includeChildForces": false,
                                 "includeChildSelections": true,
                                 "scope": "parent",
                                 "shared": true,
@@ -3270,6 +3308,18 @@
                                 "traverseAssociationGroup": true,
                                 "type": "atLeast",
                                 "value": 1
+                              },
+                              {
+                                "childId": "eef1-2e0f-f9fe-558b",
+                                "childName": "Tacticus",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "traverseAssociationGroup": true,
+                                "type": "atLeast",
+                                "value": 1
                               }
                             ]
                           }
@@ -3355,6 +3405,18 @@
                             "traverseAssociationGroup": true,
                             "type": "atLeast",
                             "value": 1
+                          },
+                          {
+                            "childId": "eef1-2e0f-f9fe-558b",
+                            "childName": "Tacticus",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "traverseAssociationGroup": true,
+                            "type": "atLeast",
+                            "value": 1
                           }
                         ]
                       }
@@ -3412,6 +3474,18 @@
                             "traverseAssociationGroup": true,
                             "type": "atLeast",
                             "value": 1
+                          },
+                          {
+                            "childId": "eef1-2e0f-f9fe-558b",
+                            "childName": "Tacticus",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "traverseAssociationGroup": true,
+                            "type": "atLeast",
+                            "value": 1
                           }
                         ]
                       }
@@ -3463,6 +3537,18 @@
                             "childId": "a7d2-66d2-814f-ee6a",
                             "childName": "Tacticus",
                             "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "traverseAssociationGroup": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "eef1-2e0f-f9fe-558b",
+                            "childName": "Tacticus",
+                            "field": "selections",
+                            "includeChildForces": false,
                             "includeChildSelections": true,
                             "scope": "parent",
                             "shared": true,
@@ -3536,6 +3622,18 @@
                                 "childId": "a7d2-66d2-814f-ee6a",
                                 "childName": "Tacticus",
                                 "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "traverseAssociationGroup": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "eef1-2e0f-f9fe-558b",
+                                "childName": "Tacticus",
+                                "field": "selections",
+                                "includeChildForces": false,
                                 "includeChildSelections": true,
                                 "scope": "parent",
                                 "shared": true,
@@ -5039,50 +5137,66 @@
                         "field": "hidden",
                         "type": "set",
                         "value": false,
-                        "conditions": [
+                        "conditionGroups": [
                           {
-                            "childId": "d378-ce19-b724-d1f4",
-                            "childName": "Gravis Marine w/ Melta Rifle",
-                            "field": "selections",
-                            "includeChildForces": false,
-                            "includeChildSelections": true,
-                            "scope": "4cbe-5ad8-7f5f-fcb0",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          },
-                          {
-                            "childId": "b6e5-22f4-6874-0ac0",
-                            "childName": "Gravis Marine w/ Heavy Bolt Rifle",
-                            "field": "selections",
-                            "includeChildForces": false,
-                            "includeChildSelections": true,
-                            "scope": "4cbe-5ad8-7f5f-fcb0",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          },
-                          {
-                            "childId": "84ea-33e9-5bae-cc30",
-                            "childName": "Gravis Marine w/ Twin Power Fist and Gauntlets",
-                            "field": "selections",
-                            "includeChildForces": false,
-                            "includeChildSelections": true,
-                            "scope": "4cbe-5ad8-7f5f-fcb0",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          },
-                          {
-                            "childId": "4b34-765f-44ce-4bda",
-                            "childName": "Gravis",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "parent",
-                            "shared": true,
-                            "traverseAssociationGroup": true,
-                            "type": "lessThan",
-                            "value": 1
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "d378-ce19-b724-d1f4",
+                                "childName": "Gravis Marine w/ Melta Rifle",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": true,
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "b6e5-22f4-6874-0ac0",
+                                "childName": "Gravis Marine w/ Heavy Bolt Rifle",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": true,
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "84ea-33e9-5bae-cc30",
+                                "childName": "Gravis Marine w/ Twin Power Fist and Gauntlets",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": true,
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "4b34-765f-44ce-4bda",
+                                "childName": "Gravis",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "traverseAssociationGroup": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "3067-614c-a47f-c26d",
+                                "childName": "Gravis",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "traverseAssociationGroup": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -5141,6 +5255,17 @@
                             "traverseAssociationGroup": true,
                             "type": "atLeast",
                             "value": 1
+                          },
+                          {
+                            "childId": "3067-614c-a47f-c26d",
+                            "childName": "Gravis",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "traverseAssociationGroup": true,
+                            "type": "atLeast",
+                            "value": 1
                           }
                         ]
                       }
@@ -5182,50 +5307,66 @@
                         "field": "hidden",
                         "type": "set",
                         "value": false,
-                        "conditions": [
+                        "conditionGroups": [
                           {
-                            "childId": "d378-ce19-b724-d1f4",
-                            "childName": "Gravis Marine w/ Melta Rifle",
-                            "field": "selections",
-                            "includeChildForces": false,
-                            "includeChildSelections": true,
-                            "scope": "4cbe-5ad8-7f5f-fcb0",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          },
-                          {
-                            "childId": "b6e5-22f4-6874-0ac0",
-                            "childName": "Gravis Marine w/ Heavy Bolt Rifle",
-                            "field": "selections",
-                            "includeChildForces": false,
-                            "includeChildSelections": true,
-                            "scope": "4cbe-5ad8-7f5f-fcb0",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          },
-                          {
-                            "childId": "84ea-33e9-5bae-cc30",
-                            "childName": "Gravis Marine w/ Twin Power Fist and Gauntlets",
-                            "field": "selections",
-                            "includeChildForces": false,
-                            "includeChildSelections": true,
-                            "scope": "4cbe-5ad8-7f5f-fcb0",
-                            "shared": true,
-                            "type": "lessThan",
-                            "value": 1
-                          },
-                          {
-                            "childId": "4b34-765f-44ce-4bda",
-                            "childName": "Gravis",
-                            "field": "selections",
-                            "includeChildSelections": true,
-                            "scope": "parent",
-                            "shared": true,
-                            "traverseAssociationGroup": true,
-                            "type": "lessThan",
-                            "value": 1
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "d378-ce19-b724-d1f4",
+                                "childName": "Gravis Marine w/ Melta Rifle",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": true,
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "b6e5-22f4-6874-0ac0",
+                                "childName": "Gravis Marine w/ Heavy Bolt Rifle",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": true,
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "84ea-33e9-5bae-cc30",
+                                "childName": "Gravis Marine w/ Twin Power Fist and Gauntlets",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": true,
+                                "scope": "4cbe-5ad8-7f5f-fcb0",
+                                "shared": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "4b34-765f-44ce-4bda",
+                                "childName": "Gravis",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "traverseAssociationGroup": true,
+                                "type": "lessThan",
+                                "value": 1
+                              },
+                              {
+                                "childId": "3067-614c-a47f-c26d",
+                                "childName": "Gravis",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "traverseAssociationGroup": true,
+                                "type": "lessThan",
+                                "value": 1
+                              }
+                            ]
                           }
                         ]
                       }
@@ -13060,8 +13201,8 @@
                         "typeId": "c547-1836-d8a-ff4f",
                         "typeName": "Unit",
                         "characteristics": [
-                          {"name": "M", "$text": "6\"", "typeId": "e703-ecb6-5ce7-aec1"},
-                          {"name": "T", "$text": "4", "typeId": "0398-77db-0833-6880"},
+                          {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                          {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
                           {"name": "Sv", "$text": "2+", "typeId": "450-a17e-9d5e-29da"},
                           {"name": "InSv", "$text": "5+", "typeId": "55a7-5b54-c60d-11dc"},
                           {"name": "W", "$text": "5", "typeId": "750a-a2ec-90d3-21fe"},
@@ -13215,6 +13356,693 @@
                           {
                             "name": "Description",
                             "$text": "While this unit is within range of an objective it controls, attacks that target this unit with a S greater than this unit's T have -1 to wound rolls.",
+                            "typeId": "9b8f-694b-e5e-b573"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Apothecary",
+        "id": "21b6-0ec7-7ccf-d567",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "associations": [
+          {
+            "name": "Supporting",
+            "id": "c7ae-af42-ea99-4257",
+            "action": "group",
+            "childId": "unit",
+            "childName": "unit",
+            "defaultSelectionEntryId": "none",
+            "includeChildSelections": true,
+            "label": "Supported by",
+            "max": 1,
+            "min": 0,
+            "scope": "force",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "b3e8-68c7-3e6e-f236",
+                            "childName": "Tactical Squad",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          },
+                          {
+                            "childId": "834d-a4ee-e112-2937",
+                            "childName": "Veteran Squad",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "eef1-2e0f-f9fe-558b",
+                            "childName": "Tacticus",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "queryFromSelf": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "4cbe-5ad8-7f5f-fcb0",
+                            "childName": "Gravis Squad",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "3067-614c-a47f-c26d",
+                            "childName": "Phobos",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "queryFromSelf": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {"name": "Infantry", "id": "bd75-7c5b-fb4b-0ecd", "hidden": false, "primary": false, "targetId": "35fa-30e7-f803-c8a7"},
+          {"name": "Character", "id": "586c-0ab5-a2f3-6d6b", "hidden": false, "primary": true, "targetId": "351f-2cd0-e63e-a1e4"},
+          {"name": "Explosives", "id": "22cc-badb-b50c-4f14", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"},
+          {"name": "Support", "id": "ae8c-bf75-c460-46ef", "hidden": false, "primary": false, "targetId": "f260-f1b3-90a8-e783"}
+        ],
+        "constraints": [{"id": "5abf-c0e8-a003-5e1b", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
+        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 50}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "infoLinks": [
+          {"name": "Combat Doctrines", "id": "dfbd-9b99-e95a-1f33", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"},
+          {"name": "Support", "id": "f5af-3054-4980-0cd9", "hidden": false, "targetId": "3342-2180-9c5d-925f", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "error",
+            "scope": "bdb7-97af-c302-458d",
+            "type": "add",
+            "value": "Support must be attached to an available unit!",
+            "conditions": [
+              {
+                "childId": "any",
+                "childName": "any",
+                "field": "associations",
+                "includeChildSelections": false,
+                "scope": "self",
+                "shared": true,
+                "traverseAssociationGroup": true,
+                "type": "lessThan",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Apothecary",
+            "id": "8844-38bf-6089-1d59",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "0b03-c98f-42d8-287d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "b0f0-3356-9f56-ab82", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Warlord",
+                "id": "b302-0996-ce77-328c",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Warlord", "id": "eeda-5a92-f2e8-0f08", "hidden": false, "primary": false, "targetId": "947e-e67c-ae12-87a4"}],
+                "constraints": [{"id": "41a3-1f28-3649-7168", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Absolvor Bolt Pistol",
+                "id": "6620-022a-e676-ea57",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "7438-dc85-9d12-d7de", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "a7e6-b732-e429-bd36", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Absolvor Bolt Pistol",
+                    "id": "114c-74ac-2526-0ca5",
+                    "hidden": false,
+                    "typeId": "f77d-b953-8fa4-b762",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                      {"name": "A", "$text": "5", "typeId": "3bb-c35f-f54-fb08"},
+                      {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                      {"name": "S", "$text": "5", "typeId": "3b47-7d50-0997-d20c"},
+                      {"name": "AP", "$text": "0", "typeId": "9ead-8a10-520-de15"},
+                      {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                      {"name": "Keywords", "$text": "", "typeId": "7f1b-8591-2fcf-d01c"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Servo Arms",
+                "id": "9355-100d-8768-b135",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "166a-a585-0100-d42c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "7cd6-c9fa-845b-30ef", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Servo Arms",
+                    "id": "0503-2d13-8945-26da",
+                    "hidden": false,
+                    "typeId": "8a40-4aaa-c780-9046",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                      {"name": "A", "$text": "6", "typeId": "2337-daa1-6682-b110"},
+                      {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+                      {"name": "S", "$text": "5", "typeId": "9084-7f6b-2119-3116"},
+                      {"name": "AP", "$text": "1", "typeId": "41a0-1301-112a-e2f2"},
+                      {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
+                      {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Armour Type",
+                "id": "8f60-983d-e29c-3406",
+                "hidden": false,
+                "sortIndex": 2,
+                "constraints": [
+                  {"id": "ec57-5126-5696-7d29", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "82e3-96ac-5b54-fb0b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Tacticus",
+                    "id": "eef1-2e0f-f9fe-558b",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Ancient",
+                        "id": "2f64-7165-489d-325c",
+                        "hidden": false,
+                        "typeId": "c547-1836-d8a-ff4f",
+                        "typeName": "Unit",
+                        "characteristics": [
+                          {"name": "M", "$text": "5\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                          {"name": "T", "$text": "4", "typeId": "0398-77db-0833-6880"},
+                          {"name": "Sv", "$text": "4+", "typeId": "450-a17e-9d5e-29da"},
+                          {"name": "InSv", "$text": "6+", "typeId": "55a7-5b54-c60d-11dc"},
+                          {"name": "W", "$text": "4", "typeId": "750a-a2ec-90d3-21fe"},
+                          {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                          {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
+                        ]
+                      },
+                      {
+                        "name": "Support",
+                        "id": "d404-0bf8-dedb-85eb",
+                        "hidden": false,
+                        "typeId": "9cc3-6d83-4dd3-9b64",
+                        "typeName": "Abilities",
+                        "characteristics": [{"name": "Description", "$text": "This unit must be attached to one of these units:\n\nTactical Squad, Veteran Squad", "typeId": "9b8f-694b-e5e-b573"}]
+                      }
+                    ],
+                    "selectionEntryGroups": [
+                      {
+                        "name": "Weapon",
+                        "id": "b49b-b191-94f5-4d0d",
+                        "hidden": false,
+                        "constraints": [
+                          {"id": "6a1f-e35a-1c10-3b7c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1},
+                          {"id": "35ae-341f-cfb0-7150", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}
+                        ],
+                        "selectionEntries": [
+                          {
+                            "name": "Reductor Pistol",
+                            "id": "be22-44b2-22d6-c704",
+                            "hidden": false,
+                            "import": true,
+                            "type": "upgrade",
+                            "constraints": [
+                              {"id": "f6de-5a40-5c72-1109", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                              {"id": "db6f-ae9e-5b9e-381a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                            ],
+                            "infoLinks": [{"name": "Extra Attacks", "id": "3556-c7b4-1cd0-8cca", "hidden": false, "targetId": "9907-50f8-8591-cc3b", "type": "rule"}],
+                            "profiles": [
+                              {
+                                "name": "Reductor Pistol",
+                                "id": "47d4-b722-7c54-39d6",
+                                "hidden": false,
+                                "typeId": "f77d-b953-8fa4-b762",
+                                "typeName": "Ranged Weapons",
+                                "characteristics": [
+                                  {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                                  {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                                  {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                                  {"name": "S", "$text": "6", "typeId": "3b47-7d50-0997-d20c"},
+                                  {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                                  {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                                  {"name": "Keywords", "$text": "Melee, Extra Attacks", "typeId": "7f1b-8591-2fcf-d01c"}
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Gravis",
+                    "id": "3067-614c-a47f-c26d",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "type": "upgrade",
+                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 15}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                    "modifiers": [
+                      {"affects": "self.entries.recursive.971d-9f6b-db68-611f", "field": "name", "scope": "parent", "type": "set", "value": "Apothecary Biologis"},
+                      {"affects": "self.entries.recursive.d41e-7695-375d-2ef0", "field": "name", "scope": "d41e-7695-375d-2ef0", "type": "set", "value": "Apothecary Biologis"}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Apothecary Biologis",
+                        "id": "2138-9e89-c7c6-e1f9",
+                        "hidden": false,
+                        "typeId": "c547-1836-d8a-ff4f",
+                        "typeName": "Unit",
+                        "characteristics": [
+                          {"name": "M", "$text": "4\"", "typeId": "e703-ecb6-5ce7-aec1"},
+                          {"name": "T", "$text": "5", "typeId": "0398-77db-0833-6880"},
+                          {"name": "Sv", "$text": "3+", "typeId": "450-a17e-9d5e-29da"},
+                          {"name": "InSv", "$text": "6+", "typeId": "55a7-5b54-c60d-11dc"},
+                          {"name": "W", "$text": "5", "typeId": "750a-a2ec-90d3-21fe"},
+                          {"name": "LD", "$text": "6+", "typeId": "58d2-b879-49c7-43bc"},
+                          {"name": "Base", "$text": "40mm", "typeId": "nr-base-size"}
+                        ]
+                      },
+                      {
+                        "name": "Support",
+                        "id": "e609-4bc7-5b9b-1280",
+                        "hidden": false,
+                        "typeId": "9cc3-6d83-4dd3-9b64",
+                        "typeName": "Abilities",
+                        "characteristics": [{"name": "Description", "$text": "This unit must be attached to one of these units:\n\nGravis Squad", "typeId": "9b8f-694b-e5e-b573"}]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Wargear",
+                "id": "4033-f6af-1c15-5a30",
+                "hidden": false,
+                "constraints": [
+                  {"id": "4357-6294-450a-ff65", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "7e31-d56f-1443-c357", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Narthecium",
+                    "id": "cf23-8d59-806c-0465",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Narthecium",
+                        "id": "22e7-ebde-d41f-81d2",
+                        "hidden": false,
+                        "typeId": "9cc3-6d83-4dd3-9b64",
+                        "typeName": "Abilities",
+                        "characteristics": [{"name": "Description", "$text": "In your command phase, this unit heals D3+1 wounds.", "typeId": "9b8f-694b-e5e-b573"}]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Vivispectral Analysis Targeting",
+                    "id": "6c39-4eca-471f-b240",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "modifiers": [
+                      {
+                        "affects": "self.entries.group.recursive.profiles.Ranged Weapons",
+                        "field": "7f1b-8591-2fcf-d01c",
+                        "join": ", ",
+                        "position": 1,
+                        "scope": "bdb7-97af-c302-458d",
+                        "skipIfPresent": "Critical: +1 to Wound",
+                        "type": "append",
+                        "value": "Critical: +1 to Wound"
+                      },
+                      {
+                        "affects": "self.entries.group.recursive.profiles.Melee Weapons",
+                        "field": "893f-9000-ccf7-648e",
+                        "join": ", ",
+                        "position": 1,
+                        "scope": "bdb7-97af-c302-458d",
+                        "skipIfPresent": "Critical: +1 to Wound",
+                        "type": "append",
+                        "value": "Critical: +1 to Wound"
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Vivispectral Analysis Targeting",
+                        "id": "4020-27da-83b2-a820",
+                        "hidden": false,
+                        "typeId": "9cc3-6d83-4dd3-9b64",
+                        "typeName": "Abilities",
+                        "characteristics": [{"name": "Description", "$text": "This unit has Critical: +1 to Wound.", "typeId": "9b8f-694b-e5e-b573"}]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Transhuman Vitality",
+                    "id": "1c38-488c-4e4c-7ca7",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "modifiers": [
+                      {
+                        "affects": "self.entries.group.recursive.profiles.Unit",
+                        "field": "e703-ecb6-5ce7-aec1",
+                        "position": 1,
+                        "scope": "bdb7-97af-c302-458d",
+                        "type": "increment",
+                        "value": 1
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Transhuman Vitality",
+                        "id": "dbfe-4eb9-0b89-ff53",
+                        "hidden": false,
+                        "typeId": "9cc3-6d83-4dd3-9b64",
+                        "typeName": "Abilities",
+                        "characteristics": [{"name": "Description", "$text": "This unit has +1\" to its move characteristic.", "typeId": "9b8f-694b-e5e-b573"}]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Techmarine",
+        "id": "7cb1-f2e7-02fc-69a1",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Infantry", "id": "f1b2-e599-ce4e-6784", "hidden": false, "primary": false, "targetId": "35fa-30e7-f803-c8a7"},
+          {"name": "Character", "id": "b4c9-3fad-7a95-54fa", "hidden": false, "primary": true, "targetId": "351f-2cd0-e63e-a1e4"},
+          {"name": "Explosives", "id": "2406-4c2c-11c4-fe50", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"}
+        ],
+        "constraints": [{"id": "ca14-3594-50fc-cc02", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
+        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 70}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "infoLinks": [{"name": "Combat Doctrines", "id": "2b06-2216-6b8f-36e2", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
+        "selectionEntries": [
+          {
+            "name": "Techmarine",
+            "id": "e15f-1287-56d7-15e8",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "ee81-7b71-a44d-1534", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "5833-874c-1ab9-5696", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "infoLinks": [{"name": "Lone Operative X\"", "id": "6003-93d2-18e7-c17d", "hidden": false, "targetId": "ab6e-299f-d421-e2d6", "type": "rule"}],
+            "profiles": [
+              {
+                "name": "Omnissiah's Blessing",
+                "id": "0559-5c02-36d5-a1fd",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [
+                  {
+                    "name": "Description",
+                    "$text": "(Once per turn, per unit): At the end of your movement phase, select a friendly vehicle unit within 3\" of this model. It heals D3+2 wounds.",
+                    "typeId": "9b8f-694b-e5e-b573"
+                  }
+                ]
+              },
+              {
+                "name": "Techmarine",
+                "id": "7a94-822a-e6f2-9d88",
+                "hidden": false,
+                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeName": "Abilities",
+                "characteristics": [{"name": "Description", "$text": "While this unit is within 3\" of a friendly vehicle unit, it has Lone Operative 12\".", "typeId": "9b8f-694b-e5e-b573"}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Warlord",
+                "id": "a11f-bd6d-4acc-2841",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Warlord", "id": "9f56-062a-4b61-ef49", "hidden": false, "primary": false, "targetId": "947e-e67c-ae12-87a4"}],
+                "constraints": [{"id": "2590-2a83-832c-3dbb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Omnissian Power Axe and Servo Arm",
+                "id": "8a75-3fb8-c5a1-9f48",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "6feb-cc11-de87-2e43", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "17be-ab5a-acf6-0759", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "profiles": [
+                  {
+                    "name": "Omnissian Power Axe and Servo Arm",
+                    "id": "1d61-a072-f94e-2958",
+                    "hidden": false,
+                    "typeId": "8a40-4aaa-c780-9046",
+                    "typeName": "Melee Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
+                      {"name": "A", "$text": "6", "typeId": "2337-daa1-6682-b110"},
+                      {"name": "WS", "$text": "3+", "typeId": "95d1-95f-45b4-11d6"},
+                      {"name": "S", "$text": "5", "typeId": "9084-7f6b-2119-3116"},
+                      {"name": "AP", "$text": "1", "typeId": "41a0-1301-112a-e2f2"},
+                      {"name": "D", "$text": "2", "typeId": "3254-9fe6-d824-513e"},
+                      {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Grav Pistol",
+                "id": "4f38-fb38-e2b6-4b05",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "252a-8838-6fc8-859c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "d1d6-0c79-3ab6-0125", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "infoLinks": [{"name": "Anti-X: Y+", "id": "085a-e7ff-b133-0340", "hidden": false, "targetId": "af41-cc39-113b-ad57", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Grav Pistol",
+                    "id": "299b-24a4-62ba-1949",
+                    "hidden": false,
+                    "typeId": "f77d-b953-8fa4-b762",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "12\"", "typeId": "9896-9419-16a1-92fc"},
+                      {"name": "A", "$text": "2", "typeId": "3bb-c35f-f54-fb08"},
+                      {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                      {"name": "S", "$text": "2", "typeId": "3b47-7d50-0997-d20c"},
+                      {"name": "AP", "$text": "3", "typeId": "9ead-8a10-520-de15"},
+                      {"name": "D", "$text": "4", "typeId": "a354-c1c8-a745-f9e3"},
+                      {"name": "Keywords", "$text": "Anti-Monster/Vehicle 2+", "typeId": "7f1b-8591-2fcf-d01c"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Forge Bolter",
+                "id": "cda3-afae-187d-70b7",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "2b38-6a1e-2c06-89b6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "655a-5ef9-7a72-4e41", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "infoLinks": [{"name": "Heavy", "id": "6637-a873-e2bd-9cff", "hidden": false, "targetId": "edf7-88d5-1556-e3c3", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Forge Bolter",
+                    "id": "eb8c-5e13-e954-4cd0",
+                    "hidden": false,
+                    "typeId": "f77d-b953-8fa4-b762",
+                    "typeName": "Ranged Weapons",
+                    "characteristics": [
+                      {"name": "Range", "$text": "24\"", "typeId": "9896-9419-16a1-92fc"},
+                      {"name": "A", "$text": "6", "typeId": "3bb-c35f-f54-fb08"},
+                      {"name": "BS", "$text": "3+", "typeId": "94d-8a98-cf90-183e"},
+                      {"name": "S", "$text": "5", "typeId": "3b47-7d50-0997-d20c"},
+                      {"name": "AP", "$text": "1", "typeId": "9ead-8a10-520-de15"},
+                      {"name": "D", "$text": "2", "typeId": "a354-c1c8-a745-f9e3"},
+                      {"name": "Keywords", "$text": "Heavy", "typeId": "7f1b-8591-2fcf-d01c"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Wargear",
+                "id": "a1b0-fa52-85a7-3fbc",
+                "hidden": false,
+                "sortIndex": 5,
+                "constraints": [
+                  {"id": "0751-8b68-edcd-2f38", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "97b1-bdac-4b1c-523a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Omnissiah's Power",
+                    "id": "51ee-0352-b2ac-e9f0",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Omnissiah's Power",
+                        "id": "73c8-114b-f5e0-325c",
+                        "hidden": false,
+                        "typeId": "9cc3-6d83-4dd3-9b64",
+                        "typeName": "Abilities",
+                        "characteristics": [{"name": "Description", "$text": "When using Omnissiah's Blessing, the selected vehicle unit also gains +1 to hit.", "typeId": "9b8f-694b-e5e-b573"}]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Omnissiah's Expertise",
+                    "id": "a8b9-dc0a-90c7-140a",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 10}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Omnissiah's Expertise",
+                        "id": "6213-65c4-a33b-71be",
+                        "hidden": false,
+                        "typeId": "9cc3-6d83-4dd3-9b64",
+                        "typeName": "Abilities",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "$text": "When using Omnissiah's Blessing, the selected vehicle unit heals D6+2 wounds instead of D3+2.",
+                            "typeId": "9b8f-694b-e5e-b573"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Omnissiah's Sight",
+                    "id": "fe52-e3b2-03bc-0881",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Omnissiah's Sight",
+                        "id": "7df1-2d55-54fa-cebe",
+                        "hidden": false,
+                        "typeId": "9cc3-6d83-4dd3-9b64",
+                        "typeName": "Abilities",
+                        "characteristics": [
+                          {
+                            "name": "Description",
+                            "$text": "When using Omnissiah's Blessing, the selected vehicle unit also gains +6\" range on its ranged weapons.",
                             "typeId": "9b8f-694b-e5e-b573"
                           }
                         ]

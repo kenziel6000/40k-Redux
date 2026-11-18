@@ -221,7 +221,13 @@
         "description": "If the model on which this weapon is equipped made a charge move this turn, this weapon has +1 to wound.",
         "hidden": false
       },
-      {"name": "Lone Operative X\"", "id": "ab6e-299f-d421-e2d6", "description": "This unit is not visible to any model outside of X\".", "hidden": false}
+      {"name": "Lone Operative X\"", "id": "ab6e-299f-d421-e2d6", "description": "This unit is not visible to any model outside of X\".", "hidden": false},
+      {
+        "name": "Extra Attacks",
+        "id": "9907-50f8-8591-cc3b",
+        "description": "When a model equipped with an extra attacks weapon fights, they can make attacks with that weapon in addition to one other non-extra attacks melee weapon.",
+        "hidden": false
+      }
     ]
   }
 }
