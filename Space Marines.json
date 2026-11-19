@@ -238,7 +238,7 @@
                         "childId": "model",
                         "childName": "model",
                         "field": "selections",
-                        "includeChildForces": true,
+                        "includeChildForces": false,
                         "includeChildSelections": true,
                         "repeats": 1,
                         "roundUp": false,
@@ -2794,7 +2794,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "(Twice per game): Use when a Veteran Squad must make a battleshock test. That Veteran Squad passes that test without rolling..",
+                        "$text": "(Twice per game): Use when a Veteran Squad must make a battleshock test. That Veteran Squad passes that test without rolling.",
                         "typeId": "da45-7d87-3fe9-e650"
                       }
                     ]
