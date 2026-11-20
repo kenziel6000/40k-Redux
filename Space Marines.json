@@ -1888,7 +1888,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "Use in your command phase. Select 1 enemy unit. Until the end of the turn, each time a friendly Tactical Squad makes a melee attack against that enemy unit, that attack has\nCritical: +1AP.\nor\nCritical: Re-roll 1s to wound.",
+                        "$text": "Use in your command phase. Select 1 enemy unit. Until the end of the turn, each time a friendly Tactical Squad makes a melee attack against that enemy unit, that attack has\n- Critical: +1AP.\nor\n- Critical: Re-roll 1s to wound.",
                         "typeId": "da45-7d87-3fe9-e650"
                       }
                     ]
@@ -2152,7 +2152,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "Use in your shooting phase. Select up to two friendly Tactical Squads. Then, select an enemy unit. Until they have shot, attacks by your selected units have:\nCritical: +1AP.\nor\nCritical: Re-roll 1s to wound.",
+                        "$text": "Use in your shooting phase. Select up to two friendly Tactical Squads. Then, select an enemy unit. Until they have shot, attacks by your selected units have:\n- Critical: +1AP.\nor\n- Critical: Re-roll 1s to wound.",
                         "typeId": "da45-7d87-3fe9-e650"
                       }
                     ]
@@ -2530,7 +2530,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "Use when a unit that fell back this turn is selected to make attacks. Until that unit has finished making attacks, its attacks have:\nCritical: +1AP\nor\nCritical: Re-roll 1s to wound.",
+                        "$text": "Use when a unit that fell back this turn is selected to make attacks. Until that unit has finished making attacks, its attacks have:\n- Critical: +1AP\nor\n- Critical: Re-roll 1s to wound.",
                         "typeId": "da45-7d87-3fe9-e650"
                       }
                     ]
@@ -2567,13 +2567,13 @@
                 "name": "Heavy Onslaught",
                 "id": "d713-e4eb-1720-ea5d",
                 "hidden": false,
-                "typeId": "9cc3-6d83-4dd3-9b64",
+                "typeId": "a47b-91ac-c740-4af2",
                 "typeName": "Abilities",
                 "characteristics": [
                   {
                     "name": "Description",
                     "$text": "When a friendly Gravis Squad targets an enemy unit, if your unit controls an objective, add 1 to the attacks characteristic of each ranged weapon equipped by that unit.",
-                    "typeId": "9b8f-694b-e5e-b573"
+                    "typeId": "9853-4bfc-3869-052b"
                   }
                 ]
               }
@@ -2594,13 +2594,13 @@
                     "name": "Gun Emplacement (1 CP)",
                     "id": "01fa-704e-7e97-b3ad",
                     "hidden": false,
-                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeId": "c4e6-903b-6ba1-5b2f",
                     "typeName": "Stratagem",
                     "characteristics": [
                       {
                         "name": "Description",
                         "$text": "Use at the end of your opponent's movement phase, when an enemy unit is within 12\" of a friendly Gravis unit that controlled an objective it was in range of at the start of the phase. That unit can shoot using snap shooting, but can hit on both unmodified 5s and 6s.",
-                        "typeId": "3d0a-3b95-50e8-caaa"
+                        "typeId": "da45-7d87-3fe9-e650"
                       }
                     ]
                   },
@@ -2608,13 +2608,13 @@
                     "name": "Fortify Position (1 CP)",
                     "id": "0c88-7704-262b-8906",
                     "hidden": false,
-                    "typeId": "64cb-e4cc-9252-4240",
+                    "typeId": "c4e6-903b-6ba1-5b2f",
                     "typeName": "Stratagem",
                     "characteristics": [
                       {
                         "name": "Description",
                         "$text": "Use at the end of your movement phase. Select a friendly Gravis Squad that controls an objective. That unit has +1OC.",
-                        "typeId": "3d0a-3b95-50e8-caaa"
+                        "typeId": "da45-7d87-3fe9-e650"
                       }
                     ]
                   }
@@ -2745,7 +2745,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "Use in your shooting phase. Select up to two friendly Terminator Squad. Then, select an enemy unit. Until they have shot, attacks by your selected units have:\nCritical: Extra Hit\nor\nCritical: +1S.",
+                        "$text": "Use in your shooting phase. Select up to two friendly Terminator Squad. Then, select an enemy unit. Until they have shot, attacks by your selected units have:\n- Critical: Extra Hit\nor\n- Critical: +1S.",
                         "typeId": "da45-7d87-3fe9-e650"
                       }
                     ]
@@ -3003,7 +3003,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "Use in your shooting phase, when a friendly Land Speeder, Storm Speeder, or Outrider squad is selected to make attacks. Until it is finished making attacks, attacks by that unit have:\nRe-roll 1s to hit\nor\nCritical: Re-roll 1s to wound.",
+                        "$text": "Use in your shooting phase, when a friendly Land Speeder, Storm Speeder, or Outrider squad is selected to make attacks. Until it is finished making attacks, attacks by that unit have:\n- Re-roll 1s to hit\nor\n- Critical: Re-roll 1s to wound.",
                         "typeId": "da45-7d87-3fe9-e650"
                       }
                     ]
@@ -3052,7 +3052,7 @@
                     "characteristics": [
                       {
                         "name": "Description",
-                        "$text": "Use in your shooting phase. Select up to two friendly Land Speeders or Storm Speeders (including one of each). Then, select an enemy unit. Until they have shot, attacks by your selected units have:\nCritical: Extra Hit\nor\nCritical: +1AP.",
+                        "$text": "Use in your shooting phase. Select up to two friendly Land Speeders or Storm Speeders (including one of each). Then, select an enemy unit. Until they have shot, attacks by your selected units have:\n- Critical: Extra Hit\nor\n- Critical: +1AP.",
                         "typeId": "da45-7d87-3fe9-e650"
                       }
                     ]
