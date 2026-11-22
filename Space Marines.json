@@ -5,6 +5,7 @@
     "battleScribeVersion": "2.03",
     "gameSystemId": "sys-aeaf-f07a-9d60-52ee",
     "gameSystemRevision": 1,
+    "icon": "icons/factions/space-marines.webp",
     "library": false,
     "revision": 1,
     "type": "catalogue",
@@ -5980,7 +5981,13 @@
                     "hidden": false,
                     "typeId": "a47b-91ac-c740-4af2",
                     "typeName": "Abilities",
-                    "characteristics": [{"name": "Description", "$text": "(Once per turn, per unit): This unit can use the Crushing Impact stratagem for 0CP.", "typeId": "9853-4bfc-3869-052b"}]
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "(Once per turn, per unit): This unit can use the Crushing Impact stratagem for 0CP, and this usage of the stratagem does not prevent other uses of it.",
+                        "typeId": "9853-4bfc-3869-052b"
+                      }
+                    ]
                   }
                 ]
               },
@@ -6104,7 +6111,7 @@
                 "typeId": "3485-d73b-1e4a-d8ce",
                 "typeName": "Unit",
                 "characteristics": [
-                  {"name": "M", "$text": "9\"", "typeId": "9485-c4d9-5238-25a1"},
+                  {"name": "M", "$text": "10\"", "typeId": "9485-c4d9-5238-25a1"},
                   {"name": "T", "$text": "7", "typeId": "f6c3-f7bc-f33c-a016"},
                   {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
                   {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
@@ -6458,7 +6465,7 @@
                 "typeId": "3485-d73b-1e4a-d8ce",
                 "typeName": "Unit",
                 "characteristics": [
-                  {"name": "M", "$text": "9\"", "typeId": "9485-c4d9-5238-25a1"},
+                  {"name": "M", "$text": "10\"", "typeId": "9485-c4d9-5238-25a1"},
                   {"name": "T", "$text": "8", "typeId": "f6c3-f7bc-f33c-a016"},
                   {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
                   {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
@@ -6871,16 +6878,16 @@
                     "name": "Armoured Impact",
                     "id": "296a-1114-900d-8261",
                     "hidden": false,
-                    "typeId": "8a40-4aaa-c780-9046",
+                    "typeId": "55d8-2d59-9471-1f12",
                     "typeName": "Melee Weapons",
                     "characteristics": [
-                      {"name": "Range", "$text": "Melee", "typeId": "914c-b413-91e3-a132"},
-                      {"name": "A", "$text": "5", "typeId": "2337-daa1-6682-b110"},
-                      {"name": "WS", "$text": "4+", "typeId": "95d1-95f-45b4-11d6"},
-                      {"name": "S", "$text": "5", "typeId": "9084-7f6b-2119-3116"},
-                      {"name": "AP", "$text": "0", "typeId": "41a0-1301-112a-e2f2"},
-                      {"name": "D", "$text": "1", "typeId": "3254-9fe6-d824-513e"},
-                      {"name": "Keywords", "$text": "Melee", "typeId": "893f-9000-ccf7-648e"}
+                      {"name": "Range", "$text": "Melee", "typeId": "793c-4ce6-05e8-1c90"},
+                      {"name": "A", "$text": "5", "typeId": "2fbb-2976-c0fa-e443"},
+                      {"name": "WS", "$text": "4+", "typeId": "d915-9281-7953-ec59"},
+                      {"name": "S", "$text": "5", "typeId": "080f-5a23-dd88-4b93"},
+                      {"name": "AP", "$text": "0", "typeId": "c0ee-5d4a-1b5b-ad39"},
+                      {"name": "D", "$text": "1", "typeId": "ff44-a11f-c061-de40"},
+                      {"name": "Keywords", "$text": "Melee", "typeId": "3e74-90bb-646b-d2ed"}
                     ]
                   }
                 ]
@@ -9011,9 +9018,15 @@
             "name": "Transport",
             "id": "0654-e313-5da6-ba72",
             "hidden": false,
-            "typeId": "a47b-91ac-c740-4af2",
-            "typeName": "Abilities",
-            "characteristics": [{"name": "Description", "$text": "", "typeId": "9853-4bfc-3869-052b"}]
+            "typeId": "4eed-15fb-7696-7027",
+            "typeName": "Transport",
+            "characteristics": [
+              {
+                "name": "Capacity",
+                "$text": "This model has a transport capacity of 14 friendly infantry models. It cannot transport Jump Pack models. Each model from a Gravis Squad or Terminator Squad takes up the space of 2 models.",
+                "typeId": "9594-8757-c6a6-c474"
+              }
+            ]
           },
           {
             "name": "Assault Ramp",
@@ -9475,9 +9488,15 @@
             "name": "Transport",
             "id": "0046-ac32-8179-3846",
             "hidden": false,
-            "typeId": "a47b-91ac-c740-4af2",
-            "typeName": "Abilities",
-            "characteristics": [{"name": "Description", "$text": "", "typeId": "9853-4bfc-3869-052b"}],
+            "typeId": "4eed-15fb-7696-7027",
+            "typeName": "Transport",
+            "characteristics": [
+              {
+                "name": "Capacity",
+                "$text": "This model has a transport capacity of 14 friendly infantry models. It cannot transport Jump Pack models. Each model from a Gravis Squad or Terminator Squad takes up the space of 2 models.",
+                "typeId": "9594-8757-c6a6-c474"
+              }
+            ],
             "modifiers": [
               {
                 "affects": "self.entries.recursive",
@@ -10147,13 +10166,13 @@
                 "name": "Transport",
                 "id": "51b9-1985-e818-cc43",
                 "hidden": false,
-                "typeId": "a47b-91ac-c740-4af2",
-                "typeName": "Abilities",
+                "typeId": "4eed-15fb-7696-7027",
+                "typeName": "Transport",
                 "characteristics": [
                   {
-                    "name": "Description",
+                    "name": "Capacity",
                     "$text": "This model has a transport capacity of 6 friendly infantry models. It cannot transport models from Gravis Squads, Terminator Squads, or Jump Pack models.",
-                    "typeId": "9853-4bfc-3869-052b"
+                    "typeId": "9594-8757-c6a6-c474"
                   }
                 ]
               },
@@ -10395,13 +10414,13 @@
                 "name": "Transport",
                 "id": "053f-4c80-2990-eb50",
                 "hidden": false,
-                "typeId": "a47b-91ac-c740-4af2",
-                "typeName": "Abilities",
+                "typeId": "4eed-15fb-7696-7027",
+                "typeName": "Transport",
                 "characteristics": [
                   {
-                    "name": "Description",
+                    "name": "Capacity",
                     "$text": "This model has a transport capacity of 11 friendly infantry models. It cannot transport models from Gravis Squads, Terminator Squads, or Jump Pack models.",
-                    "typeId": "9853-4bfc-3869-052b"
+                    "typeId": "9594-8757-c6a6-c474"
                   }
                 ]
               },
@@ -10970,13 +10989,13 @@
                 "name": "Transport",
                 "id": "3f73-dd31-5944-4ec6",
                 "hidden": false,
-                "typeId": "a47b-91ac-c740-4af2",
-                "typeName": "Abilities",
+                "typeId": "4eed-15fb-7696-7027",
+                "typeName": "Transport",
                 "characteristics": [
                   {
-                    "name": "Description",
+                    "name": "Capacity",
                     "$text": "This model has a transport capacity of 11 friendly infantry models. It cannot transport models from a Gravis Squad, Terminator Squad, or jump pack models.",
-                    "typeId": "9853-4bfc-3869-052b"
+                    "typeId": "9594-8757-c6a6-c474"
                   }
                 ]
               },
@@ -11109,7 +11128,7 @@
                     "typeId": "3485-d73b-1e4a-d8ce",
                     "typeName": "Unit",
                     "characteristics": [
-                      {"name": "M", "$text": "8\"", "typeId": "9485-c4d9-5238-25a1"},
+                      {"name": "M", "$text": "9\"", "typeId": "9485-c4d9-5238-25a1"},
                       {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
                       {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
                       {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
