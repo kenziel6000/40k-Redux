@@ -267,29 +267,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "modifiers": [
-                  {
-                    "affects": "self.entries.recursive.baea-d279-8ba3-1f8a.profiles.Ranged Weapons",
-                    "field": "ca5b-6247-2769-226d",
-                    "scope": "f8e0-1cb5-4607-ba8e",
-                    "type": "increment",
-                    "value": 1
-                  },
-                  {
-                    "affects": "self.entries.recursive.6ba6-6b07-3fa2-4a0d.profiles.Ranged Weapons",
-                    "field": "ca5b-6247-2769-226d",
-                    "scope": "f8e0-1cb5-4607-ba8e",
-                    "type": "increment",
-                    "value": 1
-                  },
-                  {
-                    "affects": "self.entries.recursive.baa0-535a-76f0-ce2d.profiles.Ranged Weapons",
-                    "field": "ca5b-6247-2769-226d",
-                    "scope": "f8e0-1cb5-4607-ba8e",
-                    "type": "increment",
-                    "value": 1
-                  }
-                ],
+                "modifiers": [{"affects": "self.entries.recursive.profiles.Ranged Weapons", "field": "a195-f4fc-a505-801d", "scope": "f8e0-1cb5-4607-ba8e", "type": "increment", "value": 1}],
                 "profiles": [
                   {
                     "name": "Bigger Bolts",
@@ -297,13 +275,7 @@
                     "hidden": false,
                     "typeId": "a47b-91ac-c740-4af2",
                     "typeName": "Abilities",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "$text": "Storm Bolters and Assault Cannons equipped by this unit have +1 AP (excluding character models).",
-                        "typeId": "9853-4bfc-3869-052b"
-                      }
-                    ]
+                    "characteristics": [{"name": "Description", "$text": "Ranged weapons equipped by this unit have +1 AP (excluding character models).", "typeId": "9853-4bfc-3869-052b"}]
                   }
                 ]
               }
@@ -817,7 +789,7 @@
                 "sortIndex": 2,
                 "type": "model",
                 "constraints": [{"id": "7e29-26cc-d007-aef3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}],
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 27}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "profiles": [
                   {
                     "name": "Bladeguard Veterans",
@@ -862,7 +834,7 @@
                           {"name": "S", "$text": "5", "typeId": "080f-5a23-dd88-4b93"},
                           {"name": "AP", "$text": "1", "typeId": "c0ee-5d4a-1b5b-ad39"},
                           {"name": "D", "$text": "2", "typeId": "ff44-a11f-c061-de40"},
-                          {"name": "Keywords", "$text": "Melee, Critical: Extra Hit", "typeId": "3e74-90bb-646b-d2ed"}
+                          {"name": "Keywords", "$text": "Melee, Critical: +1AP", "typeId": "3e74-90bb-646b-d2ed"}
                         ]
                       }
                     ]
@@ -907,7 +879,7 @@
                 "type": "model",
                 "categoryLinks": [{"name": "Fly", "id": "b1c7-8775-9242-d0fa", "hidden": false, "primary": false, "targetId": "b3be-306e-6f3e-625b"}],
                 "constraints": [{"id": "4c76-8d2e-786e-e2ea", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 10}],
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 28}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "infoLinks": [
                   {
                     "name": "Deep Strike",
@@ -1337,7 +1309,7 @@
                     "import": true,
                     "sortIndex": 1,
                     "type": "model",
-                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 23}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 22}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                     "infoLinks": [
                       {"name": "Melta X", "id": "5c7f-d082-095d-3041", "hidden": false, "targetId": "7b9b-01a0-8243-f217", "type": "rule"},
                       {"name": "Critical: X", "id": "9bbf-6cb3-2441-c1f5", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}
@@ -1353,7 +1325,7 @@
                           {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
                           {"name": "T", "$text": "4", "typeId": "f6c3-f7bc-f33c-a016"},
                           {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
-                          {"name": "InSv", "$text": "5+", "typeId": "34f1-1eff-0811-9aed"},
+                          {"name": "InSv", "$text": "6+", "typeId": "34f1-1eff-0811-9aed"},
                           {"name": "W", "$text": "2", "typeId": "5ba9-7dbe-f745-cc7a"},
                           {"name": "LD", "$text": "6+", "typeId": "fd15-de8d-f256-063b"},
                           {"name": "Base", "$text": "32mm", "typeId": "6cdc-be13-f204-7fb3"}
@@ -1462,7 +1434,7 @@
                     "sortIndex": 2,
                     "type": "model",
                     "constraints": [{"id": "65ac-9657-e99f-98fc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
-                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                     "modifiers": [
                       {
                         "field": "65ac-9657-e99f-98fc",
@@ -3183,7 +3155,7 @@
             "value": 1
           }
         ],
-        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 10}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "infoLinks": [{"name": "Combat Doctrines", "id": "ca4d-a174-05db-0ba9", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}],
         "selectionEntryGroups": [
           {
@@ -3312,7 +3284,7 @@
                   {
                     "field": "acdc-8926-b4b9-633c",
                     "type": "increment",
-                    "value": 2,
+                    "value": 1,
                     "repeats": [
                       {
                         "childId": "3cbf-3bb7-37ba-6c27",
@@ -3329,7 +3301,7 @@
                   {
                     "field": "acdc-8926-b4b9-633c",
                     "type": "increment",
-                    "value": 2,
+                    "value": 1,
                     "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "b3e8-68c7-3e6e-f236", "shared": true, "value": 1}]
                   },
                   {
@@ -3853,7 +3825,7 @@
                 "import": true,
                 "sortIndex": 3,
                 "type": "model",
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 22}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "profiles": [
                   {
                     "name": "Tactical Marine",
@@ -4028,7 +4000,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "model",
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 19}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 18}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "infoLinks": [{"name": "Torrent", "id": "54ee-a1ef-c67d-20f0", "hidden": false, "targetId": "a2d7-5271-6671-228a", "type": "rule"}],
                 "profiles": [
                   {
@@ -4069,7 +4041,7 @@
                         "characteristics": [
                           {"name": "Range", "$text": "12\"", "typeId": "dec3-9673-e7b2-d188"},
                           {"name": "A", "$text": "D6", "typeId": "ca5b-6247-2769-226d"},
-                          {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
+                          {"name": "BS", "$text": "-", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "4", "typeId": "9673-0ac1-cc35-954e"},
                           {"name": "AP", "$text": "0", "typeId": "a195-f4fc-a505-801d"},
                           {"name": "D", "$text": "1", "typeId": "c7e5-e8b6-281a-b8ec"},
@@ -6028,7 +6000,7 @@
           {"name": "Frame", "id": "848d-bd90-dfe0-8b4c", "hidden": false, "primary": false, "targetId": "5411-4f0c-2c5a-5138"}
         ],
         "constraints": [{"id": "93c4-31b0-79a6-fb78", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 3}],
-        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 130}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 120}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "infoLinks": [
           {"name": "Deep Strike", "id": "1473-deae-2acb-aa1c", "hidden": false, "targetId": "b85b-fd47-3ce5-cd10", "type": "rule"},
           {"name": "Combat Doctrines", "id": "633b-cefc-aac3-0aef", "hidden": false, "targetId": "2fa7-69dd-9016-4554", "type": "rule"}
@@ -6240,7 +6212,7 @@
                         "typeId": "3e46-13ca-c21d-5332",
                         "typeName": "Ranged Weapons",
                         "characteristics": [
-                          {"name": "Range", "$text": "24\"", "typeId": "dec3-9673-e7b2-d188"},
+                          {"name": "Range", "$text": "12\"", "typeId": "dec3-9673-e7b2-d188"},
                           {"name": "A", "$text": "D6+4", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "-", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "4", "typeId": "9673-0ac1-cc35-954e"},
@@ -8907,7 +8879,7 @@
                     "hidden": false,
                     "import": true,
                     "type": "upgrade",
-                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                    "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 15}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                     "profiles": [
                       {
                         "name": "Into the Fray",

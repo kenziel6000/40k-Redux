@@ -123,13 +123,13 @@
             "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
             "profiles": [
               {
-                "name": "Hearthkyn Warriors",
-                "id": "8a7f-4579-7ac4-522f",
+                "name": "Theyn",
+                "id": "0ed9-f9df-e3f0-5b19",
                 "hidden": false,
                 "typeId": "3485-d73b-1e4a-d8ce",
                 "typeName": "Unit",
                 "characteristics": [
-                  {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
+                  {"name": "M", "$text": "4\"", "typeId": "9485-c4d9-5238-25a1"},
                   {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
                   {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
                   {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
@@ -297,6 +297,24 @@
               {"id": "7da6-f762-dddf-cf28-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 9},
               {"id": "5e2d-5a4d-3e3e-0d84", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 9}
             ],
+            "profiles": [
+              {
+                "name": "Hearthkyn Warriors",
+                "id": "24a7-a6cb-56e4-f1c7",
+                "hidden": false,
+                "typeId": "3485-d73b-1e4a-d8ce",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "4\"", "typeId": "9485-c4d9-5238-25a1"},
+                  {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
+                  {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
+                  {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
+                  {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
+                  {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
+                  {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
+                ]
+              }
+            ],
             "selectionEntries": [
               {
                 "name": "Hearthkyn Warrior w/ Bolter",
@@ -321,24 +339,6 @@
                   }
                 ],
                 "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
-                "profiles": [
-                  {
-                    "name": "Hearthkyn Warriors",
-                    "id": "7ed4-de79-d014-2365",
-                    "hidden": false,
-                    "typeId": "3485-d73b-1e4a-d8ce",
-                    "typeName": "Unit",
-                    "characteristics": [
-                      {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
-                      {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
-                      {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
-                      {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
-                      {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
-                      {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
-                      {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
-                    ]
-                  }
-                ],
                 "selectionEntries": [
                   {
                     "name": "Close Combat Weapon",
@@ -447,24 +447,6 @@
                   }
                 ],
                 "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
-                "profiles": [
-                  {
-                    "name": "Hearthkyn Warriors",
-                    "id": "11ef-2441-b934-dcc6",
-                    "hidden": false,
-                    "typeId": "3485-d73b-1e4a-d8ce",
-                    "typeName": "Unit",
-                    "characteristics": [
-                      {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
-                      {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
-                      {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
-                      {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
-                      {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
-                      {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
-                      {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
-                    ]
-                  }
-                ],
                 "selectionEntries": [
                   {
                     "name": "Ion Blaster",
@@ -571,24 +553,6 @@
                   }
                 ],
                 "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
-                "profiles": [
-                  {
-                    "name": "Hearthkyn Warriors",
-                    "id": "6509-17b1-5cec-0b9d",
-                    "hidden": false,
-                    "typeId": "3485-d73b-1e4a-d8ce",
-                    "typeName": "Unit",
-                    "characteristics": [
-                      {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
-                      {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
-                      {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
-                      {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
-                      {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
-                      {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
-                      {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
-                    ]
-                  }
-                ],
                 "selectionEntries": [
                   {
                     "name": "Autoch-pattern Bolt Pistol",
@@ -707,24 +671,6 @@
                     "import": true,
                     "type": "model",
                     "constraints": [{"id": "1a8e-d3ab-0e5f-4e57", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "profiles": [
-                      {
-                        "name": "Hearthkyn Warriors",
-                        "id": "6de3-e986-5e06-c829",
-                        "hidden": false,
-                        "typeId": "3485-d73b-1e4a-d8ce",
-                        "typeName": "Unit",
-                        "characteristics": [
-                          {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
-                          {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
-                          {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
-                          {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
-                          {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
-                          {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
-                          {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
-                        ]
-                      }
-                    ],
                     "selectionEntries": [
                       {
                         "name": "HYLas Rotary Cannon",
@@ -751,7 +697,7 @@
                             "typeName": "Ranged Weapons",
                             "characteristics": [
                               {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
-                              {"name": "A", "$text": "2D3+4", "typeId": "ca5b-6247-2769-226d"},
+                              {"name": "A", "$text": "2D3+2", "typeId": "ca5b-6247-2769-226d"},
                               {"name": "BS", "$text": "5+", "typeId": "b89d-fa39-33d6-5304"},
                               {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
                               {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
@@ -820,24 +766,6 @@
                     "import": true,
                     "type": "model",
                     "constraints": [{"id": "e940-e48e-9111-be29", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "profiles": [
-                      {
-                        "name": "Hearthkyn Warriors",
-                        "id": "8763-b665-8376-7758",
-                        "hidden": false,
-                        "typeId": "3485-d73b-1e4a-d8ce",
-                        "typeName": "Unit",
-                        "characteristics": [
-                          {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
-                          {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
-                          {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
-                          {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
-                          {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
-                          {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
-                          {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
-                        ]
-                      }
-                    ],
                     "selectionEntries": [
                       {
                         "name": "HYLas Auto Rifle",
@@ -861,7 +789,7 @@
                             "typeName": "Ranged Weapons",
                             "characteristics": [
                               {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
-                              {"name": "A", "$text": "D6+2", "typeId": "ca5b-6247-2769-226d"},
+                              {"name": "A", "$text": "D6", "typeId": "ca5b-6247-2769-226d"},
                               {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                               {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
                               {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
@@ -930,24 +858,6 @@
                     "import": true,
                     "type": "model",
                     "constraints": [{"id": "e4a4-c497-18e3-4a18", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "profiles": [
-                      {
-                        "name": "Hearthkyn Warriors",
-                        "id": "6838-6008-9899-b733",
-                        "hidden": false,
-                        "typeId": "3485-d73b-1e4a-d8ce",
-                        "typeName": "Unit",
-                        "characteristics": [
-                          {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
-                          {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
-                          {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
-                          {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
-                          {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
-                          {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
-                          {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
-                        ]
-                      }
-                    ],
                     "selectionEntries": [
                       {
                         "name": "L7 Missile Launcher",
@@ -1056,24 +966,6 @@
                     "import": true,
                     "type": "model",
                     "constraints": [{"id": "f365-74bf-f56f-a130", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "profiles": [
-                      {
-                        "name": "Hearthkyn Warriors",
-                        "id": "a47d-dc0a-fc35-8fcd",
-                        "hidden": false,
-                        "typeId": "3485-d73b-1e4a-d8ce",
-                        "typeName": "Unit",
-                        "characteristics": [
-                          {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
-                          {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
-                          {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
-                          {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
-                          {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
-                          {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
-                          {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
-                        ]
-                      }
-                    ],
                     "selectionEntries": [
                       {
                         "name": "Magna-rail Rifle",
@@ -1169,24 +1061,6 @@
                     "import": true,
                     "type": "model",
                     "constraints": [{"id": "6993-575f-08e2-b651", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "profiles": [
-                      {
-                        "name": "Hearthkyn Warriors",
-                        "id": "2921-f8d7-7887-729e",
-                        "hidden": false,
-                        "typeId": "3485-d73b-1e4a-d8ce",
-                        "typeName": "Unit",
-                        "characteristics": [
-                          {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
-                          {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
-                          {"name": "Sv", "$text": "4+", "typeId": "726a-b163-93b6-bfd4"},
-                          {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
-                          {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
-                          {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
-                          {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
-                        ]
-                      }
-                    ],
                     "selectionEntries": [
                       {
                         "name": "EtaCarn Plasma Beamer",
@@ -1515,12 +1389,12 @@
                         "typeName": "Ranged Weapons",
                         "characteristics": [
                           {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
-                          {"name": "A", "$text": "6", "typeId": "ca5b-6247-2769-226d"},
+                          {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "3+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "5", "typeId": "9673-0ac1-cc35-954e"},
                           {"name": "AP", "$text": "0", "typeId": "a195-f4fc-a505-801d"},
                           {"name": "D", "$text": "2", "typeId": "c7e5-e8b6-281a-b8ec"},
-                          {"name": "Keywords", "$text": "\n", "typeId": "e1b8-4d33-0765-902e"}
+                          {"name": "Keywords", "$text": "Critical: Extra Hit", "typeId": "e1b8-4d33-0765-902e"}
                         ]
                       }
                     ]
@@ -1765,7 +1639,7 @@
           {"name": "Exo-Armour", "id": "d1cc-a342-bfca-8ae5", "hidden": false, "primary": false, "targetId": "292d-e56a-3d6f-df9d"}
         ],
         "constraints": [{"id": "6a7e-1e91-5c2c-d197", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}],
-        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 40}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "infoLinks": [{"name": "Prioritized Efficiency", "id": "c15f-c982-b9e2-7e7e", "hidden": false, "targetId": "b36b-8117-6f82-6d7f", "type": "rule"}],
         "profiles": [
           {
@@ -1805,7 +1679,7 @@
                 "typeName": "Unit",
                 "characteristics": [
                   {"name": "M", "$text": "4\"", "typeId": "9485-c4d9-5238-25a1"},
-                  {"name": "T", "$text": "6", "typeId": "f6c3-f7bc-f33c-a016"},
+                  {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
                   {"name": "Sv", "$text": "3+", "typeId": "726a-b163-93b6-bfd4"},
                   {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
                   {"name": "W", "$text": "2", "typeId": "5ba9-7dbe-f745-cc7a"},
@@ -1833,7 +1707,7 @@
                     "typeId": "3e46-13ca-c21d-5332",
                     "typeName": "Ranged Weapons",
                     "characteristics": [
-                      {"name": "Range", "$text": "12\"", "typeId": "dec3-9673-e7b2-d188"},
+                      {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
                       {"name": "A", "$text": "D3", "typeId": "ca5b-6247-2769-226d"},
                       {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                       {"name": "S", "$text": "3", "typeId": "9673-0ac1-cc35-954e"},
@@ -2011,7 +1885,7 @@
                         "typeName": "Ranged Weapons",
                         "characteristics": [
                           {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
-                          {"name": "A", "$text": "3", "typeId": "ca5b-6247-2769-226d"},
+                          {"name": "A", "$text": "2", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "7", "typeId": "9673-0ac1-cc35-954e"},
                           {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
@@ -2036,13 +1910,13 @@
                         "typeId": "3e46-13ca-c21d-5332",
                         "typeName": "Ranged Weapons",
                         "characteristics": [
-                          {"name": "Range", "$text": "24\"", "typeId": "dec3-9673-e7b2-d188"},
-                          {"name": "A", "$text": "6", "typeId": "ca5b-6247-2769-226d"},
+                          {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
+                          {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "5", "typeId": "9673-0ac1-cc35-954e"},
                           {"name": "AP", "$text": "0", "typeId": "a195-f4fc-a505-801d"},
                           {"name": "D", "$text": "2", "typeId": "c7e5-e8b6-281a-b8ec"},
-                          {"name": "Keywords", "$text": "\n", "typeId": "e1b8-4d33-0765-902e"}
+                          {"name": "Keywords", "$text": "Critical: Extra Hit", "typeId": "e1b8-4d33-0765-902e"}
                         ]
                       }
                     ]
@@ -2069,7 +1943,7 @@
                 "typeName": "Unit",
                 "characteristics": [
                   {"name": "M", "$text": "4", "typeId": "9485-c4d9-5238-25a1"},
-                  {"name": "T", "$text": "6", "typeId": "f6c3-f7bc-f33c-a016"},
+                  {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
                   {"name": "Sv", "$text": "3+", "typeId": "726a-b163-93b6-bfd4"},
                   {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
                   {"name": "W", "$text": "2", "typeId": "5ba9-7dbe-f745-cc7a"},
@@ -2097,7 +1971,7 @@
                     "typeId": "3e46-13ca-c21d-5332",
                     "typeName": "Ranged Weapons",
                     "characteristics": [
-                      {"name": "Range", "$text": "12\"", "typeId": "dec3-9673-e7b2-d188"},
+                      {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
                       {"name": "A", "$text": "D3", "typeId": "ca5b-6247-2769-226d"},
                       {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                       {"name": "S", "$text": "3", "typeId": "9673-0ac1-cc35-954e"},
@@ -2200,7 +2074,7 @@
                         "typeName": "Ranged Weapons",
                         "characteristics": [
                           {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
-                          {"name": "A", "$text": "3", "typeId": "ca5b-6247-2769-226d"},
+                          {"name": "A", "$text": "2", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "7", "typeId": "9673-0ac1-cc35-954e"},
                           {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
@@ -2225,8 +2099,8 @@
                         "typeId": "3e46-13ca-c21d-5332",
                         "typeName": "Ranged Weapons",
                         "characteristics": [
-                          {"name": "Range", "$text": "24\"", "typeId": "dec3-9673-e7b2-d188"},
-                          {"name": "A", "$text": "6", "typeId": "ca5b-6247-2769-226d"},
+                          {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
+                          {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "5", "typeId": "9673-0ac1-cc35-954e"},
                           {"name": "AP", "$text": "0", "typeId": "a195-f4fc-a505-801d"},
@@ -2250,6 +2124,20 @@
               {"id": "685c-1129-7ad2-16a5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "8498-e4c0-ba54-226b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
+            "modifiers": [
+              {
+                "field": "685c-1129-7ad2-16a5",
+                "type": "set",
+                "value": 0,
+                "conditions": [{"childId": "model", "childName": "model", "field": "selections", "scope": "parent", "shared": true, "type": "lessThan", "value": 3}]
+              },
+              {
+                "field": "8498-e4c0-ba54-226b",
+                "type": "set",
+                "value": 0,
+                "conditions": [{"childId": "model", "childName": "model", "field": "selections", "scope": "parent", "shared": true, "type": "lessThan", "value": 3}]
+              }
+            ],
             "selectionEntries": [
               {
                 "name": "Thick Exo-armour",
@@ -2258,26 +2146,6 @@
                 "import": true,
                 "type": "upgrade",
                 "costs": [{"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
-                "modifiers": [
-                  {
-                    "field": "acdc-8926-b4b9-633c",
-                    "type": "increment",
-                    "value": 4,
-                    "repeats": [
-                      {
-                        "childId": "model",
-                        "childName": "model",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "repeats": 1,
-                        "roundUp": false,
-                        "scope": "parent",
-                        "shared": true,
-                        "value": 1
-                      }
-                    ]
-                  }
-                ],
                 "profiles": [
                   {
                     "name": "Thick Exo-armour",
@@ -2285,13 +2153,7 @@
                     "hidden": false,
                     "typeId": "a47b-91ac-c740-4af2",
                     "typeName": "Abilities",
-                    "characteristics": [
-                      {
-                        "name": "Description",
-                        "$text": "While this unit has Fortify Takeover, Hesyr and Einhyr Hearthguard models in this unit have +1W.",
-                        "typeId": "9853-4bfc-3869-052b"
-                      }
-                    ]
+                    "characteristics": [{"name": "Description", "$text": "While this unit has Fortify Takeover, attacks against this unit have -1D.", "typeId": "9853-4bfc-3869-052b"}]
                   }
                 ]
               },
@@ -2332,7 +2194,13 @@
                     "hidden": false,
                     "typeId": "a47b-91ac-c740-4af2",
                     "typeName": "Abilities",
-                    "characteristics": [{"name": "Description", "$text": "This unit use the Explosives stratagem for 0CP.", "typeId": "9853-4bfc-3869-052b"}]
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "This unit use the Explosives stratagem for 0CP and when selecting the enemy unit it can be within 12\".",
+                        "typeId": "9853-4bfc-3869-052b"
+                      }
+                    ]
                   }
                 ]
               }
@@ -2556,6 +2424,20 @@
               {"id": "727a-b929-128b-b0b1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "7618-a321-070e-158d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
+            "modifiers": [
+              {
+                "field": "727a-b929-128b-b0b1",
+                "type": "set",
+                "value": 0,
+                "conditions": [{"childId": "model", "childName": "model", "field": "selections", "scope": "parent", "shared": true, "type": "lessThan", "value": 3}]
+              },
+              {
+                "field": "7618-a321-070e-158d",
+                "type": "set",
+                "value": 0,
+                "conditions": [{"childId": "model", "childName": "model", "field": "selections", "scope": "parent", "shared": true, "type": "lessThan", "value": 3}]
+              }
+            ],
             "selectionEntries": [
               {
                 "name": "Calibrated Actuators",
@@ -2739,7 +2621,7 @@
                     "typeName": "Ranged Weapons",
                     "characteristics": [
                       {"name": "Range", "$text": "24\"", "typeId": "dec3-9673-e7b2-d188"},
-                      {"name": "A", "$text": "6", "typeId": "ca5b-6247-2769-226d"},
+                      {"name": "A", "$text": "5", "typeId": "ca5b-6247-2769-226d"},
                       {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                       {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
                       {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
@@ -2859,7 +2741,7 @@
                         "typeId": "3e46-13ca-c21d-5332",
                         "typeName": "Ranged Weapons",
                         "characteristics": [
-                          {"name": "Range", "$text": "24\"", "typeId": "dec3-9673-e7b2-d188"},
+                          {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
                           {"name": "A", "$text": "3", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "7", "typeId": "9673-0ac1-cc35-954e"},
@@ -2875,7 +2757,7 @@
                         "typeId": "3e46-13ca-c21d-5332",
                         "typeName": "Ranged Weapons",
                         "characteristics": [
-                          {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
+                          {"name": "Range", "$text": "24\"", "typeId": "dec3-9673-e7b2-d188"},
                           {"name": "A", "$text": "D6+3", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "4", "typeId": "9673-0ac1-cc35-954e"},
@@ -3124,7 +3006,7 @@
                     "typeName": "Ranged Weapons",
                     "characteristics": [
                       {"name": "Range", "$text": "24\"", "typeId": "dec3-9673-e7b2-d188"},
-                      {"name": "A", "$text": "8", "typeId": "ca5b-6247-2769-226d"},
+                      {"name": "A", "$text": "6", "typeId": "ca5b-6247-2769-226d"},
                       {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                       {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
                       {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
@@ -3191,8 +3073,8 @@
                         "typeId": "3e46-13ca-c21d-5332",
                         "typeName": "Ranged Weapons",
                         "characteristics": [
-                          {"name": "Range", "$text": "24\"", "typeId": "dec3-9673-e7b2-d188"},
-                          {"name": "A", "$text": "D6+3", "typeId": "ca5b-6247-2769-226d"},
+                          {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
+                          {"name": "A", "$text": "D6+4", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "8", "typeId": "9673-0ac1-cc35-954e"},
                           {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
@@ -3287,7 +3169,7 @@
                         "typeId": "3e46-13ca-c21d-5332",
                         "typeName": "Ranged Weapons",
                         "characteristics": [
-                          {"name": "Range", "$text": "24\"", "typeId": "dec3-9673-e7b2-d188"},
+                          {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
                           {"name": "A", "$text": "D6", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
@@ -3842,7 +3724,7 @@
                         "typeName": "Ranged Weapons",
                         "characteristics": [
                           {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
-                          {"name": "A", "$text": "3", "typeId": "ca5b-6247-2769-226d"},
+                          {"name": "A", "$text": "2", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "3+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "7", "typeId": "9673-0ac1-cc35-954e"},
                           {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
@@ -3867,13 +3749,13 @@
                         "typeId": "3e46-13ca-c21d-5332",
                         "typeName": "Ranged Weapons",
                         "characteristics": [
-                          {"name": "Range", "$text": "24\"", "typeId": "dec3-9673-e7b2-d188"},
-                          {"name": "A", "$text": "6", "typeId": "ca5b-6247-2769-226d"},
+                          {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
+                          {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
                           {"name": "BS", "$text": "3+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "5", "typeId": "9673-0ac1-cc35-954e"},
                           {"name": "AP", "$text": "0", "typeId": "a195-f4fc-a505-801d"},
                           {"name": "D", "$text": "2", "typeId": "c7e5-e8b6-281a-b8ec"},
-                          {"name": "Keywords", "$text": "\n", "typeId": "e1b8-4d33-0765-902e"}
+                          {"name": "Keywords", "$text": "Critical: Extra Hit", "typeId": "e1b8-4d33-0765-902e"}
                         ]
                       }
                     ]
@@ -4024,6 +3906,7 @@
                 "id": "2e98-b97f-a2f7-7596",
                 "hidden": false,
                 "import": true,
+                "sortIndex": 1,
                 "type": "upgrade",
                 "profiles": [
                   {
@@ -4047,6 +3930,7 @@
                 "id": "d361-4197-be3a-7f18",
                 "hidden": false,
                 "import": true,
+                "sortIndex": 2,
                 "type": "upgrade",
                 "profiles": [
                   {
@@ -4099,7 +3983,7 @@
           {"name": "Battleline", "id": "11b1-c2ab-e0e9-9bde", "hidden": false, "primary": true, "targetId": "48a2-a96a-636c-ecff"}
         ],
         "constraints": [{"id": "aa58-f70c-f3c1-4de9", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 6}],
-        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+        "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
         "infoLinks": [
           {"name": "Prioritized Efficiency", "id": "4bed-ecce-7d76-a0fe", "hidden": false, "targetId": "b36b-8117-6f82-6d7f", "type": "rule"},
           {"name": "Precision", "id": "e96e-4abf-2db7-9020", "hidden": false, "targetId": "ac98-561d-b4b9-e845", "type": "rule"}
@@ -4132,7 +4016,7 @@
               {"id": "3ae6-5a5d-ce70-18db", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 6},
               {"id": "61af-c4be-daf1-58aa", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}
             ],
-            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 20}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+            "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 30}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
             "profiles": [
               {
                 "name": "Ironkin Steeljacks",
@@ -4221,7 +4105,6 @@
                       {
                         "name": "Plasma Sword",
                         "id": "4cb4-c045-aef8-7e67",
-                        "collective": true,
                         "hidden": false,
                         "import": true,
                         "type": "upgrade",
@@ -4259,10 +4142,10 @@
                             "typeName": "Melee Weapons",
                             "characteristics": [
                               {"name": "Range", "$text": "Melee", "typeId": "793c-4ce6-05e8-1c90"},
-                              {"name": "A", "$text": "7", "typeId": "2fbb-2976-c0fa-e443"},
+                              {"name": "A", "$text": "4", "typeId": "2fbb-2976-c0fa-e443"},
                               {"name": "WS", "$text": "4+", "typeId": "d915-9281-7953-ec59"},
                               {"name": "S", "$text": "6", "typeId": "080f-5a23-dd88-4b93"},
-                              {"name": "AP", "$text": "1", "typeId": "c0ee-5d4a-1b5b-ad39"},
+                              {"name": "AP", "$text": "2", "typeId": "c0ee-5d4a-1b5b-ad39"},
                               {"name": "D", "$text": "1", "typeId": "ff44-a11f-c061-de40"},
                               {"name": "Keywords", "$text": "Melee, Critical: Extra Hit", "typeId": "3e74-90bb-646b-d2ed"}
                             ]
@@ -4288,6 +4171,7 @@
                           {"id": "ee1f-e61b-09d8-cf6c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
                           {"id": "5bfa-4098-cce1-caaa", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
                         ],
+                        "infoLinks": [{"name": "Critical: X", "id": "30af-b80e-48e3-c3ab", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
                         "profiles": [
                           {
                             "name": "Heavy Volkanite Disintegrator",
@@ -4296,13 +4180,13 @@
                             "typeId": "3e46-13ca-c21d-5332",
                             "typeName": "Ranged Weapons",
                             "characteristics": [
-                              {"name": "Range", "$text": "24\"", "typeId": "dec3-9673-e7b2-d188"},
-                              {"name": "A", "$text": "7", "typeId": "ca5b-6247-2769-226d"},
+                              {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
+                              {"name": "A", "$text": "3", "typeId": "ca5b-6247-2769-226d"},
                               {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                               {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
                               {"name": "AP", "$text": "0", "typeId": "a195-f4fc-a505-801d"},
                               {"name": "D", "$text": "3", "typeId": "c7e5-e8b6-281a-b8ec"},
-                              {"name": "Keywords", "$text": "\n", "typeId": "e1b8-4d33-0765-902e"}
+                              {"name": "Keywords", "$text": "Critical: Extra Hit", "typeId": "e1b8-4d33-0765-902e"}
                             ]
                           }
                         ]
@@ -4347,7 +4231,7 @@
                             "typeName": "Melee Weapons",
                             "characteristics": [
                               {"name": "Range", "$text": "Melee", "typeId": "793c-4ce6-05e8-1c90"},
-                              {"name": "A", "$text": "4", "typeId": "2fbb-2976-c0fa-e443"},
+                              {"name": "A", "$text": "3", "typeId": "2fbb-2976-c0fa-e443"},
                               {"name": "WS", "$text": "4+", "typeId": "d915-9281-7953-ec59"},
                               {"name": "S", "$text": "5", "typeId": "080f-5a23-dd88-4b93"},
                               {"name": "AP", "$text": "1", "typeId": "c0ee-5d4a-1b5b-ad39"},
@@ -4372,6 +4256,20 @@
             "constraints": [
               {"id": "0a87-9636-eefb-1c2c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e08c-d572-e162-5ee5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "field": "0a87-9636-eefb-1c2c",
+                "type": "set",
+                "value": 0,
+                "conditions": [{"childId": "model", "childName": "model", "field": "selections", "scope": "parent", "shared": true, "type": "lessThan", "value": 3}]
+              },
+              {
+                "field": "e08c-d572-e162-5ee5",
+                "type": "set",
+                "value": 0,
+                "conditions": [{"childId": "model", "childName": "model", "field": "selections", "scope": "parent", "shared": true, "type": "lessThan", "value": 3}]
+              }
             ],
             "selectionEntries": [
               {
@@ -4569,7 +4467,7 @@
                 ]
               },
               {
-                "name": "Magna-coil autocannon",
+                "name": "Magna-coil Autocannon",
                 "id": "b77c-0cb7-ca62-18b8",
                 "hidden": false,
                 "import": true,
@@ -4780,8 +4678,8 @@
                     "typeName": "Ranged Weapons",
                     "characteristics": [
                       {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
-                      {"name": "A", "$text": "6", "typeId": "ca5b-6247-2769-226d"},
-                      {"name": "BS", "$text": "4", "typeId": "b89d-fa39-33d6-5304"},
+                      {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
+                      {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                       {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
                       {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
                       {"name": "D", "$text": "2", "typeId": "c7e5-e8b6-281a-b8ec"},
@@ -4842,8 +4740,8 @@
                         "typeName": "Ranged Weapons",
                         "characteristics": [
                           {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
-                          {"name": "A", "$text": "8", "typeId": "ca5b-6247-2769-226d"},
-                          {"name": "BS", "$text": "4", "typeId": "b89d-fa39-33d6-5304"},
+                          {"name": "A", "$text": "6", "typeId": "ca5b-6247-2769-226d"},
+                          {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
                           {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
                           {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
                           {"name": "D", "$text": "2", "typeId": "c7e5-e8b6-281a-b8ec"},
@@ -4987,22 +4885,6 @@
         "infoLinks": [{"name": "Infiltrators", "id": "ef4b-2e1f-b1d5-0729", "hidden": false, "targetId": "c05d-f4c3-f091-4938", "type": "rule"}],
         "profiles": [
           {
-            "name": "Hernkyn Yaegirs",
-            "id": "3cb7-824f-70fc-ac53",
-            "hidden": false,
-            "typeId": "3485-d73b-1e4a-d8ce",
-            "typeName": "Unit",
-            "characteristics": [
-              {"name": "M", "$text": "6\"", "typeId": "9485-c4d9-5238-25a1"},
-              {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
-              {"name": "Sv", "$text": "5+", "typeId": "726a-b163-93b6-bfd4"},
-              {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
-              {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
-              {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
-              {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
-            ]
-          },
-          {
             "name": "Pragmatic Hunters",
             "id": "9b20-7d92-1649-148f",
             "hidden": false,
@@ -5056,6 +4938,24 @@
                   }
                 ],
                 "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
+                "profiles": [
+                  {
+                    "name": "Yaegir Theyn",
+                    "id": "3cb7-824f-70fc-ac53",
+                    "hidden": false,
+                    "typeId": "3485-d73b-1e4a-d8ce",
+                    "typeName": "Unit",
+                    "characteristics": [
+                      {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
+                      {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
+                      {"name": "Sv", "$text": "5+", "typeId": "726a-b163-93b6-bfd4"},
+                      {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
+                      {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
+                      {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
+                      {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
+                    ]
+                  }
+                ],
                 "selectionEntryGroups": [
                   {
                     "name": "Weapon",
@@ -5147,9 +5047,9 @@
                                 "typeName": "Ranged Weapons",
                                 "characteristics": [
                                   {"name": "Range", "$text": "12\"", "typeId": "dec3-9673-e7b2-d188"},
-                                  {"name": "A", "$text": "3", "typeId": "ca5b-6247-2769-226d"},
+                                  {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
                                   {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
-                                  {"name": "S", "$text": "5", "typeId": "9673-0ac1-cc35-954e"},
+                                  {"name": "S", "$text": "4", "typeId": "9673-0ac1-cc35-954e"},
                                   {"name": "AP", "$text": "0", "typeId": "a195-f4fc-a505-801d"},
                                   {"name": "D", "$text": "1", "typeId": "c7e5-e8b6-281a-b8ec"},
                                   {"name": "Keywords", "$text": "Assault", "typeId": "e1b8-4d33-0765-902e"}
@@ -5259,7 +5159,7 @@
                                   {"name": "Range", "$text": "12\"", "typeId": "dec3-9673-e7b2-d188"},
                                   {"name": "A", "$text": "2", "typeId": "ca5b-6247-2769-226d"},
                                   {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
-                                  {"name": "S", "$text": "4", "typeId": "9673-0ac1-cc35-954e"},
+                                  {"name": "S", "$text": "3", "typeId": "9673-0ac1-cc35-954e"},
                                   {"name": "AP", "$text": "0", "typeId": "a195-f4fc-a505-801d"},
                                   {"name": "D", "$text": "1", "typeId": "c7e5-e8b6-281a-b8ec"},
                                   {"name": "Keywords", "$text": "", "typeId": "e1b8-4d33-0765-902e"}
@@ -5283,6 +5183,24 @@
             "constraints": [
               {"id": "c121-0f10-5ba6-f114", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 9},
               {"id": "0db2-6947-3521-f8f7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 9}
+            ],
+            "profiles": [
+              {
+                "name": "Hernkyn Yaegirs",
+                "id": "8228-3a40-f89d-a5dd",
+                "hidden": false,
+                "typeId": "3485-d73b-1e4a-d8ce",
+                "typeName": "Unit",
+                "characteristics": [
+                  {"name": "M", "$text": "5\"", "typeId": "9485-c4d9-5238-25a1"},
+                  {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
+                  {"name": "Sv", "$text": "5+", "typeId": "726a-b163-93b6-bfd4"},
+                  {"name": "InSv", "$text": "", "typeId": "34f1-1eff-0811-9aed"},
+                  {"name": "W", "$text": "1", "typeId": "5ba9-7dbe-f745-cc7a"},
+                  {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
+                  {"name": "Base", "$text": "28.5mm", "typeId": "6cdc-be13-f204-7fb3"}
+                ]
+              }
             ],
             "selectionEntries": [
               {
