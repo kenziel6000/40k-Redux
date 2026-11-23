@@ -4602,7 +4602,8 @@
             "targetId": "b68a-5ded-65ac-98c",
             "type": "rule",
             "modifiers": [{"field": "name", "type": "append", "value": 1}]
-          }
+          },
+          {"name": "Prioritized Efficiency", "id": "a49b-b51b-e1df-169d", "hidden": false, "targetId": "b36b-8117-6f82-6d7f", "type": "rule"}
         ],
         "profiles": [
           {
@@ -4882,7 +4883,10 @@
           }
         ],
         "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 90}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
-        "infoLinks": [{"name": "Infiltrators", "id": "ef4b-2e1f-b1d5-0729", "hidden": false, "targetId": "c05d-f4c3-f091-4938", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Infiltrators", "id": "ef4b-2e1f-b1d5-0729", "hidden": false, "targetId": "c05d-f4c3-f091-4938", "type": "rule"},
+          {"name": "Prioritized Efficiency", "id": "a38f-ec9a-4b59-442e", "hidden": false, "targetId": "b36b-8117-6f82-6d7f", "type": "rule"}
+        ],
         "profiles": [
           {
             "name": "Pragmatic Hunters",
