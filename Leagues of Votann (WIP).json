@@ -23,7 +23,8 @@
       {"name": "Ironkin Steeljacks", "id": "cfb9-5071-640b-7de0", "hidden": false, "import": true, "targetId": "0c9c-8b6a-b56e-f175", "type": "selectionEntry"},
       {"name": "Kapricus Defenders", "id": "e12c-3a83-f203-e902", "hidden": false, "import": true, "targetId": "6c2e-b308-33e1-4cdb", "type": "selectionEntry"},
       {"name": "Kapricus Carrier", "id": "75f6-c391-972a-ed64", "hidden": false, "import": true, "targetId": "2cec-d89d-8ffe-ac93", "type": "selectionEntry"},
-      {"name": "Hernkyn Yaegirs", "id": "50a9-05ff-a653-dcf7", "hidden": false, "import": true, "targetId": "a6d2-d4cb-a776-231f", "type": "selectionEntry"}
+      {"name": "Hernkyn Yaegirs", "id": "50a9-05ff-a653-dcf7", "hidden": false, "import": true, "targetId": "a6d2-d4cb-a776-231f", "type": "selectionEntry"},
+      {"name": "Hernkyn Pioneers", "id": "cb26-7c61-9c72-1959", "hidden": false, "import": true, "targetId": "9086-5272-398b-bbce", "type": "selectionEntry"}
     ],
     "profileTypes": [
       {
@@ -2163,7 +2164,7 @@
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 15}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "costs": [{"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "profiles": [
                   {
                     "name": "For the Ancestors!",
@@ -4375,7 +4376,33 @@
             "type": "rule",
             "modifiers": [{"field": "name", "type": "append", "value": 1}]
           },
-          {"name": "Prioritized Efficiency", "id": "7f6b-755f-00eb-7a27", "hidden": false, "targetId": "b36b-8117-6f82-6d7f", "type": "rule"}
+          {"name": "Prioritized Efficiency", "id": "7f6b-755f-00eb-7a27", "hidden": false, "targetId": "b36b-8117-6f82-6d7f", "type": "rule"},
+          {
+            "name": "Scouts 5\"",
+            "id": "e37e-3215-7ee9-2190",
+            "hidden": false,
+            "targetId": "b4d7-ba95-ed79-bafe",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "9f78-a4d3-2b8a-4719",
+                    "childName": "Scout Guides",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "75f6-c391-972a-ed64",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "profiles": [
           {
@@ -4527,20 +4554,21 @@
                 ]
               },
               {
-                "name": "Hernkyn Scout Vehicle",
+                "name": "Scout Guides",
                 "id": "9f78-a4d3-2b8a-4719",
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 10}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
                 "infoLinks": [{"name": "Scouts 8\"", "id": "e0fa-98cf-9354-ac21", "hidden": false, "targetId": "a5f4-4af8-4735-7384", "type": "rule"}],
                 "profiles": [
                   {
-                    "name": "Hernkyn Scout Vehicle",
+                    "name": "Scout Guides",
                     "id": "9585-868c-9186-3877",
                     "hidden": false,
                     "typeId": "a47b-91ac-c740-4af2",
                     "typeName": "Abilities",
-                    "characteristics": [{"name": "Description", "$text": "This unit has Scouts 8\".", "typeId": "9853-4bfc-3869-052b"}]
+                    "characteristics": [{"name": "Description", "$text": "This unit has Scouts 8\" instead of Scouts 5\".", "typeId": "9853-4bfc-3869-052b"}]
                   }
                 ]
               },
@@ -4603,7 +4631,33 @@
             "type": "rule",
             "modifiers": [{"field": "name", "type": "append", "value": 1}]
           },
-          {"name": "Prioritized Efficiency", "id": "a49b-b51b-e1df-169d", "hidden": false, "targetId": "b36b-8117-6f82-6d7f", "type": "rule"}
+          {"name": "Prioritized Efficiency", "id": "a49b-b51b-e1df-169d", "hidden": false, "targetId": "b36b-8117-6f82-6d7f", "type": "rule"},
+          {
+            "name": "Scouts 5\"",
+            "id": "acad-99ef-eb84-784d",
+            "hidden": false,
+            "targetId": "b4d7-ba95-ed79-bafe",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "ebd0-f053-e0ee-2826",
+                    "childName": "Scout Guides",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "e12c-3a83-f203-e902",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
         ],
         "profiles": [
           {
@@ -4649,7 +4703,7 @@
               {"id": "f735-3551-ef11-32d1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
             "costs": [
-              {"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 80},
+              {"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 75},
               {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0},
               {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
               {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
@@ -4819,20 +4873,21 @@
                 ]
               },
               {
-                "name": "Light Hernkyn Scout Vehicle",
+                "name": "Scout Guides",
                 "id": "ebd0-f053-e0ee-2826",
                 "hidden": false,
                 "import": true,
                 "type": "upgrade",
-                "infoLinks": [{"name": "Scouts 9\"", "id": "b613-4a53-51ba-ef09", "hidden": false, "targetId": "9ea5-acc2-a2ac-257b", "type": "rule"}],
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 10}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [{"name": "Scouts 7\"", "id": "28e0-ed83-0796-706b", "hidden": false, "targetId": "6a04-6476-b45b-aef8", "type": "rule"}],
                 "profiles": [
                   {
-                    "name": "Light Hernkyn Scout Vehicle",
+                    "name": "Scout Guides",
                     "id": "d62a-9445-a668-dcbc",
                     "hidden": false,
                     "typeId": "a47b-91ac-c740-4af2",
                     "typeName": "Abilities",
-                    "characteristics": [{"name": "Description", "$text": "This unit has Scouts 9\".", "typeId": "9853-4bfc-3869-052b"}]
+                    "characteristics": [{"name": "Description", "$text": "This unit has Scouts 7\" instead of Scouts 5\".", "typeId": "9853-4bfc-3869-052b"}]
                   }
                 ]
               },
@@ -5773,6 +5828,673 @@
                         "typeId": "9853-4bfc-3869-052b"
                       }
                     ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hernkyn Pioneers",
+        "id": "9086-5272-398b-bbce",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Mounted", "id": "02f1-f0ca-0652-c287", "hidden": false, "primary": true, "targetId": "c6ee-25c5-d80e-a51a"},
+          {"name": "Fly", "id": "b048-803c-e35d-6109", "hidden": false, "primary": false, "targetId": "b3be-306e-6f3e-625b"},
+          {"name": "Explosives", "id": "cf24-a5b8-8f26-bfed", "hidden": false, "primary": false, "targetId": "2630-d0bd-d058-68a2"}
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 10},
+          {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0},
+          {"name": "Crusade Points", "typeId": "b03b-c239-15a5-da55", "value": 0},
+          {"name": "Crusade: Battle Honours", "typeId": "75bb-ded1-c86d-bdf0", "value": 0},
+          {"name": "Crusade: Experience", "typeId": "a623-fe74-1d33-cddf", "value": 0},
+          {"name": "Crusade: Weapon Modifications", "typeId": "716d-91b7-d55a-1022", "value": 0},
+          {"name": "Blackstone Fragments", "typeId": "ac6b-ced3-9b5e-9a6e", "value": 0},
+          {"name": "Detachment Points", "typeId": "82ae-1066-5107-6ae0", "value": 0},
+          {"name": "Enhancements", "typeId": "f759-1bc4-cb3a-f0d2", "value": 0},
+          {"name": "Command Points", "typeId": "621c-5e90-c575-8242", "value": 0}
+        ],
+        "infoLinks": [
+          {
+            "name": "Scouts 5\"",
+            "id": "89ca-5517-d842-1892",
+            "hidden": false,
+            "targetId": "b4d7-ba95-ed79-bafe",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "1c29-182a-40bd-52d5",
+                    "childName": "Scout Guides",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "9086-5272-398b-bbce",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Outflanking Mag-Riders",
+            "id": "0a56-b381-c3ac-12bd",
+            "hidden": false,
+            "typeId": "c3d2-66d0-e7d4-2229",
+            "typeName": "YP Ability",
+            "characteristics": [
+              {
+                "name": "Description",
+                "$text": "At the end of the opponent's fight phase, you can spend 1YP. If you do, select two units with this ability that are wholly within 9\" of a board edge and place them in strategic reserves.",
+                "typeId": "b759-6431-8d6d-6400"
+              }
+            ]
+          },
+          {
+            "name": "Hernkyn Pioneer",
+            "id": "eed4-0f4c-f180-db12",
+            "hidden": false,
+            "typeId": "3485-d73b-1e4a-d8ce",
+            "typeName": "Unit",
+            "characteristics": [
+              {"name": "M", "$text": "9\"", "typeId": "9485-c4d9-5238-25a1"},
+              {"name": "T", "$text": "5", "typeId": "f6c3-f7bc-f33c-a016"},
+              {"name": "Sv", "$text": "", "typeId": "726a-b163-93b6-bfd4"},
+              {"name": "InSv", "$text": "4+", "typeId": "34f1-1eff-0811-9aed"},
+              {"name": "W", "$text": "3", "typeId": "5ba9-7dbe-f745-cc7a"},
+              {"name": "LD", "$text": "7+", "typeId": "fd15-de8d-f256-063b"},
+              {"name": "Base", "$text": "90x52.5mm", "typeId": "6cdc-be13-f204-7fb3"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Hernkyn Pioneers",
+            "id": "6016-5c68-b821-0070",
+            "collective": false,
+            "defaultSelectionEntryId": "48b1-2aa0-4098-6661",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "constraints": [
+              {
+                "id": "888c-0331-4efd-ac2f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 6
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Hernkyn Pioneer",
+                "id": "48b1-2aa0-4098-6661",
+                "collective": false,
+                "defaultAmount": "3",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "d4dd-7c36-f40f-6ee3",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 6
+                  }
+                ],
+                "costs": [
+                  {"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25},
+                  {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0},
+                  {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Bolt Shotgun",
+                    "id": "5e2d-47f8-4bbb-8f19",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "9808-e99f-6e84-63e9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "ee7a-3cbd-f7a1-0951", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "infoLinks": [{"name": "Assault", "id": "875c-8dd9-d872-ae34", "hidden": false, "targetId": "2d1b-fc3b-61d8-d325", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Bolt Shotgun",
+                        "id": "eaba-474f-48fe-ddf0",
+                        "hidden": false,
+                        "typeId": "3e46-13ca-c21d-5332",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "12\"", "typeId": "dec3-9673-e7b2-d188"},
+                          {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
+                          {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
+                          {"name": "S", "$text": "4", "typeId": "9673-0ac1-cc35-954e"},
+                          {"name": "AP", "$text": "0", "typeId": "a195-f4fc-a505-801d"},
+                          {"name": "D", "$text": "1", "typeId": "c7e5-e8b6-281a-b8ec"},
+                          {"name": "Keywords", "$text": "Assault", "typeId": "e1b8-4d33-0765-902e"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Magna-coil Autocannon",
+                    "id": "d5b8-4a93-771e-2250",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "6781-8cca-e0bd-4d3c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "4f33-626b-ab06-9797", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Magna-coil Autocannon",
+                        "id": "0c2d-63a0-661e-d240",
+                        "hidden": false,
+                        "typeId": "3e46-13ca-c21d-5332",
+                        "typeName": "Ranged Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
+                          {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
+                          {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
+                          {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
+                          {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
+                          {"name": "D", "$text": "2", "typeId": "c7e5-e8b6-281a-b8ec"},
+                          {"name": "Keywords", "$text": "", "typeId": "e1b8-4d33-0765-902e"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Plasma Knife",
+                    "id": "9474-e295-0faa-749e",
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "c454-247e-def3-fef4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                      {"id": "629b-a691-ca44-a80c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Plasma Knife",
+                        "id": "0e7d-9a4b-78c6-4c61",
+                        "hidden": false,
+                        "typeId": "55d8-2d59-9471-1f12",
+                        "typeName": "Melee Weapons",
+                        "characteristics": [
+                          {"name": "Range", "$text": "Melee", "typeId": "793c-4ce6-05e8-1c90"},
+                          {"name": "A", "$text": "4", "typeId": "2fbb-2976-c0fa-e443"},
+                          {"name": "WS", "$text": "4+", "typeId": "d915-9281-7953-ec59"},
+                          {"name": "S", "$text": "5", "typeId": "080f-5a23-dd88-4b93"},
+                          {"name": "AP", "$text": "1", "typeId": "c0ee-5d4a-1b5b-ad39"},
+                          {"name": "D", "$text": "1", "typeId": "ff44-a11f-c061-de40"},
+                          {"name": "Keywords", "$text": "Melee", "typeId": "3e74-90bb-646b-d2ed"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Heavy Weapons",
+                "id": "087f-002e-3cc1-7623",
+                "hidden": false,
+                "constraints": [{"id": "c7c8-8467-5a9f-6de6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "modifiers": [
+                  {
+                    "field": "c7c8-8467-5a9f-6de6",
+                    "type": "set",
+                    "value": 2,
+                    "conditions": [
+                      {
+                        "childId": "model",
+                        "childName": "model",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "cb26-7c61-9c72-1959",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 6
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Hernkyn Pioneer w/ HYLas rotary cannon",
+                    "id": "ce66-1679-9f1d-bbba",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "constraints": [
+                      {
+                        "id": "6a27-b99f-89a3-a566",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 2
+                      }
+                    ],
+                    "costs": [
+                      {"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25},
+                      {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0},
+                      {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}
+                    ],
+                    "selectionEntries": [
+                      {
+                        "name": "Bolt Shotgun",
+                        "id": "ded0-e7af-b659-bec1",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "b563-361e-1f4d-87eb", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "40e0-d78a-449a-ec71", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
+                        "infoLinks": [{"name": "Assault", "id": "f885-a80b-895e-f5fb", "hidden": false, "targetId": "2d1b-fc3b-61d8-d325", "type": "rule"}],
+                        "profiles": [
+                          {
+                            "name": "Bolt Shotgun",
+                            "id": "d7ae-1032-5798-3a48",
+                            "hidden": false,
+                            "typeId": "3e46-13ca-c21d-5332",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "12\"", "typeId": "dec3-9673-e7b2-d188"},
+                              {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
+                              {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
+                              {"name": "S", "$text": "4", "typeId": "9673-0ac1-cc35-954e"},
+                              {"name": "AP", "$text": "0", "typeId": "a195-f4fc-a505-801d"},
+                              {"name": "D", "$text": "1", "typeId": "c7e5-e8b6-281a-b8ec"},
+                              {"name": "Keywords", "$text": "Assault", "typeId": "e1b8-4d33-0765-902e"}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Magna-coil Autocannon",
+                        "id": "f611-6bad-5c09-ce2d",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "fafc-9f3b-7fce-adb8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "04bd-b3ea-558f-0d24", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Magna-coil Autocannon",
+                            "id": "ac94-3f46-96eb-3f02",
+                            "hidden": false,
+                            "typeId": "3e46-13ca-c21d-5332",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
+                              {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
+                              {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
+                              {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
+                              {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
+                              {"name": "D", "$text": "2", "typeId": "c7e5-e8b6-281a-b8ec"},
+                              {"name": "Keywords", "$text": "", "typeId": "e1b8-4d33-0765-902e"}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Plasma Knife",
+                        "id": "1231-ca5b-54b7-976a",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "cec0-9013-7324-6201", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "451f-cc48-8cbc-0e61", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Plasma Knife",
+                            "id": "9022-5613-9f43-da50",
+                            "hidden": false,
+                            "typeId": "55d8-2d59-9471-1f12",
+                            "typeName": "Melee Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "Melee", "typeId": "793c-4ce6-05e8-1c90"},
+                              {"name": "A", "$text": "4", "typeId": "2fbb-2976-c0fa-e443"},
+                              {"name": "WS", "$text": "4+", "typeId": "d915-9281-7953-ec59"},
+                              {"name": "S", "$text": "5", "typeId": "080f-5a23-dd88-4b93"},
+                              {"name": "AP", "$text": "1", "typeId": "c0ee-5d4a-1b5b-ad39"},
+                              {"name": "D", "$text": "1", "typeId": "ff44-a11f-c061-de40"},
+                              {"name": "Keywords", "$text": "Melee", "typeId": "3e74-90bb-646b-d2ed"}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "HYLas Rotary Cannon",
+                        "id": "1f0b-c03a-7b19-7cad",
+                        "collective": false,
+                        "hidden": false,
+                        "import": true,
+                        "sortIndex": 1,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "7645-ca70-e7ce-ade5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "8f1f-bd2e-0cfe-cbcd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
+                        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
+                        "infoLinks": [
+                          {"name": "Heavy", "id": "f42e-a921-bbda-4cd6", "exportable": false, "hidden": false, "targetId": "edf7-88d5-1556-e3c3", "type": "rule"},
+                          {"name": "Critical: X", "id": "3ce8-cbc7-83c0-516a", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}
+                        ],
+                        "profiles": [
+                          {
+                            "name": "HYLas Rotary Cannon",
+                            "id": "0a97-7f0b-26cd-4a99",
+                            "hidden": false,
+                            "typeId": "3e46-13ca-c21d-5332",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
+                              {"name": "A", "$text": "2D3+3", "typeId": "ca5b-6247-2769-226d"},
+                              {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
+                              {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
+                              {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
+                              {"name": "D", "$text": "1", "typeId": "c7e5-e8b6-281a-b8ec"},
+                              {"name": "Keywords", "$text": "Heavy, Critical: Extra Hit", "typeId": "e1b8-4d33-0765-902e"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Hernkyn Pioneer w/ Ion Beamer",
+                    "id": "c8df-4536-bd14-5d05",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "constraints": [
+                      {
+                        "id": "02be-73d2-3829-ec1c",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 2
+                      }
+                    ],
+                    "costs": [
+                      {"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 25},
+                      {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0},
+                      {"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}
+                    ],
+                    "selectionEntries": [
+                      {
+                        "name": "Ion Beamer",
+                        "id": "de68-654e-878b-596f",
+                        "hidden": false,
+                        "import": true,
+                        "sortIndex": 1,
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "af9f-b8bb-39a9-dd8e",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": false,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "min",
+                            "value": 1
+                          },
+                          {
+                            "id": "a027-ce26-2292-c078",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": false,
+                            "percentValue": false,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "max",
+                            "value": 1
+                          }
+                        ],
+                        "costs": [{"name": "pts", "typeId": "51b2-306e-1021-d207", "value": 0}],
+                        "infoLinks": [{"name": "Critical: X", "id": "3b9f-b152-c118-82e0", "hidden": false, "targetId": "ca1f-0384-7deb-dd31", "type": "rule"}],
+                        "profiles": [
+                          {
+                            "name": "Ion Beamer",
+                            "id": "a2e2-7ecc-e1f6-297d",
+                            "hidden": false,
+                            "typeId": "3e46-13ca-c21d-5332",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
+                              {"name": "A", "$text": "D3+2", "typeId": "ca5b-6247-2769-226d"},
+                              {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
+                              {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
+                              {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
+                              {"name": "D", "$text": "2", "typeId": "c7e5-e8b6-281a-b8ec"},
+                              {"name": "Keywords", "$text": "Critical: +1AP", "typeId": "e1b8-4d33-0765-902e"}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Bolt Shotgun",
+                        "id": "ec80-1756-8bad-edbd",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "0fb4-656a-3a4d-f679", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "5007-6280-7681-1b6f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
+                        "infoLinks": [{"name": "Assault", "id": "6266-7aaa-8800-d431", "hidden": false, "targetId": "2d1b-fc3b-61d8-d325", "type": "rule"}],
+                        "profiles": [
+                          {
+                            "name": "Bolt Shotgun",
+                            "id": "74f6-80f4-4955-2175",
+                            "hidden": false,
+                            "typeId": "3e46-13ca-c21d-5332",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "12\"", "typeId": "dec3-9673-e7b2-d188"},
+                              {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
+                              {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
+                              {"name": "S", "$text": "4", "typeId": "9673-0ac1-cc35-954e"},
+                              {"name": "AP", "$text": "0", "typeId": "a195-f4fc-a505-801d"},
+                              {"name": "D", "$text": "1", "typeId": "c7e5-e8b6-281a-b8ec"},
+                              {"name": "Keywords", "$text": "Assault", "typeId": "e1b8-4d33-0765-902e"}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Magna-coil Autocannon",
+                        "id": "672a-8e53-f028-82e2",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "f437-5fad-9ae7-02b7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "7b17-bb93-2066-7b94", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Magna-coil Autocannon",
+                            "id": "d474-f9b9-5cf8-a725",
+                            "hidden": false,
+                            "typeId": "3e46-13ca-c21d-5332",
+                            "typeName": "Ranged Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "18\"", "typeId": "dec3-9673-e7b2-d188"},
+                              {"name": "A", "$text": "4", "typeId": "ca5b-6247-2769-226d"},
+                              {"name": "BS", "$text": "4+", "typeId": "b89d-fa39-33d6-5304"},
+                              {"name": "S", "$text": "6", "typeId": "9673-0ac1-cc35-954e"},
+                              {"name": "AP", "$text": "1", "typeId": "a195-f4fc-a505-801d"},
+                              {"name": "D", "$text": "2", "typeId": "c7e5-e8b6-281a-b8ec"},
+                              {"name": "Keywords", "$text": "", "typeId": "e1b8-4d33-0765-902e"}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Plasma Knife",
+                        "id": "6b6c-acc1-1b21-c96d",
+                        "hidden": false,
+                        "import": true,
+                        "type": "upgrade",
+                        "constraints": [
+                          {"id": "b392-7063-ef1d-663e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                          {"id": "e3d4-321d-4f9c-1f5b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                        ],
+                        "profiles": [
+                          {
+                            "name": "Plasma Knife",
+                            "id": "a1fa-f65e-2cfb-f9ed",
+                            "hidden": false,
+                            "typeId": "55d8-2d59-9471-1f12",
+                            "typeName": "Melee Weapons",
+                            "characteristics": [
+                              {"name": "Range", "$text": "Melee", "typeId": "793c-4ce6-05e8-1c90"},
+                              {"name": "A", "$text": "4", "typeId": "2fbb-2976-c0fa-e443"},
+                              {"name": "WS", "$text": "4+", "typeId": "d915-9281-7953-ec59"},
+                              {"name": "S", "$text": "5", "typeId": "080f-5a23-dd88-4b93"},
+                              {"name": "AP", "$text": "1", "typeId": "c0ee-5d4a-1b5b-ad39"},
+                              {"name": "D", "$text": "1", "typeId": "ff44-a11f-c061-de40"},
+                              {"name": "Keywords", "$text": "Melee", "typeId": "3e74-90bb-646b-d2ed"}
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Wargear",
+            "id": "76bf-598d-ef11-99d9",
+            "hidden": false,
+            "constraints": [
+              {"id": "65db-2776-c365-88fe", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "af0a-a061-59a7-50e5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "modifiers": [
+              {
+                "field": "65db-2776-c365-88fe",
+                "type": "set",
+                "value": 0,
+                "conditions": [{"childId": "model", "childName": "model", "field": "selections", "scope": "parent", "shared": true, "type": "lessThan", "value": 3}]
+              },
+              {
+                "field": "af0a-a061-59a7-50e5",
+                "type": "set",
+                "value": 0,
+                "conditions": [{"childId": "model", "childName": "model", "field": "selections", "scope": "parent", "shared": true, "type": "lessThan", "value": 3}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Scout Guides",
+                "id": "1c29-182a-40bd-52d5",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": "Points", "typeId": "acdc-8926-b4b9-633c", "value": 10}, {"name": "Detachment Points (DP)", "typeId": "e3b7-e73c-d6b7-b429", "value": 0}],
+                "infoLinks": [{"name": "Scouts 9\"", "id": "fdf1-d5c2-c47b-506a", "hidden": false, "targetId": "9ea5-acc2-a2ac-257b", "type": "rule"}],
+                "profiles": [
+                  {
+                    "name": "Scout Guides",
+                    "id": "2076-96ef-f491-0fe7",
+                    "hidden": false,
+                    "typeId": "a47b-91ac-c740-4af2",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "This unit has Scouts 9\" instead of Scouts 5\".", "typeId": "9853-4bfc-3869-052b"}]
+                  }
+                ]
+              },
+              {
+                "name": "Pan-Spectral Scanner",
+                "id": "30b3-c8af-2ba3-d5f3",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Pan-Spectral Scanner",
+                    "id": "66f3-cc8f-6640-57d6",
+                    "hidden": false,
+                    "typeId": "a47b-91ac-c740-4af2",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "Each time a model in the bearer's unit makes a ranged attack, re-roll a Hit roll of 1.", "typeId": "9853-4bfc-3869-052b"}]
+                  }
+                ]
+              },
+              {
+                "name": "Rollbar Searchlight",
+                "id": "aaa9-f034-4e88-067c",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "modifiers": [
+                  {
+                    "affects": "self.entries.recursive.profiles.Ranged Weapons",
+                    "field": "e1b8-4d33-0765-902e",
+                    "join": ", ",
+                    "scope": "cb26-7c61-9c72-1959",
+                    "skipIfPresent": "Ignores Cover",
+                    "type": "append",
+                    "value": "Ignores Cover"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Rollbar Searchlight",
+                    "id": "a021-6f7e-6d69-f488",
+                    "hidden": false,
+                    "typeId": "a47b-91ac-c740-4af2",
+                    "typeName": "Abilities",
+                    "characteristics": [{"name": "Description", "$text": "This unit's ranged attacks have Ignores Cover.", "typeId": "9853-4bfc-3869-052b"}]
                   }
                 ]
               }
